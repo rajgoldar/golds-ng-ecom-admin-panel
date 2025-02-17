@@ -1,28 +1,65 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  MatButton,
-  MatButtonModule,
-  MatIconButton
-} from "./chunk-2XKPEQDF.js";
+  MAT_INPUT_VALUE_ACCESSOR
+} from "./chunk-4PCS64RV.js";
 import {
+  CdkPortalOutlet,
+  CdkScrollableModule,
+  ComponentPortal,
   FlexibleConnectedPositionStrategy,
   Overlay,
   OverlayConfig,
-  OverlayModule
-} from "./chunk-UTIX4DG6.js";
-import {
-  CdkPortalOutlet,
-  ComponentPortal,
+  OverlayModule,
   PortalModule,
   TemplatePortal
-} from "./chunk-H3TBOZ4E.js";
+} from "./chunk-ODIQJCPH.js";
 import {
-  CdkScrollableModule
-} from "./chunk-WRRKECMY.js";
-import "./chunk-A5EICGFH.js";
+  MAT_FORM_FIELD,
+  MatFormFieldControl
+} from "./chunk-VWQGOX3J.js";
 import {
-  MAT_INPUT_VALUE_ACCESSOR
-} from "./chunk-J74U7V35.js";
+  animate,
+  keyframes,
+  state,
+  style,
+  transition,
+  trigger
+} from "./chunk-YITY56S4.js";
+import {
+  DateAdapter,
+  Directionality,
+  ErrorStateMatcher,
+  MAT_DATE_FORMATS,
+  MatCommonModule,
+  MatRippleLoader,
+  MatRippleModule,
+  _ErrorStateTracker
+} from "./chunk-JSCAYRTV.js";
+import {
+  A11yModule,
+  CdkMonitorFocus,
+  CdkTrapFocus,
+  FocusMonitor,
+  Platform,
+  _getFocusedElementPierceShadowDom,
+  coerceStringArray,
+  normalizePassiveListenerOptions
+} from "./chunk-27I4VZMZ.js";
+import {
+  BACKSPACE,
+  DOWN_ARROW,
+  END,
+  ENTER,
+  ESCAPE,
+  HOME,
+  LEFT_ARROW,
+  PAGE_DOWN,
+  PAGE_UP,
+  RIGHT_ARROW,
+  SPACE,
+  UP_ARROW,
+  hasModifierKey
+} from "./chunk-3WRF2ZPO.js";
 import {
   ControlContainer,
   FormGroupDirective,
@@ -31,57 +68,15 @@ import {
   NgControl,
   NgForm,
   Validators
-} from "./chunk-TFDUT5FJ.js";
+} from "./chunk-67U5MMGD.js";
 import {
-  MAT_FORM_FIELD,
-  MatFormFieldControl
-} from "./chunk-3VVIO7PN.js";
-import "./chunk-Y3MXJAVK.js";
-import {
-  animate,
-  keyframes,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-QMBW6Z3E.js";
-import {
-  A11yModule,
-  BACKSPACE,
-  CdkMonitorFocus,
-  CdkTrapFocus,
-  DOWN_ARROW,
-  DateAdapter,
-  Directionality,
-  END,
-  ENTER,
-  ESCAPE,
-  ErrorStateMatcher,
-  HOME,
-  LEFT_ARROW,
-  MAT_DATE_FORMATS,
-  MatCommonModule,
-  PAGE_DOWN,
-  PAGE_UP,
-  Platform,
-  RIGHT_ARROW,
-  SPACE,
-  UP_ARROW,
-  _CdkPrivateStyleLoader,
-  _ErrorStateTracker,
-  _IdGenerator,
-  _StructuralStylesLoader,
-  _VisuallyHiddenLoader,
-  _getFocusedElementPierceShadowDom,
-  coerceStringArray,
-  hasModifierKey,
-  normalizePassiveListenerOptions
-} from "./chunk-N3ZF3M4H.js";
-import {
+  CommonModule,
   DOCUMENT,
   NgClass
-} from "./chunk-QYUJDBLS.js";
+} from "./chunk-J6ZTTRJD.js";
 import {
+  ANIMATION_MODULE_TYPE,
+  Attribute,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
@@ -89,7 +84,7 @@ import {
   Directive,
   ElementRef,
   EventEmitter,
-  HostAttributeToken,
+  Inject,
   Injectable,
   InjectionToken,
   Injector,
@@ -98,6 +93,7 @@ import {
   NgZone,
   Optional,
   Output,
+  Self,
   SkipSelf,
   TemplateRef,
   ViewChild,
@@ -107,6 +103,7 @@ import {
   booleanAttribute,
   forwardRef,
   inject,
+  numberAttribute,
   require_cjs,
   require_operators,
   setClassMetadata,
@@ -127,6 +124,7 @@ import {
   ɵɵdefineInjectable,
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
+  ɵɵdirectiveInject,
   ɵɵelement,
   ɵɵelementEnd,
   ɵɵelementStart,
@@ -134,6 +132,7 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵhostProperty,
   ɵɵinject,
+  ɵɵinjectAttribute,
   ɵɵinvalidFactory,
   ɵɵlistener,
   ɵɵloadQuery,
@@ -155,20 +154,1181 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
-  ɵɵtextInterpolate2,
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
   ɵɵviewQuery
-} from "./chunk-FB6BDKAH.js";
+} from "./chunk-QNCE3SLJ.js";
 import {
+  __spreadProps,
+  __spreadValues,
   __toESM
 } from "./chunk-NQ4HTGF6.js";
+
+// node_modules/@angular/material/fesm2022/button.mjs
+var _c0 = ["mat-button", ""];
+var _c1 = [[["", 8, "material-icons", 3, "iconPositionEnd", ""], ["mat-icon", 3, "iconPositionEnd", ""], ["", "matButtonIcon", "", 3, "iconPositionEnd", ""]], "*", [["", "iconPositionEnd", "", 8, "material-icons"], ["mat-icon", "iconPositionEnd", ""], ["", "matButtonIcon", "", "iconPositionEnd", ""]]];
+var _c2 = [".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])", "*", ".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]"];
+var _c3 = '.mat-mdc-button-base{text-decoration:none}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-text-button-horizontal-padding, 8px);height:var(--mdc-text-button-container-height);font-family:var(--mdc-text-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-text-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-text-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-text-button-label-text-transform);font-weight:var(--mdc-text-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-text-button-with-icon-horizontal-padding, 8px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-text-button-ripple-color)}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-text-button-touch-target-display)}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mdc-text-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mdc-text-button-label-text-color, var(--mat-app-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-text-button-disabled-label-text-color)}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-filled-button-horizontal-padding, 16px);height:var(--mdc-filled-button-container-height);font-family:var(--mdc-filled-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-filled-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-filled-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-filled-button-label-text-transform);font-weight:var(--mdc-filled-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-filled-button-ripple-color)}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-state-layer-color, var(--mat-app-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-unelevated-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-filled-button-touch-target-display)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mdc-filled-button-label-text-color, var(--mat-app-on-primary));background-color:var(--mdc-filled-button-container-color, var(--mat-app-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mdc-filled-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-filled-button-disabled-label-text-color);background-color:var(--mdc-filled-button-disabled-container-color)}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-protected-button-horizontal-padding, 16px);box-shadow:var(--mdc-protected-button-container-elevation-shadow, var(--mat-app-level1));height:var(--mdc-protected-button-container-height);font-family:var(--mdc-protected-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-protected-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-protected-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-protected-button-label-text-transform);font-weight:var(--mdc-protected-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-protected-button-ripple-color)}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-raised-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-protected-button-touch-target-display)}.mat-mdc-raised-button:not(:disabled){color:var(--mdc-protected-button-label-text-color, var(--mat-app-primary));background-color:var(--mdc-protected-button-container-color, var(--mat-app-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mdc-protected-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mdc-protected-button-hover-container-elevation-shadow, var(--mat-app-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mdc-protected-button-focus-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mdc-protected-button-pressed-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-protected-button-disabled-label-text-color);background-color:var(--mdc-protected-button-disabled-container-color)}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mdc-protected-button-disabled-container-elevation-shadow, var(--mat-app-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-outlined-button-horizontal-padding, 15px);height:var(--mdc-outlined-button-container-height);font-family:var(--mdc-outlined-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-outlined-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-outlined-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-outlined-button-label-text-transform);font-weight:var(--mdc-outlined-button-label-text-weight, var(--mat-app-label-large-weight));border-radius:var(--mdc-outlined-button-container-shape, var(--mat-app-corner-full));border-width:var(--mdc-outlined-button-outline-width)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-outlined-button-ripple-color)}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-outlined-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-outlined-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-outlined-button-touch-target-display)}.mat-mdc-outlined-button:not(:disabled){color:var(--mdc-outlined-button-label-text-color, var(--mat-app-primary));border-color:var(--mdc-outlined-button-outline-color, var(--mat-app-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-outlined-button-disabled-label-text-color);border-color:var(--mdc-outlined-button-disabled-outline-color)}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button .mdc-button__ripple{border-width:var(--mdc-outlined-button-outline-width);border-style:solid;border-color:rgba(0,0,0,0)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-mdc-focus-indicator,.mat-mdc-unelevated-button .mat-mdc-focus-indicator,.mat-mdc-raised-button .mat-mdc-focus-indicator,.mat-mdc-outlined-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-unelevated-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-raised-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-outlined-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-mdc-focus-indicator::before,.mat-mdc-raised-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 3px)*-1)}';
+var _c4 = ".cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}";
+var _c5 = ["mat-fab", ""];
+var _c6 = ["mat-mini-fab", ""];
+var _c7 = '.mat-mdc-fab-base{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mdc-fab-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-container-shape, var(--mat-app-corner-large));color:var(--mat-fab-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-touch-target-display)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color)}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-fab:hover{box-shadow:var(--mdc-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-fab:focus{box-shadow:var(--mdc-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mdc-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color);background-color:var(--mat-fab-disabled-state-container-color)}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mdc-fab-small-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-small-container-shape, var(--mat-app-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-small-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-small-touch-target-display)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color)}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-mini-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-mini-fab:hover{box-shadow:var(--mdc-fab-small-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mdc-fab-small-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mdc-fab-small-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color);background-color:var(--mat-fab-small-disabled-state-container-color)}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;border-radius:24px;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mdc-extended-fab-container-elevation-shadow, var(--mat-app-level3));height:var(--mdc-extended-fab-container-height);border-radius:var(--mdc-extended-fab-container-shape, var(--mat-app-corner-large));font-family:var(--mdc-extended-fab-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-extended-fab-label-text-size, var(--mat-app-label-large-size));font-weight:var(--mdc-extended-fab-label-text-weight, var(--mat-app-label-large-weight));letter-spacing:var(--mdc-extended-fab-label-text-tracking, var(--mat-app-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mdc-extended-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mdc-extended-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mdc-extended-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}';
+var _c8 = ["mat-icon-button", ""];
+var _c9 = ["*"];
+var _c10 = '.mat-mdc-icon-button{-webkit-user-select:none;user-select:none;display:inline-block;position:relative;box-sizing:border-box;border:none;outline:none;background-color:rgba(0,0,0,0);fill:currentColor;color:inherit;text-decoration:none;cursor:pointer;z-index:0;overflow:visible;border-radius:50%;flex-shrink:0;text-align:center;width:var(--mdc-icon-button-state-layer-size, 48px);height:var(--mdc-icon-button-state-layer-size, 48px);padding:calc(calc(var(--mdc-icon-button-state-layer-size, 48px) - var(--mdc-icon-button-icon-size, 24px)) / 2);font-size:var(--mdc-icon-button-icon-size);color:var(--mdc-icon-button-icon-color, var(--mat-app-on-surface-variant));-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-icon-button[disabled],.mat-mdc-icon-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-icon-button-disabled-icon-color)}.mat-mdc-icon-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-icon-button img,.mat-mdc-icon-button svg{width:var(--mdc-icon-button-icon-size);height:var(--mdc-icon-button-icon-size);vertical-align:baseline}.mat-mdc-icon-button .mat-mdc-button-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-icon-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-icon-button .mdc-button__label,.mat-mdc-icon-button .mat-icon{z-index:1;position:relative}.mat-mdc-icon-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-icon-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-icon-button .mat-ripple-element{background-color:var(--mat-icon-button-ripple-color)}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-icon-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-icon-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-icon-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-icon-button-touch-target-display)}.mat-mdc-icon-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple{border-radius:50%}.mat-mdc-icon-button[hidden]{display:none}.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before{background:rgba(0,0,0,0);opacity:1}';
+var MAT_BUTTON_CONFIG = new InjectionToken("MAT_BUTTON_CONFIG");
+var MAT_BUTTON_HOST = {
+  "[attr.disabled]": "_getDisabledAttribute()",
+  "[attr.aria-disabled]": "_getAriaDisabled()",
+  "[class.mat-mdc-button-disabled]": "disabled",
+  "[class.mat-mdc-button-disabled-interactive]": "disabledInteractive",
+  "[class._mat-animation-noopable]": '_animationMode === "NoopAnimations"',
+  // MDC automatically applies the primary theme color to the button, but we want to support
+  // an unthemed version. If color is undefined, apply a CSS class that makes it easy to
+  // select and style this "theme".
+  "[class.mat-unthemed]": "!color",
+  // Add a class that applies to all buttons. This makes it easier to target if somebody
+  // wants to target all Material buttons.
+  "[class.mat-mdc-button-base]": "true",
+  "[class]": 'color ? "mat-" + color : ""'
+};
+var HOST_SELECTOR_MDC_CLASS_PAIR = [{
+  attribute: "mat-button",
+  mdcClasses: ["mdc-button", "mat-mdc-button"]
+}, {
+  attribute: "mat-flat-button",
+  mdcClasses: ["mdc-button", "mdc-button--unelevated", "mat-mdc-unelevated-button"]
+}, {
+  attribute: "mat-raised-button",
+  mdcClasses: ["mdc-button", "mdc-button--raised", "mat-mdc-raised-button"]
+}, {
+  attribute: "mat-stroked-button",
+  mdcClasses: ["mdc-button", "mdc-button--outlined", "mat-mdc-outlined-button"]
+}, {
+  attribute: "mat-fab",
+  mdcClasses: ["mdc-fab", "mat-mdc-fab-base", "mat-mdc-fab"]
+}, {
+  attribute: "mat-mini-fab",
+  mdcClasses: ["mdc-fab", "mat-mdc-fab-base", "mdc-fab--mini", "mat-mdc-mini-fab"]
+}, {
+  attribute: "mat-icon-button",
+  mdcClasses: ["mdc-icon-button", "mat-mdc-icon-button"]
+}];
+var MatButtonBase = class _MatButtonBase {
+  /**
+   * Reference to the MatRipple instance of the button.
+   * @deprecated Considered an implementation detail. To be removed.
+   * @breaking-change 17.0.0
+   */
+  get ripple() {
+    return this._rippleLoader?.getRipple(this._elementRef.nativeElement);
+  }
+  set ripple(v) {
+    this._rippleLoader?.attachRipple(this._elementRef.nativeElement, v);
+  }
+  /** Whether the ripple effect is disabled or not. */
+  get disableRipple() {
+    return this._disableRipple;
+  }
+  set disableRipple(value) {
+    this._disableRipple = value;
+    this._updateRippleDisabled();
+  }
+  /** Whether the button is disabled. */
+  get disabled() {
+    return this._disabled;
+  }
+  set disabled(value) {
+    this._disabled = value;
+    this._updateRippleDisabled();
+  }
+  constructor(_elementRef, _platform, _ngZone, _animationMode) {
+    this._elementRef = _elementRef;
+    this._platform = _platform;
+    this._ngZone = _ngZone;
+    this._animationMode = _animationMode;
+    this._focusMonitor = inject(FocusMonitor);
+    this._rippleLoader = inject(MatRippleLoader);
+    this._isFab = false;
+    this._disableRipple = false;
+    this._disabled = false;
+    const config = inject(MAT_BUTTON_CONFIG, {
+      optional: true
+    });
+    const element = _elementRef.nativeElement;
+    const classList = element.classList;
+    this.disabledInteractive = config?.disabledInteractive ?? false;
+    this.color = config?.color ?? null;
+    this._rippleLoader?.configureRipple(element, {
+      className: "mat-mdc-button-ripple"
+    });
+    for (const {
+      attribute,
+      mdcClasses
+    } of HOST_SELECTOR_MDC_CLASS_PAIR) {
+      if (element.hasAttribute(attribute)) {
+        classList.add(...mdcClasses);
+      }
+    }
+  }
+  ngAfterViewInit() {
+    this._focusMonitor.monitor(this._elementRef, true);
+  }
+  ngOnDestroy() {
+    this._focusMonitor.stopMonitoring(this._elementRef);
+    this._rippleLoader?.destroyRipple(this._elementRef.nativeElement);
+  }
+  /** Focuses the button. */
+  focus(origin = "program", options) {
+    if (origin) {
+      this._focusMonitor.focusVia(this._elementRef.nativeElement, origin, options);
+    } else {
+      this._elementRef.nativeElement.focus(options);
+    }
+  }
+  _getAriaDisabled() {
+    if (this.ariaDisabled != null) {
+      return this.ariaDisabled;
+    }
+    return this.disabled && this.disabledInteractive ? true : null;
+  }
+  _getDisabledAttribute() {
+    return this.disabledInteractive || !this.disabled ? null : true;
+  }
+  _updateRippleDisabled() {
+    this._rippleLoader?.setDisabled(this._elementRef.nativeElement, this.disableRipple || this.disabled);
+  }
+  static {
+    this.ɵfac = function MatButtonBase_Factory(t) {
+      ɵɵinvalidFactory();
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatButtonBase,
+      inputs: {
+        color: "color",
+        disableRipple: [2, "disableRipple", "disableRipple", booleanAttribute],
+        disabled: [2, "disabled", "disabled", booleanAttribute],
+        ariaDisabled: [2, "aria-disabled", "ariaDisabled", booleanAttribute],
+        disabledInteractive: [2, "disabledInteractive", "disabledInteractive", booleanAttribute]
+      },
+      features: [ɵɵInputTransformsFeature]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatButtonBase, [{
+    type: Directive
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0
+  }], {
+    color: [{
+      type: Input
+    }],
+    disableRipple: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    disabled: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    ariaDisabled: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute,
+        alias: "aria-disabled"
+      }]
+    }],
+    disabledInteractive: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }]
+  });
+})();
+var MAT_ANCHOR_HOST = {
+  // Note that this is basically a noop on anchors,
+  // but it appears that some internal apps depend on it.
+  "[attr.disabled]": "_getDisabledAttribute()",
+  "[class.mat-mdc-button-disabled]": "disabled",
+  "[class.mat-mdc-button-disabled-interactive]": "disabledInteractive",
+  "[class._mat-animation-noopable]": '_animationMode === "NoopAnimations"',
+  // Note that we ignore the user-specified tabindex when it's disabled for
+  // consistency with the `mat-button` applied on native buttons where even
+  // though they have an index, they're not tabbable.
+  "[attr.tabindex]": "disabled && !disabledInteractive ? -1 : tabIndex",
+  "[attr.aria-disabled]": "_getAriaDisabled()",
+  // MDC automatically applies the primary theme color to the button, but we want to support
+  // an unthemed version. If color is undefined, apply a CSS class that makes it easy to
+  // select and style this "theme".
+  "[class.mat-unthemed]": "!color",
+  // Add a class that applies to all buttons. This makes it easier to target if somebody
+  // wants to target all Material buttons.
+  "[class.mat-mdc-button-base]": "true",
+  "[class]": 'color ? "mat-" + color : ""'
+};
+var MatAnchorBase = class _MatAnchorBase extends MatButtonBase {
+  constructor(elementRef, platform, ngZone, animationMode) {
+    super(elementRef, platform, ngZone, animationMode);
+    this._haltDisabledEvents = (event) => {
+      if (this.disabled) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+    };
+  }
+  ngOnInit() {
+    this._ngZone.runOutsideAngular(() => {
+      this._elementRef.nativeElement.addEventListener("click", this._haltDisabledEvents);
+    });
+  }
+  ngOnDestroy() {
+    super.ngOnDestroy();
+    this._elementRef.nativeElement.removeEventListener("click", this._haltDisabledEvents);
+  }
+  _getAriaDisabled() {
+    if (this.ariaDisabled != null) {
+      return this.ariaDisabled;
+    }
+    return this.disabled || null;
+  }
+  static {
+    this.ɵfac = function MatAnchorBase_Factory(t) {
+      ɵɵinvalidFactory();
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatAnchorBase,
+      inputs: {
+        tabIndex: [2, "tabIndex", "tabIndex", (value) => {
+          return value == null ? void 0 : numberAttribute(value);
+        }]
+      },
+      features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatAnchorBase, [{
+    type: Directive
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0
+  }], {
+    tabIndex: [{
+      type: Input,
+      args: [{
+        transform: (value) => {
+          return value == null ? void 0 : numberAttribute(value);
+        }
+      }]
+    }]
+  });
+})();
+var MatButton = class _MatButton extends MatButtonBase {
+  constructor(elementRef, platform, ngZone, animationMode) {
+    super(elementRef, platform, ngZone, animationMode);
+  }
+  static {
+    this.ɵfac = function MatButton_Factory(t) {
+      return new (t || _MatButton)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatButton,
+      selectors: [["button", "mat-button", ""], ["button", "mat-raised-button", ""], ["button", "mat-flat-button", ""], ["button", "mat-stroked-button", ""]],
+      hostVars: 14,
+      hostBindings: function MatButton_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true);
+        }
+      },
+      exportAs: ["matButton"],
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c0,
+      ngContentSelectors: _c2,
+      decls: 7,
+      vars: 4,
+      consts: [[1, "mat-mdc-button-persistent-ripple"], [1, "mdc-button__label"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatButton_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c1);
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelementStart(2, "span", 1);
+          ɵɵprojection(3, 1);
+          ɵɵelementEnd();
+          ɵɵprojection(4, 2);
+          ɵɵelement(5, "span", 2)(6, "span", 3);
+        }
+        if (rf & 2) {
+          ɵɵclassProp("mdc-button__ripple", !ctx._isFab)("mdc-fab__ripple", ctx._isFab);
+        }
+      },
+      styles: ['.mat-mdc-button-base{text-decoration:none}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-text-button-horizontal-padding, 8px);height:var(--mdc-text-button-container-height);font-family:var(--mdc-text-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-text-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-text-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-text-button-label-text-transform);font-weight:var(--mdc-text-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-text-button-with-icon-horizontal-padding, 8px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-text-button-ripple-color)}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-text-button-touch-target-display)}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mdc-text-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mdc-text-button-label-text-color, var(--mat-app-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-text-button-disabled-label-text-color)}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-filled-button-horizontal-padding, 16px);height:var(--mdc-filled-button-container-height);font-family:var(--mdc-filled-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-filled-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-filled-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-filled-button-label-text-transform);font-weight:var(--mdc-filled-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-filled-button-ripple-color)}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-state-layer-color, var(--mat-app-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-unelevated-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-filled-button-touch-target-display)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mdc-filled-button-label-text-color, var(--mat-app-on-primary));background-color:var(--mdc-filled-button-container-color, var(--mat-app-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mdc-filled-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-filled-button-disabled-label-text-color);background-color:var(--mdc-filled-button-disabled-container-color)}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-protected-button-horizontal-padding, 16px);box-shadow:var(--mdc-protected-button-container-elevation-shadow, var(--mat-app-level1));height:var(--mdc-protected-button-container-height);font-family:var(--mdc-protected-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-protected-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-protected-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-protected-button-label-text-transform);font-weight:var(--mdc-protected-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-protected-button-ripple-color)}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-raised-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-protected-button-touch-target-display)}.mat-mdc-raised-button:not(:disabled){color:var(--mdc-protected-button-label-text-color, var(--mat-app-primary));background-color:var(--mdc-protected-button-container-color, var(--mat-app-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mdc-protected-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mdc-protected-button-hover-container-elevation-shadow, var(--mat-app-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mdc-protected-button-focus-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mdc-protected-button-pressed-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-protected-button-disabled-label-text-color);background-color:var(--mdc-protected-button-disabled-container-color)}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mdc-protected-button-disabled-container-elevation-shadow, var(--mat-app-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-outlined-button-horizontal-padding, 15px);height:var(--mdc-outlined-button-container-height);font-family:var(--mdc-outlined-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-outlined-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-outlined-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-outlined-button-label-text-transform);font-weight:var(--mdc-outlined-button-label-text-weight, var(--mat-app-label-large-weight));border-radius:var(--mdc-outlined-button-container-shape, var(--mat-app-corner-full));border-width:var(--mdc-outlined-button-outline-width)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-outlined-button-ripple-color)}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-outlined-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-outlined-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-outlined-button-touch-target-display)}.mat-mdc-outlined-button:not(:disabled){color:var(--mdc-outlined-button-label-text-color, var(--mat-app-primary));border-color:var(--mdc-outlined-button-outline-color, var(--mat-app-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-outlined-button-disabled-label-text-color);border-color:var(--mdc-outlined-button-disabled-outline-color)}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button .mdc-button__ripple{border-width:var(--mdc-outlined-button-outline-width);border-style:solid;border-color:rgba(0,0,0,0)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-mdc-focus-indicator,.mat-mdc-unelevated-button .mat-mdc-focus-indicator,.mat-mdc-raised-button .mat-mdc-focus-indicator,.mat-mdc-outlined-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-unelevated-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-raised-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-outlined-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-mdc-focus-indicator::before,.mat-mdc-raised-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 3px)*-1)}', ".cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}"],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatButton, [{
+    type: Component,
+    args: [{
+      selector: `
+    button[mat-button], button[mat-raised-button], button[mat-flat-button],
+    button[mat-stroked-button]
+  `,
+      host: MAT_BUTTON_HOST,
+      exportAs: "matButton",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span
+    class="mat-mdc-button-persistent-ripple"
+    [class.mdc-button__ripple]="!_isFab"
+    [class.mdc-fab__ripple]="_isFab"></span>
+
+<ng-content select=".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])">
+</ng-content>
+
+<span class="mdc-button__label"><ng-content></ng-content></span>
+
+<ng-content select=".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]">
+</ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-button-base{text-decoration:none}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-text-button-horizontal-padding, 8px);height:var(--mdc-text-button-container-height);font-family:var(--mdc-text-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-text-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-text-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-text-button-label-text-transform);font-weight:var(--mdc-text-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-text-button-with-icon-horizontal-padding, 8px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-text-button-ripple-color)}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-text-button-touch-target-display)}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mdc-text-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mdc-text-button-label-text-color, var(--mat-app-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-text-button-disabled-label-text-color)}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-filled-button-horizontal-padding, 16px);height:var(--mdc-filled-button-container-height);font-family:var(--mdc-filled-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-filled-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-filled-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-filled-button-label-text-transform);font-weight:var(--mdc-filled-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-filled-button-ripple-color)}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-state-layer-color, var(--mat-app-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-unelevated-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-filled-button-touch-target-display)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mdc-filled-button-label-text-color, var(--mat-app-on-primary));background-color:var(--mdc-filled-button-container-color, var(--mat-app-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mdc-filled-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-filled-button-disabled-label-text-color);background-color:var(--mdc-filled-button-disabled-container-color)}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-protected-button-horizontal-padding, 16px);box-shadow:var(--mdc-protected-button-container-elevation-shadow, var(--mat-app-level1));height:var(--mdc-protected-button-container-height);font-family:var(--mdc-protected-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-protected-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-protected-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-protected-button-label-text-transform);font-weight:var(--mdc-protected-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-protected-button-ripple-color)}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-raised-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-protected-button-touch-target-display)}.mat-mdc-raised-button:not(:disabled){color:var(--mdc-protected-button-label-text-color, var(--mat-app-primary));background-color:var(--mdc-protected-button-container-color, var(--mat-app-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mdc-protected-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mdc-protected-button-hover-container-elevation-shadow, var(--mat-app-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mdc-protected-button-focus-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mdc-protected-button-pressed-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-protected-button-disabled-label-text-color);background-color:var(--mdc-protected-button-disabled-container-color)}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mdc-protected-button-disabled-container-elevation-shadow, var(--mat-app-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-outlined-button-horizontal-padding, 15px);height:var(--mdc-outlined-button-container-height);font-family:var(--mdc-outlined-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-outlined-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-outlined-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-outlined-button-label-text-transform);font-weight:var(--mdc-outlined-button-label-text-weight, var(--mat-app-label-large-weight));border-radius:var(--mdc-outlined-button-container-shape, var(--mat-app-corner-full));border-width:var(--mdc-outlined-button-outline-width)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-outlined-button-ripple-color)}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-outlined-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-outlined-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-outlined-button-touch-target-display)}.mat-mdc-outlined-button:not(:disabled){color:var(--mdc-outlined-button-label-text-color, var(--mat-app-primary));border-color:var(--mdc-outlined-button-outline-color, var(--mat-app-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-outlined-button-disabled-label-text-color);border-color:var(--mdc-outlined-button-disabled-outline-color)}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button .mdc-button__ripple{border-width:var(--mdc-outlined-button-outline-width);border-style:solid;border-color:rgba(0,0,0,0)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-mdc-focus-indicator,.mat-mdc-unelevated-button .mat-mdc-focus-indicator,.mat-mdc-raised-button .mat-mdc-focus-indicator,.mat-mdc-outlined-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-unelevated-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-raised-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-outlined-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-mdc-focus-indicator::before,.mat-mdc-raised-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 3px)*-1)}', ".cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}"]
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }], null);
+})();
+var MatAnchor = class _MatAnchor extends MatAnchorBase {
+  constructor(elementRef, platform, ngZone, animationMode) {
+    super(elementRef, platform, ngZone, animationMode);
+  }
+  static {
+    this.ɵfac = function MatAnchor_Factory(t) {
+      return new (t || _MatAnchor)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatAnchor,
+      selectors: [["a", "mat-button", ""], ["a", "mat-raised-button", ""], ["a", "mat-flat-button", ""], ["a", "mat-stroked-button", ""]],
+      hostVars: 15,
+      hostBindings: function MatAnchor_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("tabindex", ctx.disabled && !ctx.disabledInteractive ? -1 : ctx.tabIndex)("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true);
+        }
+      },
+      exportAs: ["matButton", "matAnchor"],
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c0,
+      ngContentSelectors: _c2,
+      decls: 7,
+      vars: 4,
+      consts: [[1, "mat-mdc-button-persistent-ripple"], [1, "mdc-button__label"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatAnchor_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c1);
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelementStart(2, "span", 1);
+          ɵɵprojection(3, 1);
+          ɵɵelementEnd();
+          ɵɵprojection(4, 2);
+          ɵɵelement(5, "span", 2)(6, "span", 3);
+        }
+        if (rf & 2) {
+          ɵɵclassProp("mdc-button__ripple", !ctx._isFab)("mdc-fab__ripple", ctx._isFab);
+        }
+      },
+      styles: [_c3, _c4],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatAnchor, [{
+    type: Component,
+    args: [{
+      selector: `a[mat-button], a[mat-raised-button], a[mat-flat-button], a[mat-stroked-button]`,
+      exportAs: "matButton, matAnchor",
+      host: MAT_ANCHOR_HOST,
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span
+    class="mat-mdc-button-persistent-ripple"
+    [class.mdc-button__ripple]="!_isFab"
+    [class.mdc-fab__ripple]="_isFab"></span>
+
+<ng-content select=".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])">
+</ng-content>
+
+<span class="mdc-button__label"><ng-content></ng-content></span>
+
+<ng-content select=".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]">
+</ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-button-base{text-decoration:none}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-text-button-horizontal-padding, 8px);height:var(--mdc-text-button-container-height);font-family:var(--mdc-text-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-text-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-text-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-text-button-label-text-transform);font-weight:var(--mdc-text-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-text-button-with-icon-horizontal-padding, 8px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-offset, 0);margin-left:var(--mat-text-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-text-button-icon-spacing, 8px);margin-left:var(--mat-text-button-icon-offset, 0)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-text-button-ripple-color)}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-text-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-text-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-text-button-touch-target-display)}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mdc-text-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mdc-text-button-label-text-color, var(--mat-app-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-text-button-disabled-label-text-color)}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-filled-button-horizontal-padding, 16px);height:var(--mdc-filled-button-container-height);font-family:var(--mdc-filled-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-filled-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-filled-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-filled-button-label-text-transform);font-weight:var(--mdc-filled-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-offset, -4px);margin-left:var(--mat-filled-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-filled-button-icon-spacing, 8px);margin-left:var(--mat-filled-button-icon-offset, -4px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-filled-button-ripple-color)}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-state-layer-color, var(--mat-app-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-filled-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-unelevated-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-filled-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-filled-button-touch-target-display)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mdc-filled-button-label-text-color, var(--mat-app-on-primary));background-color:var(--mdc-filled-button-container-color, var(--mat-app-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mdc-filled-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-filled-button-disabled-label-text-color);background-color:var(--mdc-filled-button-disabled-container-color)}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-protected-button-horizontal-padding, 16px);box-shadow:var(--mdc-protected-button-container-elevation-shadow, var(--mat-app-level1));height:var(--mdc-protected-button-container-height);font-family:var(--mdc-protected-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-protected-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-protected-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-protected-button-label-text-transform);font-weight:var(--mdc-protected-button-label-text-weight, var(--mat-app-label-large-weight))}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-offset, -4px);margin-left:var(--mat-protected-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-protected-button-icon-spacing, 8px);margin-left:var(--mat-protected-button-icon-offset, -4px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-protected-button-ripple-color)}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-protected-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-raised-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-raised-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-protected-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-protected-button-touch-target-display)}.mat-mdc-raised-button:not(:disabled){color:var(--mdc-protected-button-label-text-color, var(--mat-app-primary));background-color:var(--mdc-protected-button-container-color, var(--mat-app-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mdc-protected-button-container-shape, var(--mat-app-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mdc-protected-button-hover-container-elevation-shadow, var(--mat-app-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mdc-protected-button-focus-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mdc-protected-button-pressed-container-elevation-shadow, var(--mat-app-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-protected-button-disabled-label-text-color);background-color:var(--mdc-protected-button-disabled-container-color)}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mdc-protected-button-disabled-container-elevation-shadow, var(--mat-app-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);padding:0 var(--mat-outlined-button-horizontal-padding, 15px);height:var(--mdc-outlined-button-container-height);font-family:var(--mdc-outlined-button-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-outlined-button-label-text-size, var(--mat-app-label-large-size));letter-spacing:var(--mdc-outlined-button-label-text-tracking, var(--mat-app-label-large-tracking));text-transform:var(--mdc-outlined-button-label-text-transform);font-weight:var(--mdc-outlined-button-label-text-weight, var(--mat-app-label-large-weight));border-radius:var(--mdc-outlined-button-container-shape, var(--mat-app-corner-full));border-width:var(--mdc-outlined-button-outline-width)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-offset, -4px);margin-left:var(--mat-outlined-button-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-outlined-button-icon-spacing, 8px);margin-left:var(--mat-outlined-button-icon-offset, -4px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-outlined-button-ripple-color)}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-state-layer-color, var(--mat-app-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-outlined-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-outlined-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-outlined-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-outlined-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:0;right:0;transform:translateY(-50%);display:var(--mat-outlined-button-touch-target-display)}.mat-mdc-outlined-button:not(:disabled){color:var(--mdc-outlined-button-label-text-color, var(--mat-app-primary));border-color:var(--mdc-outlined-button-outline-color, var(--mat-app-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-outlined-button-disabled-label-text-color);border-color:var(--mdc-outlined-button-disabled-outline-color)}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button .mdc-button__ripple{border-width:var(--mdc-outlined-button-outline-width);border-style:solid;border-color:rgba(0,0,0,0)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-mdc-focus-indicator,.mat-mdc-unelevated-button .mat-mdc-focus-indicator,.mat-mdc-raised-button .mat-mdc-focus-indicator,.mat-mdc-outlined-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-unelevated-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-raised-button:focus .mat-mdc-focus-indicator::before,.mat-mdc-outlined-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-mdc-focus-indicator::before,.mat-mdc-raised-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 3px)*-1)}', ".cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}"]
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }], null);
+})();
+var MAT_FAB_DEFAULT_OPTIONS = new InjectionToken("mat-mdc-fab-default-options", {
+  providedIn: "root",
+  factory: MAT_FAB_DEFAULT_OPTIONS_FACTORY
+});
+function MAT_FAB_DEFAULT_OPTIONS_FACTORY() {
+  return {
+    // The FAB by default has its color set to accent.
+    color: "accent"
+  };
+}
+var defaults = MAT_FAB_DEFAULT_OPTIONS_FACTORY();
+var MatFabButton = class _MatFabButton extends MatButtonBase {
+  constructor(elementRef, platform, ngZone, animationMode, _options) {
+    super(elementRef, platform, ngZone, animationMode);
+    this._options = _options;
+    this._isFab = true;
+    this._options = this._options || defaults;
+    this.color = this._options.color || defaults.color;
+  }
+  static {
+    this.ɵfac = function MatFabButton_Factory(t) {
+      return new (t || _MatFabButton)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8), ɵɵdirectiveInject(MAT_FAB_DEFAULT_OPTIONS, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatFabButton,
+      selectors: [["button", "mat-fab", ""]],
+      hostVars: 18,
+      hostBindings: function MatFabButton_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true)("mdc-fab--extended", ctx.extended)("mat-mdc-extended-fab", ctx.extended);
+        }
+      },
+      inputs: {
+        extended: [2, "extended", "extended", booleanAttribute]
+      },
+      exportAs: ["matButton"],
+      standalone: true,
+      features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c5,
+      ngContentSelectors: _c2,
+      decls: 7,
+      vars: 4,
+      consts: [[1, "mat-mdc-button-persistent-ripple"], [1, "mdc-button__label"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatFabButton_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c1);
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelementStart(2, "span", 1);
+          ɵɵprojection(3, 1);
+          ɵɵelementEnd();
+          ɵɵprojection(4, 2);
+          ɵɵelement(5, "span", 2)(6, "span", 3);
+        }
+        if (rf & 2) {
+          ɵɵclassProp("mdc-button__ripple", !ctx._isFab)("mdc-fab__ripple", ctx._isFab);
+        }
+      },
+      styles: ['.mat-mdc-fab-base{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mdc-fab-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-container-shape, var(--mat-app-corner-large));color:var(--mat-fab-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-touch-target-display)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color)}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-fab:hover{box-shadow:var(--mdc-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-fab:focus{box-shadow:var(--mdc-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mdc-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color);background-color:var(--mat-fab-disabled-state-container-color)}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mdc-fab-small-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-small-container-shape, var(--mat-app-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-small-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-small-touch-target-display)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color)}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-mini-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-mini-fab:hover{box-shadow:var(--mdc-fab-small-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mdc-fab-small-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mdc-fab-small-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color);background-color:var(--mat-fab-small-disabled-state-container-color)}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;border-radius:24px;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mdc-extended-fab-container-elevation-shadow, var(--mat-app-level3));height:var(--mdc-extended-fab-container-height);border-radius:var(--mdc-extended-fab-container-shape, var(--mat-app-corner-large));font-family:var(--mdc-extended-fab-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-extended-fab-label-text-size, var(--mat-app-label-large-size));font-weight:var(--mdc-extended-fab-label-text-weight, var(--mat-app-label-large-weight));letter-spacing:var(--mdc-extended-fab-label-text-tracking, var(--mat-app-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mdc-extended-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mdc-extended-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mdc-extended-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}'],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatFabButton, [{
+    type: Component,
+    args: [{
+      selector: `button[mat-fab]`,
+      host: __spreadProps(__spreadValues({}, MAT_BUTTON_HOST), {
+        "[class.mdc-fab--extended]": "extended",
+        "[class.mat-mdc-extended-fab]": "extended"
+      }),
+      exportAs: "matButton",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span
+    class="mat-mdc-button-persistent-ripple"
+    [class.mdc-button__ripple]="!_isFab"
+    [class.mdc-fab__ripple]="_isFab"></span>
+
+<ng-content select=".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])">
+</ng-content>
+
+<span class="mdc-button__label"><ng-content></ng-content></span>
+
+<ng-content select=".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]">
+</ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-fab-base{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mdc-fab-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-container-shape, var(--mat-app-corner-large));color:var(--mat-fab-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-touch-target-display)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color)}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-fab:hover{box-shadow:var(--mdc-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-fab:focus{box-shadow:var(--mdc-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mdc-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color);background-color:var(--mat-fab-disabled-state-container-color)}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mdc-fab-small-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-small-container-shape, var(--mat-app-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-small-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-small-touch-target-display)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color)}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-mini-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-mini-fab:hover{box-shadow:var(--mdc-fab-small-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mdc-fab-small-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mdc-fab-small-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color);background-color:var(--mat-fab-small-disabled-state-container-color)}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;border-radius:24px;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mdc-extended-fab-container-elevation-shadow, var(--mat-app-level3));height:var(--mdc-extended-fab-container-height);border-radius:var(--mdc-extended-fab-container-shape, var(--mat-app-corner-large));font-family:var(--mdc-extended-fab-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-extended-fab-label-text-size, var(--mat-app-label-large-size));font-weight:var(--mdc-extended-fab-label-text-weight, var(--mat-app-label-large-weight));letter-spacing:var(--mdc-extended-fab-label-text-tracking, var(--mat-app-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mdc-extended-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mdc-extended-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mdc-extended-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}']
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_FAB_DEFAULT_OPTIONS]
+    }]
+  }], {
+    extended: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }]
+  });
+})();
+var MatMiniFabButton = class _MatMiniFabButton extends MatButtonBase {
+  constructor(elementRef, platform, ngZone, animationMode, _options) {
+    super(elementRef, platform, ngZone, animationMode);
+    this._options = _options;
+    this._isFab = true;
+    this._options = this._options || defaults;
+    this.color = this._options.color || defaults.color;
+  }
+  static {
+    this.ɵfac = function MatMiniFabButton_Factory(t) {
+      return new (t || _MatMiniFabButton)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8), ɵɵdirectiveInject(MAT_FAB_DEFAULT_OPTIONS, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatMiniFabButton,
+      selectors: [["button", "mat-mini-fab", ""]],
+      hostVars: 14,
+      hostBindings: function MatMiniFabButton_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true);
+        }
+      },
+      exportAs: ["matButton"],
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c6,
+      ngContentSelectors: _c2,
+      decls: 7,
+      vars: 4,
+      consts: [[1, "mat-mdc-button-persistent-ripple"], [1, "mdc-button__label"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatMiniFabButton_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c1);
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelementStart(2, "span", 1);
+          ɵɵprojection(3, 1);
+          ɵɵelementEnd();
+          ɵɵprojection(4, 2);
+          ɵɵelement(5, "span", 2)(6, "span", 3);
+        }
+        if (rf & 2) {
+          ɵɵclassProp("mdc-button__ripple", !ctx._isFab)("mdc-fab__ripple", ctx._isFab);
+        }
+      },
+      styles: [_c7],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMiniFabButton, [{
+    type: Component,
+    args: [{
+      selector: `button[mat-mini-fab]`,
+      host: MAT_BUTTON_HOST,
+      exportAs: "matButton",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span
+    class="mat-mdc-button-persistent-ripple"
+    [class.mdc-button__ripple]="!_isFab"
+    [class.mdc-fab__ripple]="_isFab"></span>
+
+<ng-content select=".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])">
+</ng-content>
+
+<span class="mdc-button__label"><ng-content></ng-content></span>
+
+<ng-content select=".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]">
+</ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-fab-base{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mdc-fab-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-container-shape, var(--mat-app-corner-large));color:var(--mat-fab-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-touch-target-display)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color)}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-fab:hover{box-shadow:var(--mdc-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-fab:focus{box-shadow:var(--mdc-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mdc-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color);background-color:var(--mat-fab-disabled-state-container-color)}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mdc-fab-small-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-small-container-shape, var(--mat-app-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-small-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-small-touch-target-display)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color)}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-mini-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-mini-fab:hover{box-shadow:var(--mdc-fab-small-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mdc-fab-small-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mdc-fab-small-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color);background-color:var(--mat-fab-small-disabled-state-container-color)}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;border-radius:24px;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mdc-extended-fab-container-elevation-shadow, var(--mat-app-level3));height:var(--mdc-extended-fab-container-height);border-radius:var(--mdc-extended-fab-container-shape, var(--mat-app-corner-large));font-family:var(--mdc-extended-fab-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-extended-fab-label-text-size, var(--mat-app-label-large-size));font-weight:var(--mdc-extended-fab-label-text-weight, var(--mat-app-label-large-weight));letter-spacing:var(--mdc-extended-fab-label-text-tracking, var(--mat-app-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mdc-extended-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mdc-extended-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mdc-extended-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}']
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_FAB_DEFAULT_OPTIONS]
+    }]
+  }], null);
+})();
+var MatFabAnchor = class _MatFabAnchor extends MatAnchor {
+  constructor(elementRef, platform, ngZone, animationMode, _options) {
+    super(elementRef, platform, ngZone, animationMode);
+    this._options = _options;
+    this._isFab = true;
+    this._options = this._options || defaults;
+    this.color = this._options.color || defaults.color;
+  }
+  static {
+    this.ɵfac = function MatFabAnchor_Factory(t) {
+      return new (t || _MatFabAnchor)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8), ɵɵdirectiveInject(MAT_FAB_DEFAULT_OPTIONS, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatFabAnchor,
+      selectors: [["a", "mat-fab", ""]],
+      hostVars: 19,
+      hostBindings: function MatFabAnchor_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("tabindex", ctx.disabled && !ctx.disabledInteractive ? -1 : ctx.tabIndex)("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true)("mdc-fab--extended", ctx.extended)("mat-mdc-extended-fab", ctx.extended);
+        }
+      },
+      inputs: {
+        extended: [2, "extended", "extended", booleanAttribute]
+      },
+      exportAs: ["matButton", "matAnchor"],
+      standalone: true,
+      features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c5,
+      ngContentSelectors: _c2,
+      decls: 7,
+      vars: 4,
+      consts: [[1, "mat-mdc-button-persistent-ripple"], [1, "mdc-button__label"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatFabAnchor_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c1);
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelementStart(2, "span", 1);
+          ɵɵprojection(3, 1);
+          ɵɵelementEnd();
+          ɵɵprojection(4, 2);
+          ɵɵelement(5, "span", 2)(6, "span", 3);
+        }
+        if (rf & 2) {
+          ɵɵclassProp("mdc-button__ripple", !ctx._isFab)("mdc-fab__ripple", ctx._isFab);
+        }
+      },
+      styles: [_c7],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatFabAnchor, [{
+    type: Component,
+    args: [{
+      selector: `a[mat-fab]`,
+      host: __spreadProps(__spreadValues({}, MAT_ANCHOR_HOST), {
+        "[class.mdc-fab--extended]": "extended",
+        "[class.mat-mdc-extended-fab]": "extended"
+      }),
+      exportAs: "matButton, matAnchor",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span
+    class="mat-mdc-button-persistent-ripple"
+    [class.mdc-button__ripple]="!_isFab"
+    [class.mdc-fab__ripple]="_isFab"></span>
+
+<ng-content select=".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])">
+</ng-content>
+
+<span class="mdc-button__label"><ng-content></ng-content></span>
+
+<ng-content select=".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]">
+</ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-fab-base{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mdc-fab-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-container-shape, var(--mat-app-corner-large));color:var(--mat-fab-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-touch-target-display)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color)}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-fab:hover{box-shadow:var(--mdc-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-fab:focus{box-shadow:var(--mdc-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mdc-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color);background-color:var(--mat-fab-disabled-state-container-color)}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mdc-fab-small-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-small-container-shape, var(--mat-app-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-small-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-small-touch-target-display)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color)}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-mini-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-mini-fab:hover{box-shadow:var(--mdc-fab-small-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mdc-fab-small-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mdc-fab-small-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color);background-color:var(--mat-fab-small-disabled-state-container-color)}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;border-radius:24px;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mdc-extended-fab-container-elevation-shadow, var(--mat-app-level3));height:var(--mdc-extended-fab-container-height);border-radius:var(--mdc-extended-fab-container-shape, var(--mat-app-corner-large));font-family:var(--mdc-extended-fab-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-extended-fab-label-text-size, var(--mat-app-label-large-size));font-weight:var(--mdc-extended-fab-label-text-weight, var(--mat-app-label-large-weight));letter-spacing:var(--mdc-extended-fab-label-text-tracking, var(--mat-app-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mdc-extended-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mdc-extended-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mdc-extended-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}']
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_FAB_DEFAULT_OPTIONS]
+    }]
+  }], {
+    extended: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }]
+  });
+})();
+var MatMiniFabAnchor = class _MatMiniFabAnchor extends MatAnchor {
+  constructor(elementRef, platform, ngZone, animationMode, _options) {
+    super(elementRef, platform, ngZone, animationMode);
+    this._options = _options;
+    this._isFab = true;
+    this._options = this._options || defaults;
+    this.color = this._options.color || defaults.color;
+  }
+  static {
+    this.ɵfac = function MatMiniFabAnchor_Factory(t) {
+      return new (t || _MatMiniFabAnchor)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8), ɵɵdirectiveInject(MAT_FAB_DEFAULT_OPTIONS, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatMiniFabAnchor,
+      selectors: [["a", "mat-mini-fab", ""]],
+      hostVars: 15,
+      hostBindings: function MatMiniFabAnchor_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("tabindex", ctx.disabled && !ctx.disabledInteractive ? -1 : ctx.tabIndex)("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true);
+        }
+      },
+      exportAs: ["matButton", "matAnchor"],
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c6,
+      ngContentSelectors: _c2,
+      decls: 7,
+      vars: 4,
+      consts: [[1, "mat-mdc-button-persistent-ripple"], [1, "mdc-button__label"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatMiniFabAnchor_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c1);
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelementStart(2, "span", 1);
+          ɵɵprojection(3, 1);
+          ɵɵelementEnd();
+          ɵɵprojection(4, 2);
+          ɵɵelement(5, "span", 2)(6, "span", 3);
+        }
+        if (rf & 2) {
+          ɵɵclassProp("mdc-button__ripple", !ctx._isFab)("mdc-fab__ripple", ctx._isFab);
+        }
+      },
+      styles: [_c7],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMiniFabAnchor, [{
+    type: Component,
+    args: [{
+      selector: `a[mat-mini-fab]`,
+      host: MAT_ANCHOR_HOST,
+      exportAs: "matButton, matAnchor",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span
+    class="mat-mdc-button-persistent-ripple"
+    [class.mdc-button__ripple]="!_isFab"
+    [class.mdc-fab__ripple]="_isFab"></span>
+
+<ng-content select=".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])">
+</ng-content>
+
+<span class="mdc-button__label"><ng-content></ng-content></span>
+
+<ng-content select=".material-icons[iconPositionEnd], mat-icon[iconPositionEnd], [matButtonIcon][iconPositionEnd]">
+</ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-fab-base{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-mdc-focus-indicator::before{margin:calc(calc(var(--mat-mdc-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mdc-fab-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-container-shape, var(--mat-app-corner-large));color:var(--mat-fab-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-touch-target-display)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color)}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-fab:hover{box-shadow:var(--mdc-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-fab:focus{box-shadow:var(--mdc-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mdc-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color);background-color:var(--mat-fab-disabled-state-container-color)}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mdc-fab-small-container-color, var(--mat-app-primary-container));border-radius:var(--mdc-fab-small-container-shape, var(--mat-app-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-app-on-primary-container, inherit));box-shadow:var(--mdc-fab-small-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-fab-small-touch-target-display)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color)}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-app-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-mini-fab:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-mini-fab:hover{box-shadow:var(--mdc-fab-small-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mdc-fab-small-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mdc-fab-small-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color);background-color:var(--mat-fab-small-disabled-state-container-color)}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;border-radius:24px;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mdc-extended-fab-container-elevation-shadow, var(--mat-app-level3));height:var(--mdc-extended-fab-container-height);border-radius:var(--mdc-extended-fab-container-shape, var(--mat-app-corner-large));font-family:var(--mdc-extended-fab-label-text-font, var(--mat-app-label-large-font));font-size:var(--mdc-extended-fab-label-text-size, var(--mat-app-label-large-size));font-weight:var(--mdc-extended-fab-label-text-weight, var(--mat-app-label-large-weight));letter-spacing:var(--mdc-extended-fab-label-text-tracking, var(--mat-app-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mdc-extended-fab-hover-container-elevation-shadow, var(--mat-app-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mdc-extended-fab-focus-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mdc-extended-fab-pressed-container-elevation-shadow, var(--mat-app-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}']
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_FAB_DEFAULT_OPTIONS]
+    }]
+  }], null);
+})();
+var MatIconButton = class _MatIconButton extends MatButtonBase {
+  constructor(elementRef, platform, ngZone, animationMode) {
+    super(elementRef, platform, ngZone, animationMode);
+    this._rippleLoader.configureRipple(this._elementRef.nativeElement, {
+      centered: true
+    });
+  }
+  static {
+    this.ɵfac = function MatIconButton_Factory(t) {
+      return new (t || _MatIconButton)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatIconButton,
+      selectors: [["button", "mat-icon-button", ""]],
+      hostVars: 14,
+      hostBindings: function MatIconButton_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true);
+        }
+      },
+      exportAs: ["matButton"],
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c8,
+      ngContentSelectors: _c9,
+      decls: 4,
+      vars: 0,
+      consts: [[1, "mat-mdc-button-persistent-ripple", "mdc-icon-button__ripple"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatIconButton_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef();
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelement(2, "span", 1)(3, "span", 2);
+        }
+      },
+      styles: ['.mat-mdc-icon-button{-webkit-user-select:none;user-select:none;display:inline-block;position:relative;box-sizing:border-box;border:none;outline:none;background-color:rgba(0,0,0,0);fill:currentColor;color:inherit;text-decoration:none;cursor:pointer;z-index:0;overflow:visible;border-radius:50%;flex-shrink:0;text-align:center;width:var(--mdc-icon-button-state-layer-size, 48px);height:var(--mdc-icon-button-state-layer-size, 48px);padding:calc(calc(var(--mdc-icon-button-state-layer-size, 48px) - var(--mdc-icon-button-icon-size, 24px)) / 2);font-size:var(--mdc-icon-button-icon-size);color:var(--mdc-icon-button-icon-color, var(--mat-app-on-surface-variant));-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-icon-button[disabled],.mat-mdc-icon-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-icon-button-disabled-icon-color)}.mat-mdc-icon-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-icon-button img,.mat-mdc-icon-button svg{width:var(--mdc-icon-button-icon-size);height:var(--mdc-icon-button-icon-size);vertical-align:baseline}.mat-mdc-icon-button .mat-mdc-button-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-icon-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-icon-button .mdc-button__label,.mat-mdc-icon-button .mat-icon{z-index:1;position:relative}.mat-mdc-icon-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-icon-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-icon-button .mat-ripple-element{background-color:var(--mat-icon-button-ripple-color)}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-icon-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-icon-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-icon-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-icon-button-touch-target-display)}.mat-mdc-icon-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple{border-radius:50%}.mat-mdc-icon-button[hidden]{display:none}.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before{background:rgba(0,0,0,0);opacity:1}', _c4],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatIconButton, [{
+    type: Component,
+    args: [{
+      selector: `button[mat-icon-button]`,
+      host: MAT_BUTTON_HOST,
+      exportAs: "matButton",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span>
+
+<ng-content></ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-icon-button{-webkit-user-select:none;user-select:none;display:inline-block;position:relative;box-sizing:border-box;border:none;outline:none;background-color:rgba(0,0,0,0);fill:currentColor;color:inherit;text-decoration:none;cursor:pointer;z-index:0;overflow:visible;border-radius:50%;flex-shrink:0;text-align:center;width:var(--mdc-icon-button-state-layer-size, 48px);height:var(--mdc-icon-button-state-layer-size, 48px);padding:calc(calc(var(--mdc-icon-button-state-layer-size, 48px) - var(--mdc-icon-button-icon-size, 24px)) / 2);font-size:var(--mdc-icon-button-icon-size);color:var(--mdc-icon-button-icon-color, var(--mat-app-on-surface-variant));-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-icon-button[disabled],.mat-mdc-icon-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-icon-button-disabled-icon-color)}.mat-mdc-icon-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-icon-button img,.mat-mdc-icon-button svg{width:var(--mdc-icon-button-icon-size);height:var(--mdc-icon-button-icon-size);vertical-align:baseline}.mat-mdc-icon-button .mat-mdc-button-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-icon-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-icon-button .mdc-button__label,.mat-mdc-icon-button .mat-icon{z-index:1;position:relative}.mat-mdc-icon-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-icon-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-icon-button .mat-ripple-element{background-color:var(--mat-icon-button-ripple-color)}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-icon-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-icon-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-icon-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-icon-button-touch-target-display)}.mat-mdc-icon-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple{border-radius:50%}.mat-mdc-icon-button[hidden]{display:none}.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before{background:rgba(0,0,0,0);opacity:1}', ".cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}"]
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }], null);
+})();
+var MatIconAnchor = class _MatIconAnchor extends MatAnchorBase {
+  constructor(elementRef, platform, ngZone, animationMode) {
+    super(elementRef, platform, ngZone, animationMode);
+  }
+  static {
+    this.ɵfac = function MatIconAnchor_Factory(t) {
+      return new (t || _MatIconAnchor)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatIconAnchor,
+      selectors: [["a", "mat-icon-button", ""]],
+      hostVars: 15,
+      hostBindings: function MatIconAnchor_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("disabled", ctx._getDisabledAttribute())("tabindex", ctx.disabled && !ctx.disabledInteractive ? -1 : ctx.tabIndex)("aria-disabled", ctx._getAriaDisabled());
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-mdc-button-disabled", ctx.disabled)("mat-mdc-button-disabled-interactive", ctx.disabledInteractive)("_mat-animation-noopable", ctx._animationMode === "NoopAnimations")("mat-unthemed", !ctx.color)("mat-mdc-button-base", true);
+        }
+      },
+      exportAs: ["matButton", "matAnchor"],
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      attrs: _c8,
+      ngContentSelectors: _c9,
+      decls: 4,
+      vars: 0,
+      consts: [[1, "mat-mdc-button-persistent-ripple", "mdc-icon-button__ripple"], [1, "mat-mdc-focus-indicator"], [1, "mat-mdc-button-touch-target"]],
+      template: function MatIconAnchor_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef();
+          ɵɵelement(0, "span", 0);
+          ɵɵprojection(1);
+          ɵɵelement(2, "span", 1)(3, "span", 2);
+        }
+      },
+      styles: [_c10, _c4],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatIconAnchor, [{
+    type: Component,
+    args: [{
+      selector: `a[mat-icon-button]`,
+      host: MAT_ANCHOR_HOST,
+      exportAs: "matButton, matAnchor",
+      encapsulation: ViewEncapsulation$1.None,
+      changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
+      template: `<span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span>
+
+<ng-content></ng-content>
+
+<!--
+  The indicator can't be directly on the button, because MDC uses ::before for high contrast
+  indication and it can't be on the ripple, because it has a border radius and overflow: hidden.
+-->
+<span class="mat-mdc-focus-indicator"></span>
+
+<span class="mat-mdc-button-touch-target"></span>
+`,
+      styles: ['.mat-mdc-icon-button{-webkit-user-select:none;user-select:none;display:inline-block;position:relative;box-sizing:border-box;border:none;outline:none;background-color:rgba(0,0,0,0);fill:currentColor;color:inherit;text-decoration:none;cursor:pointer;z-index:0;overflow:visible;border-radius:50%;flex-shrink:0;text-align:center;width:var(--mdc-icon-button-state-layer-size, 48px);height:var(--mdc-icon-button-state-layer-size, 48px);padding:calc(calc(var(--mdc-icon-button-state-layer-size, 48px) - var(--mdc-icon-button-icon-size, 24px)) / 2);font-size:var(--mdc-icon-button-icon-size);color:var(--mdc-icon-button-icon-color, var(--mat-app-on-surface-variant));-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-icon-button[disabled],.mat-mdc-icon-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mdc-icon-button-disabled-icon-color)}.mat-mdc-icon-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-icon-button img,.mat-mdc-icon-button svg{width:var(--mdc-icon-button-icon-size);height:var(--mdc-icon-button-icon-size);vertical-align:baseline}.mat-mdc-icon-button .mat-mdc-button-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-icon-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-icon-button .mdc-button__label,.mat-mdc-icon-button .mat-icon{z-index:1;position:relative}.mat-mdc-icon-button .mat-mdc-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-icon-button:focus .mat-mdc-focus-indicator::before{content:""}.mat-mdc-icon-button .mat-ripple-element{background-color:var(--mat-icon-button-ripple-color)}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-disabled-state-layer-color, var(--mat-app-on-surface-variant))}.mat-mdc-icon-button:hover .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-hover-state-layer-opacity, var(--mat-app-hover-state-layer-opacity))}.mat-mdc-icon-button.cdk-program-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.cdk-keyboard-focused .mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-focus-state-layer-opacity, var(--mat-app-focus-state-layer-opacity))}.mat-mdc-icon-button:active .mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-app-pressed-state-layer-opacity))}.mat-mdc-icon-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;left:50%;width:48px;transform:translate(-50%, -50%);display:var(--mat-icon-button-touch-target-display)}.mat-mdc-icon-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple{border-radius:50%}.mat-mdc-icon-button[hidden]{display:none}.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before{background:rgba(0,0,0,0);opacity:1}', ".cdk-high-contrast-active .mat-mdc-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-unelevated-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-raised-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-outlined-button:not(.mdc-button--outlined),.cdk-high-contrast-active .mat-mdc-icon-button{outline:solid 1px}"]
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: Platform
+  }, {
+    type: NgZone
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [ANIMATION_MODULE_TYPE]
+    }]
+  }], null);
+})();
+var MatButtonModule = class _MatButtonModule {
+  static {
+    this.ɵfac = function MatButtonModule_Factory(t) {
+      return new (t || _MatButtonModule)();
+    };
+  }
+  static {
+    this.ɵmod = ɵɵdefineNgModule({
+      type: _MatButtonModule,
+      imports: [MatCommonModule, MatRippleModule, MatAnchor, MatButton, MatIconAnchor, MatMiniFabAnchor, MatMiniFabButton, MatIconButton, MatFabAnchor, MatFabButton],
+      exports: [MatAnchor, MatButton, MatIconAnchor, MatIconButton, MatMiniFabAnchor, MatMiniFabButton, MatFabAnchor, MatFabButton, MatCommonModule]
+    });
+  }
+  static {
+    this.ɵinj = ɵɵdefineInjector({
+      imports: [MatCommonModule, MatRippleModule, MatCommonModule]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatButtonModule, [{
+    type: NgModule,
+    args: [{
+      imports: [MatCommonModule, MatRippleModule, MatAnchor, MatButton, MatIconAnchor, MatMiniFabAnchor, MatMiniFabButton, MatIconButton, MatFabAnchor, MatFabButton],
+      exports: [MatAnchor, MatButton, MatIconAnchor, MatIconButton, MatMiniFabAnchor, MatMiniFabButton, MatFabAnchor, MatFabButton, MatCommonModule]
+    }]
+  }], null, null);
+})();
 
 // node_modules/@angular/material/fesm2022/datepicker.mjs
 var import_rxjs = __toESM(require_cjs(), 1);
 var import_operators = __toESM(require_operators(), 1);
-var _c0 = ["mat-calendar-body", ""];
+var _c02 = ["mat-calendar-body", ""];
 function _forTrack0($index, $item) {
   return this._trackRow($item);
 }
@@ -272,7 +1432,7 @@ function MatMonthView_For_4_Template(rf, ctx) {
     ɵɵtextInterpolate(day_r1.narrow);
   }
 }
-var _c1 = ["*"];
+var _c12 = ["*"];
 function MatCalendar_ng_template_0_Template(rf, ctx) {
 }
 function MatCalendar_Case_2_Template(rf, ctx) {
@@ -362,9 +1522,9 @@ function MatCalendar_Case_4_Template(rf, ctx) {
 }
 function MatDatepickerContent_ng_template_2_Template(rf, ctx) {
 }
-var _c2 = ["button"];
-var _c3 = [[["", "matDatepickerToggleIcon", ""]]];
-var _c4 = ["[matDatepickerToggleIcon]"];
+var _c22 = ["button"];
+var _c32 = [[["", "matDatepickerToggleIcon", ""]]];
+var _c42 = ["[matDatepickerToggleIcon]"];
 function MatDatepickerToggle_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵnamespaceSVG();
@@ -373,8 +1533,8 @@ function MatDatepickerToggle_Conditional_2_Template(rf, ctx) {
     ɵɵelementEnd();
   }
 }
-var _c5 = [[["input", "matStartDate", ""]], [["input", "matEndDate", ""]]];
-var _c6 = ["input[matStartDate]", "input[matEndDate]"];
+var _c52 = [[["input", "matStartDate", ""]], [["input", "matEndDate", ""]]];
+var _c62 = ["input[matStartDate]", "input[matEndDate]"];
 function MatDatepickerActions_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementStart(0, "div", 0);
@@ -386,49 +1546,22 @@ function createMissingDateImplError(provider) {
   return Error(`MatDatepicker: No provider found for ${provider}. You must add one of the following to your app config: provideNativeDateAdapter, provideDateFnsAdapter, provideLuxonDateAdapter, provideMomentDateAdapter, or provide a custom implementation.`);
 }
 var MatDatepickerIntl = class _MatDatepickerIntl {
-  /**
-   * Stream that emits whenever the labels here are changed. Use this to notify
-   * components if the labels have changed after initialization.
-   */
-  changes = new import_rxjs.Subject();
-  /** A label for the calendar popup (used by screen readers). */
-  calendarLabel = "Calendar";
-  /** A label for the button used to open the calendar popup (used by screen readers). */
-  openCalendarLabel = "Open calendar";
-  /** Label for the button used to close the calendar popup. */
-  closeCalendarLabel = "Close calendar";
-  /** A label for the previous month button (used by screen readers). */
-  prevMonthLabel = "Previous month";
-  /** A label for the next month button (used by screen readers). */
-  nextMonthLabel = "Next month";
-  /** A label for the previous year button (used by screen readers). */
-  prevYearLabel = "Previous year";
-  /** A label for the next year button (used by screen readers). */
-  nextYearLabel = "Next year";
-  /** A label for the previous multi-year button (used by screen readers). */
-  prevMultiYearLabel = "Previous 24 years";
-  /** A label for the next multi-year button (used by screen readers). */
-  nextMultiYearLabel = "Next 24 years";
-  /** A label for the 'switch to month view' button (used by screen readers). */
-  switchToMonthViewLabel = "Choose date";
-  /** A label for the 'switch to year view' button (used by screen readers). */
-  switchToMultiYearViewLabel = "Choose month and year";
-  /**
-   * A label for the first date of a range of dates (used by screen readers).
-   * @deprecated Provide your own internationalization string.
-   * @breaking-change 17.0.0
-   */
-  startDateLabel = "Start date";
-  /**
-   * A label for the last date of a range of dates (used by screen readers).
-   * @deprecated Provide your own internationalization string.
-   * @breaking-change 17.0.0
-   */
-  endDateLabel = "End date";
-  /**
-   * A label for the Comparison date of a range of dates (used by screen readers).
-   */
-  comparisonDateLabel = "Comparison range";
+  constructor() {
+    this.changes = new import_rxjs.Subject();
+    this.calendarLabel = "Calendar";
+    this.openCalendarLabel = "Open calendar";
+    this.closeCalendarLabel = "Close calendar";
+    this.prevMonthLabel = "Previous month";
+    this.nextMonthLabel = "Next month";
+    this.prevYearLabel = "Previous year";
+    this.nextYearLabel = "Next year";
+    this.prevMultiYearLabel = "Previous 24 years";
+    this.nextMultiYearLabel = "Next 24 years";
+    this.switchToMonthViewLabel = "Choose date";
+    this.switchToMultiYearViewLabel = "Choose month and year";
+    this.startDateLabel = "Start date";
+    this.endDateLabel = "End date";
+  }
   /** Formats a range of years (used for visuals). */
   formatYearRange(start, end) {
     return `${start} – ${end}`;
@@ -437,14 +1570,18 @@ var MatDatepickerIntl = class _MatDatepickerIntl {
   formatYearRangeLabel(start, end) {
     return `${start} to ${end}`;
   }
-  static ɵfac = function MatDatepickerIntl_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerIntl)();
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _MatDatepickerIntl,
-    factory: _MatDatepickerIntl.ɵfac,
-    providedIn: "root"
-  });
+  static {
+    this.ɵfac = function MatDatepickerIntl_Factory(t) {
+      return new (t || _MatDatepickerIntl)();
+    };
+  }
+  static {
+    this.ɵprov = ɵɵdefineInjectable({
+      token: _MatDatepickerIntl,
+      factory: _MatDatepickerIntl.ɵfac,
+      providedIn: "root"
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerIntl, [{
@@ -456,14 +1593,6 @@ var MatDatepickerIntl = class _MatDatepickerIntl {
 })();
 var uniqueIdCounter$1 = 0;
 var MatCalendarCell = class {
-  value;
-  displayValue;
-  ariaLabel;
-  enabled;
-  cssClasses;
-  compareValue;
-  rawValue;
-  id = uniqueIdCounter$1++;
   constructor(value, displayValue, ariaLabel, enabled, cssClasses = {}, compareValue = value, rawValue) {
     this.value = value;
     this.displayValue = displayValue;
@@ -472,8 +1601,10 @@ var MatCalendarCell = class {
     this.cssClasses = cssClasses;
     this.compareValue = compareValue;
     this.rawValue = rawValue;
+    this.id = uniqueIdCounter$1++;
   }
 };
+var calendarBodyId = 1;
 var activeCapturingEventOptions = normalizePassiveListenerOptions({
   passive: false,
   capture: true
@@ -486,101 +1617,124 @@ var passiveEventOptions = normalizePassiveListenerOptions({
   passive: true
 });
 var MatCalendarBody = class _MatCalendarBody {
-  _elementRef = inject(ElementRef);
-  _ngZone = inject(NgZone);
-  _platform = inject(Platform);
-  _intl = inject(MatDatepickerIntl);
-  /**
-   * Used to skip the next focus event when rendering the preview range.
-   * We need a flag like this, because some browsers fire focus events asynchronously.
-   */
-  _skipNextFocus;
-  /**
-   * Used to focus the active cell after change detection has run.
-   */
-  _focusActiveCellAfterViewChecked = false;
-  /** The label for the table. (e.g. "Jan 2017"). */
-  label;
-  /** The cells to display in the table. */
-  rows;
-  /** The value in the table that corresponds to today. */
-  todayValue;
-  /** Start value of the selected date range. */
-  startValue;
-  /** End value of the selected date range. */
-  endValue;
-  /** The minimum number of free cells needed to fit the label in the first row. */
-  labelMinRequiredCells;
-  /** The number of columns in the table. */
-  numCols = 7;
-  /** The cell number of the active cell in the table. */
-  activeCell = 0;
   ngAfterViewChecked() {
     if (this._focusActiveCellAfterViewChecked) {
       this._focusActiveCell();
       this._focusActiveCellAfterViewChecked = false;
     }
   }
-  /** Whether a range is being selected. */
-  isRange = false;
-  /**
-   * The aspect ratio (width / height) to use for the cells in the table. This aspect ratio will be
-   * maintained even as the table resizes.
-   */
-  cellAspectRatio = 1;
-  /** Start of the comparison range. */
-  comparisonStart;
-  /** End of the comparison range. */
-  comparisonEnd;
-  /** Start of the preview range. */
-  previewStart = null;
-  /** End of the preview range. */
-  previewEnd = null;
-  /** ARIA Accessible name of the `<input matStartDate/>` */
-  startDateAccessibleName;
-  /** ARIA Accessible name of the `<input matEndDate/>` */
-  endDateAccessibleName;
-  /** Emits when a new value is selected. */
-  selectedValueChange = new EventEmitter();
-  /** Emits when the preview has changed as a result of a user action. */
-  previewChange = new EventEmitter();
-  activeDateChange = new EventEmitter();
-  /** Emits the date at the possible start of a drag event. */
-  dragStarted = new EventEmitter();
-  /** Emits the date at the conclusion of a drag, or null if mouse was not released on a date. */
-  dragEnded = new EventEmitter();
-  /** The number of blank cells to put at the beginning for the first row. */
-  _firstRowOffset;
-  /** Padding for the individual date cells. */
-  _cellPadding;
-  /** Width of an individual cell. */
-  _cellWidth;
-  /** ID for the start date label. */
-  _startDateLabelId;
-  /** ID for the end date label. */
-  _endDateLabelId;
-  /** ID for the comparison start date label. */
-  _comparisonStartDateLabelId;
-  /** ID for the comparison end date label. */
-  _comparisonEndDateLabelId;
-  _didDragSinceMouseDown = false;
-  _injector = inject(Injector);
-  comparisonDateAccessibleName = this._intl.comparisonDateLabel;
-  /**
-   * Tracking function for rows based on their identity. Ideally we would use some sort of
-   * key on the row, but that would require a breaking change for the `rows` input. We don't
-   * use the built-in identity tracking, because it logs warnings.
-   */
-  _trackRow = (row) => row;
-  constructor() {
-    const idGenerator = inject(_IdGenerator);
-    this._startDateLabelId = idGenerator.getId("mat-calendar-body-start-");
-    this._endDateLabelId = idGenerator.getId("mat-calendar-body-end-");
-    this._comparisonStartDateLabelId = idGenerator.getId("mat-calendar-body-comparison-start-");
-    this._comparisonEndDateLabelId = idGenerator.getId("mat-calendar-body-comparison-end-");
-    inject(_CdkPrivateStyleLoader).load(_StructuralStylesLoader);
-    this._ngZone.runOutsideAngular(() => {
-      const element = this._elementRef.nativeElement;
+  constructor(_elementRef, _ngZone) {
+    this._elementRef = _elementRef;
+    this._ngZone = _ngZone;
+    this._platform = inject(Platform);
+    this._focusActiveCellAfterViewChecked = false;
+    this.numCols = 7;
+    this.activeCell = 0;
+    this.isRange = false;
+    this.cellAspectRatio = 1;
+    this.previewStart = null;
+    this.previewEnd = null;
+    this.selectedValueChange = new EventEmitter();
+    this.previewChange = new EventEmitter();
+    this.activeDateChange = new EventEmitter();
+    this.dragStarted = new EventEmitter();
+    this.dragEnded = new EventEmitter();
+    this._didDragSinceMouseDown = false;
+    this._injector = inject(Injector);
+    this._trackRow = (row) => row;
+    this._enterHandler = (event) => {
+      if (this._skipNextFocus && event.type === "focus") {
+        this._skipNextFocus = false;
+        return;
+      }
+      if (event.target && this.isRange) {
+        const cell = this._getCellFromElement(event.target);
+        if (cell) {
+          this._ngZone.run(() => this.previewChange.emit({
+            value: cell.enabled ? cell : null,
+            event
+          }));
+        }
+      }
+    };
+    this._touchmoveHandler = (event) => {
+      if (!this.isRange) return;
+      const target = getActualTouchTarget(event);
+      const cell = target ? this._getCellFromElement(target) : null;
+      if (target !== event.target) {
+        this._didDragSinceMouseDown = true;
+      }
+      if (getCellElement(event.target)) {
+        event.preventDefault();
+      }
+      this._ngZone.run(() => this.previewChange.emit({
+        value: cell?.enabled ? cell : null,
+        event
+      }));
+    };
+    this._leaveHandler = (event) => {
+      if (this.previewEnd !== null && this.isRange) {
+        if (event.type !== "blur") {
+          this._didDragSinceMouseDown = true;
+        }
+        if (event.target && this._getCellFromElement(event.target) && !(event.relatedTarget && this._getCellFromElement(event.relatedTarget))) {
+          this._ngZone.run(() => this.previewChange.emit({
+            value: null,
+            event
+          }));
+        }
+      }
+    };
+    this._mousedownHandler = (event) => {
+      if (!this.isRange) return;
+      this._didDragSinceMouseDown = false;
+      const cell = event.target && this._getCellFromElement(event.target);
+      if (!cell || !this._isInRange(cell.compareValue)) {
+        return;
+      }
+      this._ngZone.run(() => {
+        this.dragStarted.emit({
+          value: cell.rawValue,
+          event
+        });
+      });
+    };
+    this._mouseupHandler = (event) => {
+      if (!this.isRange) return;
+      const cellElement = getCellElement(event.target);
+      if (!cellElement) {
+        this._ngZone.run(() => {
+          this.dragEnded.emit({
+            value: null,
+            event
+          });
+        });
+        return;
+      }
+      if (cellElement.closest(".mat-calendar-body") !== this._elementRef.nativeElement) {
+        return;
+      }
+      this._ngZone.run(() => {
+        const cell = this._getCellFromElement(cellElement);
+        this.dragEnded.emit({
+          value: cell?.rawValue ?? null,
+          event
+        });
+      });
+    };
+    this._touchendHandler = (event) => {
+      const target = getActualTouchTarget(event);
+      if (target) {
+        this._mouseupHandler({
+          target
+        });
+      }
+    };
+    this._id = `mat-calendar-body-${calendarBodyId++}`;
+    this._startDateLabelId = `${this._id}-start-date`;
+    this._endDateLabelId = `${this._id}-end-date`;
+    _ngZone.runOutsideAngular(() => {
+      const element = _elementRef.nativeElement;
       element.addEventListener("touchmove", this._touchmoveHandler, activeCapturingEventOptions);
       element.addEventListener("mouseenter", this._enterHandler, passiveCapturingEventOptions);
       element.addEventListener("focus", this._enterHandler, passiveCapturingEventOptions);
@@ -782,119 +1936,8 @@ var MatCalendarBody = class _MatCalendarBody {
     } else if (this.endValue === value) {
       return this._endDateLabelId;
     }
-    if (this.comparisonStart !== null && this.comparisonEnd !== null) {
-      if (value === this.comparisonStart && value === this.comparisonEnd) {
-        return `${this._comparisonStartDateLabelId} ${this._comparisonEndDateLabelId}`;
-      } else if (value === this.comparisonStart) {
-        return this._comparisonStartDateLabelId;
-      } else if (value === this.comparisonEnd) {
-        return this._comparisonEndDateLabelId;
-      }
-    }
     return null;
   }
-  /**
-   * Event handler for when the user enters an element
-   * inside the calendar body (e.g. by hovering in or focus).
-   */
-  _enterHandler = (event) => {
-    if (this._skipNextFocus && event.type === "focus") {
-      this._skipNextFocus = false;
-      return;
-    }
-    if (event.target && this.isRange) {
-      const cell = this._getCellFromElement(event.target);
-      if (cell) {
-        this._ngZone.run(() => this.previewChange.emit({
-          value: cell.enabled ? cell : null,
-          event
-        }));
-      }
-    }
-  };
-  _touchmoveHandler = (event) => {
-    if (!this.isRange) return;
-    const target = getActualTouchTarget(event);
-    const cell = target ? this._getCellFromElement(target) : null;
-    if (target !== event.target) {
-      this._didDragSinceMouseDown = true;
-    }
-    if (getCellElement(event.target)) {
-      event.preventDefault();
-    }
-    this._ngZone.run(() => this.previewChange.emit({
-      value: cell?.enabled ? cell : null,
-      event
-    }));
-  };
-  /**
-   * Event handler for when the user's pointer leaves an element
-   * inside the calendar body (e.g. by hovering out or blurring).
-   */
-  _leaveHandler = (event) => {
-    if (this.previewEnd !== null && this.isRange) {
-      if (event.type !== "blur") {
-        this._didDragSinceMouseDown = true;
-      }
-      if (event.target && this._getCellFromElement(event.target) && !(event.relatedTarget && this._getCellFromElement(event.relatedTarget))) {
-        this._ngZone.run(() => this.previewChange.emit({
-          value: null,
-          event
-        }));
-      }
-    }
-  };
-  /**
-   * Triggered on mousedown or touchstart on a date cell.
-   * Respsonsible for starting a drag sequence.
-   */
-  _mousedownHandler = (event) => {
-    if (!this.isRange) return;
-    this._didDragSinceMouseDown = false;
-    const cell = event.target && this._getCellFromElement(event.target);
-    if (!cell || !this._isInRange(cell.compareValue)) {
-      return;
-    }
-    this._ngZone.run(() => {
-      this.dragStarted.emit({
-        value: cell.rawValue,
-        event
-      });
-    });
-  };
-  /** Triggered on mouseup anywhere. Respsonsible for ending a drag sequence. */
-  _mouseupHandler = (event) => {
-    if (!this.isRange) return;
-    const cellElement = getCellElement(event.target);
-    if (!cellElement) {
-      this._ngZone.run(() => {
-        this.dragEnded.emit({
-          value: null,
-          event
-        });
-      });
-      return;
-    }
-    if (cellElement.closest(".mat-calendar-body") !== this._elementRef.nativeElement) {
-      return;
-    }
-    this._ngZone.run(() => {
-      const cell = this._getCellFromElement(cellElement);
-      this.dragEnded.emit({
-        value: cell?.rawValue ?? null,
-        event
-      });
-    });
-  };
-  /** Triggered on touchend anywhere. Respsonsible for ending a drag sequence. */
-  _touchendHandler = (event) => {
-    const target = getActualTouchTarget(event);
-    if (target) {
-      this._mouseupHandler({
-        target
-      });
-    }
-  };
   /** Finds the MatCalendarCell that corresponds to a DOM node. */
   _getCellFromElement(element) {
     const cell = getCellElement(element);
@@ -907,89 +1950,79 @@ var MatCalendarBody = class _MatCalendarBody {
     }
     return null;
   }
-  static ɵfac = function MatCalendarBody_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatCalendarBody)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatCalendarBody,
-    selectors: [["", "mat-calendar-body", ""]],
-    hostAttrs: [1, "mat-calendar-body"],
-    inputs: {
-      label: "label",
-      rows: "rows",
-      todayValue: "todayValue",
-      startValue: "startValue",
-      endValue: "endValue",
-      labelMinRequiredCells: "labelMinRequiredCells",
-      numCols: "numCols",
-      activeCell: "activeCell",
-      isRange: "isRange",
-      cellAspectRatio: "cellAspectRatio",
-      comparisonStart: "comparisonStart",
-      comparisonEnd: "comparisonEnd",
-      previewStart: "previewStart",
-      previewEnd: "previewEnd",
-      startDateAccessibleName: "startDateAccessibleName",
-      endDateAccessibleName: "endDateAccessibleName"
-    },
-    outputs: {
-      selectedValueChange: "selectedValueChange",
-      previewChange: "previewChange",
-      activeDateChange: "activeDateChange",
-      dragStarted: "dragStarted",
-      dragEnded: "dragEnded"
-    },
-    exportAs: ["matCalendarBody"],
-    standalone: true,
-    features: [ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
-    attrs: _c0,
-    decls: 11,
-    vars: 11,
-    consts: [["aria-hidden", "true"], ["role", "row"], [1, "mat-calendar-body-hidden-label", 3, "id"], [1, "mat-calendar-body-label"], [1, "mat-calendar-body-label", 3, "paddingTop", "paddingBottom"], ["role", "gridcell", 1, "mat-calendar-body-cell-container", 3, "width", "paddingTop", "paddingBottom"], ["role", "gridcell", 1, "mat-calendar-body-cell-container"], ["type", "button", 1, "mat-calendar-body-cell", 3, "click", "focus", "ngClass", "tabindex"], [1, "mat-calendar-body-cell-content", "mat-focus-indicator"], ["aria-hidden", "true", 1, "mat-calendar-body-cell-preview"]],
-    template: function MatCalendarBody_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, MatCalendarBody_Conditional_0_Template, 3, 6, "tr", 0);
-        ɵɵrepeaterCreate(1, MatCalendarBody_For_2_Template, 4, 1, "tr", 1, _forTrack0, true);
-        ɵɵelementStart(3, "span", 2);
-        ɵɵtext(4);
-        ɵɵelementEnd();
-        ɵɵelementStart(5, "span", 2);
-        ɵɵtext(6);
-        ɵɵelementEnd();
-        ɵɵelementStart(7, "span", 2);
-        ɵɵtext(8);
-        ɵɵelementEnd();
-        ɵɵelementStart(9, "span", 2);
-        ɵɵtext(10);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵconditional(ctx._firstRowOffset < ctx.labelMinRequiredCells ? 0 : -1);
-        ɵɵadvance();
-        ɵɵrepeater(ctx.rows);
-        ɵɵadvance(2);
-        ɵɵproperty("id", ctx._startDateLabelId);
-        ɵɵadvance();
-        ɵɵtextInterpolate1(" ", ctx.startDateAccessibleName, "\n");
-        ɵɵadvance();
-        ɵɵproperty("id", ctx._endDateLabelId);
-        ɵɵadvance();
-        ɵɵtextInterpolate1(" ", ctx.endDateAccessibleName, "\n");
-        ɵɵadvance();
-        ɵɵproperty("id", ctx._comparisonStartDateLabelId);
-        ɵɵadvance();
-        ɵɵtextInterpolate2(" ", ctx.comparisonDateAccessibleName, " ", ctx.startDateAccessibleName, "\n");
-        ɵɵadvance();
-        ɵɵproperty("id", ctx._comparisonEndDateLabelId);
-        ɵɵadvance();
-        ɵɵtextInterpolate2(" ", ctx.comparisonDateAccessibleName, " ", ctx.endDateAccessibleName, "\n");
-      }
-    },
-    dependencies: [NgClass],
-    styles: ['.mat-calendar-body{min-width:224px}.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-outline-color, var(--mat-sys-primary))}.mat-calendar-body-label{height:0;line-height:0;text-align:start;padding-left:4.7142857143%;padding-right:4.7142857143%;font-size:var(--mat-datepicker-calendar-body-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-datepicker-calendar-body-label-text-weight, var(--mat-sys-title-small-weight));color:var(--mat-datepicker-calendar-body-label-text-color, var(--mat-sys-on-surface))}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-sys-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-sys-body-medium-size));-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell::before,.mat-calendar-body-cell::after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-start::after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,.mat-calendar-body-comparison-start::after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,[dir=rtl] .mat-calendar-body-comparison-start::after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,.mat-calendar-body-comparison-end::after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,[dir=rtl] .mat-calendar-body-comparison-end::after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:0;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start::after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start::after{width:90%}.mat-calendar-body-in-preview{color:var(--mat-datepicker-calendar-date-preview-state-outline-color, var(--mat-sys-primary))}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){color:var(--mat-datepicker-calendar-date-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-calendar-body-disabled>.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-disabled-state-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}@media(forced-colors: active){.mat-calendar-body-disabled{opacity:.5}}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px;color:var(--mat-datepicker-calendar-date-text-color, var(--mat-sys-on-surface));border-color:var(--mat-datepicker-calendar-date-outline-color, transparent)}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}@media(forced-colors: active){.mat-calendar-body-cell-content{border:none}}.cdk-keyboard-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),.cdk-program-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-focus-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent))}@media(hover: hover){.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-hover-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent))}}.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-state-background-color, var(--mat-sys-primary));color:var(--mat-datepicker-calendar-date-selected-state-text-color, var(--mat-sys-on-primary))}.mat-calendar-body-disabled>.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-disabled-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-calendar-body-selected.mat-calendar-body-today{box-shadow:inset 0 0 0 1px var(--mat-datepicker-calendar-date-today-selected-state-outline-color, var(--mat-sys-primary))}.mat-calendar-body-in-range::before{background:var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-sys-primary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container))}.mat-calendar-body-comparison-bridge-start::before,[dir=rtl] .mat-calendar-body-comparison-bridge-end::before{background:linear-gradient(to right, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-sys-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container)) 50%)}.mat-calendar-body-comparison-bridge-end::before,[dir=rtl] .mat-calendar-body-comparison-bridge-start::before{background:linear-gradient(to left, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-sys-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container)) 50%)}.mat-calendar-body-in-range>.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range.mat-calendar-body-in-range::after{background:var(--mat-datepicker-calendar-date-in-overlap-range-state-background-color, var(--mat-sys-secondary-container))}.mat-calendar-body-comparison-identical.mat-calendar-body-selected,.mat-calendar-body-in-comparison-range>.mat-calendar-body-selected{background:var(--mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color, var(--mat-sys-secondary))}@media(forced-colors: active){.mat-datepicker-popup:not(:empty),.mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.mat-calendar-body-today{outline:dotted 1px}.mat-calendar-body-cell::before,.mat-calendar-body-cell::after,.mat-calendar-body-selected{background:none}.mat-calendar-body-in-range::before,.mat-calendar-body-comparison-bridge-start::before,.mat-calendar-body-comparison-bridge-end::before{border-top:solid 1px;border-bottom:solid 1px}.mat-calendar-body-range-start::before{border-left:solid 1px}[dir=rtl] .mat-calendar-body-range-start::before{border-left:0;border-right:solid 1px}.mat-calendar-body-range-end::before{border-right:solid 1px}[dir=rtl] .mat-calendar-body-range-end::before{border-right:0;border-left:solid 1px}.mat-calendar-body-in-comparison-range::before{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-comparison-start::before{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-comparison-start::before{border-left:0;border-right:dashed 1px}.mat-calendar-body-comparison-end::before{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-comparison-end::before{border-right:0;border-left:dashed 1px}}'],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatCalendarBody_Factory(t) {
+      return new (t || _MatCalendarBody)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatCalendarBody,
+      selectors: [["", "mat-calendar-body", ""]],
+      hostAttrs: [1, "mat-calendar-body"],
+      inputs: {
+        label: "label",
+        rows: "rows",
+        todayValue: "todayValue",
+        startValue: "startValue",
+        endValue: "endValue",
+        labelMinRequiredCells: "labelMinRequiredCells",
+        numCols: "numCols",
+        activeCell: "activeCell",
+        isRange: "isRange",
+        cellAspectRatio: "cellAspectRatio",
+        comparisonStart: "comparisonStart",
+        comparisonEnd: "comparisonEnd",
+        previewStart: "previewStart",
+        previewEnd: "previewEnd",
+        startDateAccessibleName: "startDateAccessibleName",
+        endDateAccessibleName: "endDateAccessibleName"
+      },
+      outputs: {
+        selectedValueChange: "selectedValueChange",
+        previewChange: "previewChange",
+        activeDateChange: "activeDateChange",
+        dragStarted: "dragStarted",
+        dragEnded: "dragEnded"
+      },
+      exportAs: ["matCalendarBody"],
+      standalone: true,
+      features: [ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
+      attrs: _c02,
+      decls: 7,
+      vars: 5,
+      consts: [["aria-hidden", "true"], ["role", "row"], [1, "mat-calendar-body-hidden-label", 3, "id"], [1, "mat-calendar-body-label"], [1, "mat-calendar-body-label", 3, "paddingTop", "paddingBottom"], ["role", "gridcell", 1, "mat-calendar-body-cell-container", 3, "width", "paddingTop", "paddingBottom"], ["role", "gridcell", 1, "mat-calendar-body-cell-container"], ["type", "button", 1, "mat-calendar-body-cell", 3, "click", "focus", "ngClass", "tabindex"], [1, "mat-calendar-body-cell-content", "mat-focus-indicator"], ["aria-hidden", "true", 1, "mat-calendar-body-cell-preview"]],
+      template: function MatCalendarBody_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵtemplate(0, MatCalendarBody_Conditional_0_Template, 3, 6, "tr", 0);
+          ɵɵrepeaterCreate(1, MatCalendarBody_For_2_Template, 4, 1, "tr", 1, _forTrack0, true);
+          ɵɵelementStart(3, "span", 2);
+          ɵɵtext(4);
+          ɵɵelementEnd();
+          ɵɵelementStart(5, "span", 2);
+          ɵɵtext(6);
+          ɵɵelementEnd();
+        }
+        if (rf & 2) {
+          ɵɵconditional(ctx._firstRowOffset < ctx.labelMinRequiredCells ? 0 : -1);
+          ɵɵadvance();
+          ɵɵrepeater(ctx.rows);
+          ɵɵadvance(2);
+          ɵɵproperty("id", ctx._startDateLabelId);
+          ɵɵadvance();
+          ɵɵtextInterpolate1(" ", ctx.startDateAccessibleName, "\n");
+          ɵɵadvance();
+          ɵɵproperty("id", ctx._endDateLabelId);
+          ɵɵadvance();
+          ɵɵtextInterpolate1(" ", ctx.endDateAccessibleName, "\n");
+        }
+      },
+      dependencies: [NgClass],
+      styles: ['.mat-calendar-body{min-width:224px}.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-outline-color, var(--mat-app-primary))}.mat-calendar-body-label{height:0;line-height:0;text-align:start;padding-left:4.7142857143%;padding-right:4.7142857143%;font-size:var(--mat-datepicker-calendar-body-label-text-size, var(--mat-app-title-small-size));font-weight:var(--mat-datepicker-calendar-body-label-text-weight, var(--mat-app-title-small-weight));color:var(--mat-datepicker-calendar-body-label-text-color, var(--mat-app-on-surface))}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-app-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-app-body-medium-size))}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell::before,.mat-calendar-body-cell::after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-start::after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,.mat-calendar-body-comparison-start::after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,[dir=rtl] .mat-calendar-body-comparison-start::after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,.mat-calendar-body-comparison-end::after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,[dir=rtl] .mat-calendar-body-comparison-end::after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:0;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start::after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start::after{width:90%}.mat-calendar-body-in-preview{color:var(--mat-datepicker-calendar-date-preview-state-outline-color, var(--mat-app-primary))}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){color:var(--mat-datepicker-calendar-date-disabled-state-text-color)}.mat-calendar-body-disabled>.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-disabled-state-outline-color)}.cdk-high-contrast-active .mat-calendar-body-disabled{opacity:.5}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px;color:var(--mat-datepicker-calendar-date-text-color, var(--mat-app-on-surface));border-color:var(--mat-datepicker-calendar-date-outline-color)}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}.cdk-high-contrast-active .mat-calendar-body-cell-content{border:none}.cdk-keyboard-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),.cdk-program-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-focus-state-background-color)}@media(hover: hover){.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-hover-state-background-color)}}.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-state-background-color, var(--mat-app-primary));color:var(--mat-datepicker-calendar-date-selected-state-text-color, var(--mat-app-on-primary))}.mat-calendar-body-disabled>.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-disabled-state-background-color)}.mat-calendar-body-selected.mat-calendar-body-today{box-shadow:inset 0 0 0 1px var(--mat-datepicker-calendar-date-today-selected-state-outline-color, var(--mat-app-primary))}.mat-calendar-body-in-range::before{background:var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-app-primary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container))}.mat-calendar-body-comparison-bridge-start::before,[dir=rtl] .mat-calendar-body-comparison-bridge-end::before{background:linear-gradient(to right, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-app-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container)) 50%)}.mat-calendar-body-comparison-bridge-end::before,[dir=rtl] .mat-calendar-body-comparison-bridge-start::before{background:linear-gradient(to left, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-app-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container)) 50%)}.mat-calendar-body-in-range>.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range.mat-calendar-body-in-range::after{background:var(--mat-datepicker-calendar-date-in-overlap-range-state-background-color, var(--mat-app-secondary-container))}.mat-calendar-body-comparison-identical.mat-calendar-body-selected,.mat-calendar-body-in-comparison-range>.mat-calendar-body-selected{background:var(--mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color, var(--mat-app-secondary))}.cdk-high-contrast-active .mat-datepicker-popup:not(:empty),.cdk-high-contrast-active .mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.cdk-high-contrast-active .mat-calendar-body-today{outline:dotted 1px}.cdk-high-contrast-active .mat-calendar-body-cell::before,.cdk-high-contrast-active .mat-calendar-body-cell::after,.cdk-high-contrast-active .mat-calendar-body-selected{background:none}.cdk-high-contrast-active .mat-calendar-body-in-range::before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-start::before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-end::before{border-top:solid 1px;border-bottom:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-start::before{border-left:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-start::before{border-left:0;border-right:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-end::before{border-right:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-end::before{border-right:0;border-left:solid 1px}.cdk-high-contrast-active .mat-calendar-body-in-comparison-range::before{border-top:dashed 1px;border-bottom:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-start::before{border-left:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-start::before{border-left:0;border-right:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-end::before{border-right:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-end::before{border-right:0;border-left:dashed 1px}'],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatCalendarBody, [{
@@ -1002,6 +2035,7 @@ var MatCalendarBody = class _MatCalendarBody {
       exportAs: "matCalendarBody",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [NgClass],
       template: `<!--
   If there's not enough space in the first row, create a separate label row. We mark this row as
@@ -1095,16 +2129,14 @@ var MatCalendarBody = class _MatCalendarBody {
 <span [id]="_endDateLabelId" class="mat-calendar-body-hidden-label">
   {{endDateAccessibleName}}
 </span>
-<span [id]="_comparisonStartDateLabelId" class="mat-calendar-body-hidden-label">
-  {{comparisonDateAccessibleName}} {{startDateAccessibleName}}
-</span>
-<span [id]="_comparisonEndDateLabelId" class="mat-calendar-body-hidden-label">
-  {{comparisonDateAccessibleName}} {{endDateAccessibleName}}
-</span>
 `,
-      styles: ['.mat-calendar-body{min-width:224px}.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-outline-color, var(--mat-sys-primary))}.mat-calendar-body-label{height:0;line-height:0;text-align:start;padding-left:4.7142857143%;padding-right:4.7142857143%;font-size:var(--mat-datepicker-calendar-body-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-datepicker-calendar-body-label-text-weight, var(--mat-sys-title-small-weight));color:var(--mat-datepicker-calendar-body-label-text-color, var(--mat-sys-on-surface))}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-sys-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-sys-body-medium-size));-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell::before,.mat-calendar-body-cell::after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-start::after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,.mat-calendar-body-comparison-start::after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,[dir=rtl] .mat-calendar-body-comparison-start::after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,.mat-calendar-body-comparison-end::after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,[dir=rtl] .mat-calendar-body-comparison-end::after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:0;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start::after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start::after{width:90%}.mat-calendar-body-in-preview{color:var(--mat-datepicker-calendar-date-preview-state-outline-color, var(--mat-sys-primary))}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){color:var(--mat-datepicker-calendar-date-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-calendar-body-disabled>.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-disabled-state-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}@media(forced-colors: active){.mat-calendar-body-disabled{opacity:.5}}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px;color:var(--mat-datepicker-calendar-date-text-color, var(--mat-sys-on-surface));border-color:var(--mat-datepicker-calendar-date-outline-color, transparent)}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}@media(forced-colors: active){.mat-calendar-body-cell-content{border:none}}.cdk-keyboard-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),.cdk-program-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-focus-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent))}@media(hover: hover){.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-hover-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent))}}.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-state-background-color, var(--mat-sys-primary));color:var(--mat-datepicker-calendar-date-selected-state-text-color, var(--mat-sys-on-primary))}.mat-calendar-body-disabled>.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-disabled-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-calendar-body-selected.mat-calendar-body-today{box-shadow:inset 0 0 0 1px var(--mat-datepicker-calendar-date-today-selected-state-outline-color, var(--mat-sys-primary))}.mat-calendar-body-in-range::before{background:var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-sys-primary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container))}.mat-calendar-body-comparison-bridge-start::before,[dir=rtl] .mat-calendar-body-comparison-bridge-end::before{background:linear-gradient(to right, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-sys-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container)) 50%)}.mat-calendar-body-comparison-bridge-end::before,[dir=rtl] .mat-calendar-body-comparison-bridge-start::before{background:linear-gradient(to left, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-sys-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-sys-tertiary-container)) 50%)}.mat-calendar-body-in-range>.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range.mat-calendar-body-in-range::after{background:var(--mat-datepicker-calendar-date-in-overlap-range-state-background-color, var(--mat-sys-secondary-container))}.mat-calendar-body-comparison-identical.mat-calendar-body-selected,.mat-calendar-body-in-comparison-range>.mat-calendar-body-selected{background:var(--mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color, var(--mat-sys-secondary))}@media(forced-colors: active){.mat-datepicker-popup:not(:empty),.mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.mat-calendar-body-today{outline:dotted 1px}.mat-calendar-body-cell::before,.mat-calendar-body-cell::after,.mat-calendar-body-selected{background:none}.mat-calendar-body-in-range::before,.mat-calendar-body-comparison-bridge-start::before,.mat-calendar-body-comparison-bridge-end::before{border-top:solid 1px;border-bottom:solid 1px}.mat-calendar-body-range-start::before{border-left:solid 1px}[dir=rtl] .mat-calendar-body-range-start::before{border-left:0;border-right:solid 1px}.mat-calendar-body-range-end::before{border-right:solid 1px}[dir=rtl] .mat-calendar-body-range-end::before{border-right:0;border-left:solid 1px}.mat-calendar-body-in-comparison-range::before{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-comparison-start::before{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-comparison-start::before{border-left:0;border-right:dashed 1px}.mat-calendar-body-comparison-end::before{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-comparison-end::before{border-right:0;border-left:dashed 1px}}']
+      styles: ['.mat-calendar-body{min-width:224px}.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-outline-color, var(--mat-app-primary))}.mat-calendar-body-label{height:0;line-height:0;text-align:start;padding-left:4.7142857143%;padding-right:4.7142857143%;font-size:var(--mat-datepicker-calendar-body-label-text-size, var(--mat-app-title-small-size));font-weight:var(--mat-datepicker-calendar-body-label-text-weight, var(--mat-app-title-small-weight));color:var(--mat-datepicker-calendar-body-label-text-color, var(--mat-app-on-surface))}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-app-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-app-body-medium-size))}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell::before,.mat-calendar-body-cell::after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-start::after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,.mat-calendar-body-comparison-start::after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start)::before,[dir=rtl] .mat-calendar-body-comparison-start::after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,.mat-calendar-body-comparison-end::after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range)::before,[dir=rtl] .mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end)::before,[dir=rtl] .mat-calendar-body-comparison-end::after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:0;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start::after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end::after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start::after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start::after{width:90%}.mat-calendar-body-in-preview{color:var(--mat-datepicker-calendar-date-preview-state-outline-color, var(--mat-app-primary))}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){color:var(--mat-datepicker-calendar-date-disabled-state-text-color)}.mat-calendar-body-disabled>.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){border-color:var(--mat-datepicker-calendar-date-today-disabled-state-outline-color)}.cdk-high-contrast-active .mat-calendar-body-disabled{opacity:.5}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px;color:var(--mat-datepicker-calendar-date-text-color, var(--mat-app-on-surface));border-color:var(--mat-datepicker-calendar-date-outline-color)}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}.cdk-high-contrast-active .mat-calendar-body-cell-content{border:none}.cdk-keyboard-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),.cdk-program-focused .mat-calendar-body-active>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-focus-state-background-color)}@media(hover: hover){.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){background-color:var(--mat-datepicker-calendar-date-hover-state-background-color)}}.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-state-background-color, var(--mat-app-primary));color:var(--mat-datepicker-calendar-date-selected-state-text-color, var(--mat-app-on-primary))}.mat-calendar-body-disabled>.mat-calendar-body-selected{background-color:var(--mat-datepicker-calendar-date-selected-disabled-state-background-color)}.mat-calendar-body-selected.mat-calendar-body-today{box-shadow:inset 0 0 0 1px var(--mat-datepicker-calendar-date-today-selected-state-outline-color, var(--mat-app-primary))}.mat-calendar-body-in-range::before{background:var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-app-primary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container))}.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range::before{background:var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container))}.mat-calendar-body-comparison-bridge-start::before,[dir=rtl] .mat-calendar-body-comparison-bridge-end::before{background:linear-gradient(to right, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-app-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container)) 50%)}.mat-calendar-body-comparison-bridge-end::before,[dir=rtl] .mat-calendar-body-comparison-bridge-start::before{background:linear-gradient(to left, var(--mat-datepicker-calendar-date-in-range-state-background-color, var(--mat-app-primary-container)) 50%, var(--mat-datepicker-calendar-date-in-comparison-range-state-background-color, var(--mat-app-tertiary-container)) 50%)}.mat-calendar-body-in-range>.mat-calendar-body-comparison-identical,.mat-calendar-body-in-comparison-range.mat-calendar-body-in-range::after{background:var(--mat-datepicker-calendar-date-in-overlap-range-state-background-color, var(--mat-app-secondary-container))}.mat-calendar-body-comparison-identical.mat-calendar-body-selected,.mat-calendar-body-in-comparison-range>.mat-calendar-body-selected{background:var(--mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color, var(--mat-app-secondary))}.cdk-high-contrast-active .mat-datepicker-popup:not(:empty),.cdk-high-contrast-active .mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.cdk-high-contrast-active .mat-calendar-body-today{outline:dotted 1px}.cdk-high-contrast-active .mat-calendar-body-cell::before,.cdk-high-contrast-active .mat-calendar-body-cell::after,.cdk-high-contrast-active .mat-calendar-body-selected{background:none}.cdk-high-contrast-active .mat-calendar-body-in-range::before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-start::before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-end::before{border-top:solid 1px;border-bottom:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-start::before{border-left:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-start::before{border-left:0;border-right:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-end::before{border-right:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-end::before{border-right:0;border-left:solid 1px}.cdk-high-contrast-active .mat-calendar-body-in-comparison-range::before{border-top:dashed 1px;border-bottom:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-start::before{border-left:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-start::before{border-left:0;border-right:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-end::before{border-right:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-end::before{border-right:0;border-left:dashed 1px}']
     }]
-  }], () => [], {
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: NgZone
+  }], {
     label: [{
       type: Input
     }],
@@ -1198,28 +2230,17 @@ function getActualTouchTarget(event) {
   return document.elementFromPoint(touchLocation.clientX, touchLocation.clientY);
 }
 var DateRange = class {
-  start;
-  end;
-  /**
-   * Ensures that objects with a `start` and `end` property can't be assigned to a variable that
-   * expects a `DateRange`
-   */
-  // tslint:disable-next-line:no-unused-variable
-  _disableStructuralEquivalency;
   constructor(start, end) {
     this.start = start;
     this.end = end;
   }
 };
 var MatDateSelectionModel = class _MatDateSelectionModel {
-  selection;
-  _adapter;
-  _selectionChanged = new import_rxjs.Subject();
-  /** Emits when the selection has changed. */
-  selectionChanged = this._selectionChanged;
   constructor(selection, _adapter) {
     this.selection = selection;
     this._adapter = _adapter;
+    this._selectionChanged = new import_rxjs.Subject();
+    this.selectionChanged = this._selectionChanged;
     this.selection = selection;
   }
   /**
@@ -1242,13 +2263,17 @@ var MatDateSelectionModel = class _MatDateSelectionModel {
   _isValidDateInstance(date) {
     return this._adapter.isDateInstance(date) && this._adapter.isValid(date);
   }
-  static ɵfac = function MatDateSelectionModel_Factory(__ngFactoryType__) {
-    ɵɵinvalidFactory();
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _MatDateSelectionModel,
-    factory: _MatDateSelectionModel.ɵfac
-  });
+  static {
+    this.ɵfac = function MatDateSelectionModel_Factory(t) {
+      ɵɵinvalidFactory();
+    };
+  }
+  static {
+    this.ɵprov = ɵɵdefineInjectable({
+      token: _MatDateSelectionModel,
+      factory: _MatDateSelectionModel.ɵfac
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDateSelectionModel, [{
@@ -1287,13 +2312,17 @@ var MatSingleDateSelectionModel = class _MatSingleDateSelectionModel extends Mat
     clone.updateSelection(this.selection, this);
     return clone;
   }
-  static ɵfac = function MatSingleDateSelectionModel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatSingleDateSelectionModel)(ɵɵinject(DateAdapter));
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _MatSingleDateSelectionModel,
-    factory: _MatSingleDateSelectionModel.ɵfac
-  });
+  static {
+    this.ɵfac = function MatSingleDateSelectionModel_Factory(t) {
+      return new (t || _MatSingleDateSelectionModel)(ɵɵinject(DateAdapter));
+    };
+  }
+  static {
+    this.ɵprov = ɵɵdefineInjectable({
+      token: _MatSingleDateSelectionModel,
+      factory: _MatSingleDateSelectionModel.ɵfac
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSingleDateSelectionModel, [{
@@ -1353,13 +2382,17 @@ var MatRangeDateSelectionModel = class _MatRangeDateSelectionModel extends MatDa
     clone.updateSelection(this.selection, this);
     return clone;
   }
-  static ɵfac = function MatRangeDateSelectionModel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatRangeDateSelectionModel)(ɵɵinject(DateAdapter));
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _MatRangeDateSelectionModel,
-    factory: _MatRangeDateSelectionModel.ɵfac
-  });
+  static {
+    this.ɵfac = function MatRangeDateSelectionModel_Factory(t) {
+      return new (t || _MatRangeDateSelectionModel)(ɵɵinject(DateAdapter));
+    };
+  }
+  static {
+    this.ɵprov = ɵɵdefineInjectable({
+      token: _MatRangeDateSelectionModel,
+      factory: _MatRangeDateSelectionModel.ɵfac
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatRangeDateSelectionModel, [{
@@ -1386,7 +2419,6 @@ var MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER = {
 };
 var MAT_DATE_RANGE_SELECTION_STRATEGY = new InjectionToken("MAT_DATE_RANGE_SELECTION_STRATEGY");
 var DefaultMatCalendarRangeStrategy = class _DefaultMatCalendarRangeStrategy {
-  _dateAdapter;
   constructor(_dateAdapter) {
     this._dateAdapter = _dateAdapter;
   }
@@ -1449,13 +2481,17 @@ var DefaultMatCalendarRangeStrategy = class _DefaultMatCalendarRangeStrategy {
     }
     return new DateRange(start, end);
   }
-  static ɵfac = function DefaultMatCalendarRangeStrategy_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DefaultMatCalendarRangeStrategy)(ɵɵinject(DateAdapter));
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _DefaultMatCalendarRangeStrategy,
-    factory: _DefaultMatCalendarRangeStrategy.ɵfac
-  });
+  static {
+    this.ɵfac = function DefaultMatCalendarRangeStrategy_Factory(t) {
+      return new (t || _DefaultMatCalendarRangeStrategy)(ɵɵinject(DateAdapter));
+    };
+  }
+  static {
+    this.ɵprov = ɵɵdefineInjectable({
+      token: _DefaultMatCalendarRangeStrategy,
+      factory: _DefaultMatCalendarRangeStrategy.ɵfac
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DefaultMatCalendarRangeStrategy, [{
@@ -1475,22 +2511,6 @@ var MAT_CALENDAR_RANGE_STRATEGY_PROVIDER = {
 var DAYS_PER_WEEK = 7;
 var uniqueIdCounter = 0;
 var MatMonthView = class _MatMonthView {
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  _dateFormats = inject(MAT_DATE_FORMATS, {
-    optional: true
-  });
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dir = inject(Directionality, {
-    optional: true
-  });
-  _rangeStrategy = inject(MAT_DATE_RANGE_SELECTION_STRATEGY, {
-    optional: true
-  });
-  _rerenderSubscription = import_rxjs.Subscription.EMPTY;
-  /** Flag used to filter out space/enter keyup events that originated outside of the view. */
-  _selectionKeyPressed;
   /**
    * The date to display in this month view (everything other than the month and year is ignored).
    */
@@ -1505,7 +2525,6 @@ var MatMonthView = class _MatMonthView {
       this._init();
     }
   }
-  _activeDate;
   /** The currently selected date. */
   get selected() {
     return this._selected;
@@ -1518,7 +2537,6 @@ var MatMonthView = class _MatMonthView {
     }
     this._setRanges(this._selected);
   }
-  _selected;
   /** The minimum selectable date. */
   get minDate() {
     return this._minDate;
@@ -1526,7 +2544,6 @@ var MatMonthView = class _MatMonthView {
   set minDate(value) {
     this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _minDate;
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
@@ -1534,62 +2551,19 @@ var MatMonthView = class _MatMonthView {
   set maxDate(value) {
     this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _maxDate;
-  /** Function used to filter which dates are selectable. */
-  dateFilter;
-  /** Function that can be used to add custom CSS classes to dates. */
-  dateClass;
-  /** Start of the comparison range. */
-  comparisonStart;
-  /** End of the comparison range. */
-  comparisonEnd;
-  /** ARIA Accessible name of the `<input matStartDate/>` */
-  startDateAccessibleName;
-  /** ARIA Accessible name of the `<input matEndDate/>` */
-  endDateAccessibleName;
-  /** Origin of active drag, or null when dragging is not active. */
-  activeDrag = null;
-  /** Emits when a new date is selected. */
-  selectedChange = new EventEmitter();
-  /** Emits when any date is selected. */
-  _userSelection = new EventEmitter();
-  /** Emits when the user initiates a date range drag via mouse or touch. */
-  dragStarted = new EventEmitter();
-  /**
-   * Emits when the user completes or cancels a date range drag.
-   * Emits null when the drag was canceled or the newly selected date range if completed.
-   */
-  dragEnded = new EventEmitter();
-  /** Emits when any date is activated. */
-  activeDateChange = new EventEmitter();
-  /** The body of calendar table */
-  _matCalendarBody;
-  /** The label for this month (e.g. "January 2017"). */
-  _monthLabel;
-  /** Grid of calendar cells representing the dates of the month. */
-  _weeks;
-  /** The number of blank cells in the first row before the 1st of the month. */
-  _firstWeekOffset;
-  /** Start value of the currently-shown date range. */
-  _rangeStart;
-  /** End value of the currently-shown date range. */
-  _rangeEnd;
-  /** Start value of the currently-shown comparison date range. */
-  _comparisonRangeStart;
-  /** End value of the currently-shown comparison date range. */
-  _comparisonRangeEnd;
-  /** Start of the preview range. */
-  _previewStart;
-  /** End of the preview range. */
-  _previewEnd;
-  /** Whether the user is currently selecting a range of dates. */
-  _isRange;
-  /** The date of the month that today falls on. Null if today is in another month. */
-  _todayDate;
-  /** The names of the weekdays. */
-  _weekdays;
-  constructor() {
-    inject(_CdkPrivateStyleLoader).load(_VisuallyHiddenLoader);
+  constructor(_changeDetectorRef, _dateFormats, _dateAdapter, _dir, _rangeStrategy) {
+    this._changeDetectorRef = _changeDetectorRef;
+    this._dateFormats = _dateFormats;
+    this._dateAdapter = _dateAdapter;
+    this._dir = _dir;
+    this._rangeStrategy = _rangeStrategy;
+    this._rerenderSubscription = import_rxjs.Subscription.EMPTY;
+    this.activeDrag = null;
+    this.selectedChange = new EventEmitter();
+    this._userSelection = new EventEmitter();
+    this.dragStarted = new EventEmitter();
+    this.dragEnded = new EventEmitter();
+    this.activeDateChange = new EventEmitter();
     if (typeof ngDevMode === "undefined" || ngDevMode) {
       if (!this._dateAdapter) {
         throw createMissingDateImplError("DateAdapter");
@@ -1877,84 +2851,88 @@ var MatMonthView = class _MatMonthView {
   _clearPreview() {
     this._previewStart = this._previewEnd = null;
   }
-  static ɵfac = function MatMonthView_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatMonthView)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatMonthView,
-    selectors: [["mat-month-view"]],
-    viewQuery: function MatMonthView_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(MatCalendarBody, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
-      }
-    },
-    inputs: {
-      activeDate: "activeDate",
-      selected: "selected",
-      minDate: "minDate",
-      maxDate: "maxDate",
-      dateFilter: "dateFilter",
-      dateClass: "dateClass",
-      comparisonStart: "comparisonStart",
-      comparisonEnd: "comparisonEnd",
-      startDateAccessibleName: "startDateAccessibleName",
-      endDateAccessibleName: "endDateAccessibleName",
-      activeDrag: "activeDrag"
-    },
-    outputs: {
-      selectedChange: "selectedChange",
-      _userSelection: "_userSelection",
-      dragStarted: "dragStarted",
-      dragEnded: "dragEnded",
-      activeDateChange: "activeDateChange"
-    },
-    exportAs: ["matMonthView"],
-    standalone: true,
-    features: [ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
-    decls: 8,
-    vars: 14,
-    consts: [["role", "grid", 1, "mat-calendar-table"], [1, "mat-calendar-table-header"], ["scope", "col"], ["aria-hidden", "true"], ["colspan", "7", 1, "mat-calendar-table-header-divider"], ["mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "previewChange", "dragStarted", "dragEnded", "keyup", "keydown", "label", "rows", "todayValue", "startValue", "endValue", "comparisonStart", "comparisonEnd", "previewStart", "previewEnd", "isRange", "labelMinRequiredCells", "activeCell", "startDateAccessibleName", "endDateAccessibleName"], [1, "cdk-visually-hidden"]],
-    template: function MatMonthView_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
-        ɵɵrepeaterCreate(3, MatMonthView_For_4_Template, 5, 2, "th", 2, _forTrack1);
-        ɵɵelementEnd();
-        ɵɵelementStart(5, "tr", 3);
-        ɵɵelement(6, "th", 4);
-        ɵɵelementEnd()();
-        ɵɵelementStart(7, "tbody", 5);
-        ɵɵlistener("selectedValueChange", function MatMonthView_Template_tbody_selectedValueChange_7_listener($event) {
-          return ctx._dateSelected($event);
-        })("activeDateChange", function MatMonthView_Template_tbody_activeDateChange_7_listener($event) {
-          return ctx._updateActiveDate($event);
-        })("previewChange", function MatMonthView_Template_tbody_previewChange_7_listener($event) {
-          return ctx._previewChanged($event);
-        })("dragStarted", function MatMonthView_Template_tbody_dragStarted_7_listener($event) {
-          return ctx.dragStarted.emit($event);
-        })("dragEnded", function MatMonthView_Template_tbody_dragEnded_7_listener($event) {
-          return ctx._dragEnded($event);
-        })("keyup", function MatMonthView_Template_tbody_keyup_7_listener($event) {
-          return ctx._handleCalendarBodyKeyup($event);
-        })("keydown", function MatMonthView_Template_tbody_keydown_7_listener($event) {
-          return ctx._handleCalendarBodyKeydown($event);
-        });
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵadvance(3);
-        ɵɵrepeater(ctx._weekdays);
-        ɵɵadvance(4);
-        ɵɵproperty("label", ctx._monthLabel)("rows", ctx._weeks)("todayValue", ctx._todayDate)("startValue", ctx._rangeStart)("endValue", ctx._rangeEnd)("comparisonStart", ctx._comparisonRangeStart)("comparisonEnd", ctx._comparisonRangeEnd)("previewStart", ctx._previewStart)("previewEnd", ctx._previewEnd)("isRange", ctx._isRange)("labelMinRequiredCells", 3)("activeCell", ctx._dateAdapter.getDate(ctx.activeDate) - 1)("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
-      }
-    },
-    dependencies: [MatCalendarBody],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatMonthView_Factory(t) {
+      return new (t || _MatMonthView)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(MAT_DATE_RANGE_SELECTION_STRATEGY, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatMonthView,
+      selectors: [["mat-month-view"]],
+      viewQuery: function MatMonthView_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(MatCalendarBody, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
+        }
+      },
+      inputs: {
+        activeDate: "activeDate",
+        selected: "selected",
+        minDate: "minDate",
+        maxDate: "maxDate",
+        dateFilter: "dateFilter",
+        dateClass: "dateClass",
+        comparisonStart: "comparisonStart",
+        comparisonEnd: "comparisonEnd",
+        startDateAccessibleName: "startDateAccessibleName",
+        endDateAccessibleName: "endDateAccessibleName",
+        activeDrag: "activeDrag"
+      },
+      outputs: {
+        selectedChange: "selectedChange",
+        _userSelection: "_userSelection",
+        dragStarted: "dragStarted",
+        dragEnded: "dragEnded",
+        activeDateChange: "activeDateChange"
+      },
+      exportAs: ["matMonthView"],
+      standalone: true,
+      features: [ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
+      decls: 8,
+      vars: 14,
+      consts: [["role", "grid", 1, "mat-calendar-table"], [1, "mat-calendar-table-header"], ["scope", "col"], ["aria-hidden", "true"], ["colspan", "7", 1, "mat-calendar-table-header-divider"], ["mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "previewChange", "dragStarted", "dragEnded", "keyup", "keydown", "label", "rows", "todayValue", "startValue", "endValue", "comparisonStart", "comparisonEnd", "previewStart", "previewEnd", "isRange", "labelMinRequiredCells", "activeCell", "startDateAccessibleName", "endDateAccessibleName"], [1, "cdk-visually-hidden"]],
+      template: function MatMonthView_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
+          ɵɵrepeaterCreate(3, MatMonthView_For_4_Template, 5, 2, "th", 2, _forTrack1);
+          ɵɵelementEnd();
+          ɵɵelementStart(5, "tr", 3);
+          ɵɵelement(6, "th", 4);
+          ɵɵelementEnd()();
+          ɵɵelementStart(7, "tbody", 5);
+          ɵɵlistener("selectedValueChange", function MatMonthView_Template_tbody_selectedValueChange_7_listener($event) {
+            return ctx._dateSelected($event);
+          })("activeDateChange", function MatMonthView_Template_tbody_activeDateChange_7_listener($event) {
+            return ctx._updateActiveDate($event);
+          })("previewChange", function MatMonthView_Template_tbody_previewChange_7_listener($event) {
+            return ctx._previewChanged($event);
+          })("dragStarted", function MatMonthView_Template_tbody_dragStarted_7_listener($event) {
+            return ctx.dragStarted.emit($event);
+          })("dragEnded", function MatMonthView_Template_tbody_dragEnded_7_listener($event) {
+            return ctx._dragEnded($event);
+          })("keyup", function MatMonthView_Template_tbody_keyup_7_listener($event) {
+            return ctx._handleCalendarBodyKeyup($event);
+          })("keydown", function MatMonthView_Template_tbody_keydown_7_listener($event) {
+            return ctx._handleCalendarBodyKeydown($event);
+          });
+          ɵɵelementEnd()();
+        }
+        if (rf & 2) {
+          ɵɵadvance(3);
+          ɵɵrepeater(ctx._weekdays);
+          ɵɵadvance(4);
+          ɵɵproperty("label", ctx._monthLabel)("rows", ctx._weeks)("todayValue", ctx._todayDate)("startValue", ctx._rangeStart)("endValue", ctx._rangeEnd)("comparisonStart", ctx._comparisonRangeStart)("comparisonEnd", ctx._comparisonRangeEnd)("previewStart", ctx._previewStart)("previewEnd", ctx._previewEnd)("isRange", ctx._isRange)("labelMinRequiredCells", 3)("activeCell", ctx._dateAdapter.getDate(ctx.activeDate) - 1)("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
+        }
+      },
+      dependencies: [MatCalendarBody],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMonthView, [{
@@ -1964,10 +2942,39 @@ var MatMonthView = class _MatMonthView {
       exportAs: "matMonthView",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [MatCalendarBody],
       template: '<table class="mat-calendar-table" role="grid">\n  <thead class="mat-calendar-table-header">\n    <tr>\n      @for (day of _weekdays; track day.id) {\n        <th scope="col">\n          <span class="cdk-visually-hidden">{{day.long}}</span>\n          <span aria-hidden="true">{{day.narrow}}</span>\n        </th>\n      }\n    </tr>\n    <tr aria-hidden="true"><th class="mat-calendar-table-header-divider" colspan="7"></th></tr>\n  </thead>\n  <tbody mat-calendar-body\n         [label]="_monthLabel"\n         [rows]="_weeks"\n         [todayValue]="_todayDate!"\n         [startValue]="_rangeStart!"\n         [endValue]="_rangeEnd!"\n         [comparisonStart]="_comparisonRangeStart"\n         [comparisonEnd]="_comparisonRangeEnd"\n         [previewStart]="_previewStart"\n         [previewEnd]="_previewEnd"\n         [isRange]="_isRange"\n         [labelMinRequiredCells]="3"\n         [activeCell]="_dateAdapter.getDate(activeDate) - 1"\n         [startDateAccessibleName]="startDateAccessibleName"\n         [endDateAccessibleName]="endDateAccessibleName"\n         (selectedValueChange)="_dateSelected($event)"\n         (activeDateChange)="_updateActiveDate($event)"\n         (previewChange)="_previewChanged($event)"\n         (dragStarted)="dragStarted.emit($event)"\n         (dragEnded)="_dragEnded($event)"\n         (keyup)="_handleCalendarBodyKeyup($event)"\n         (keydown)="_handleCalendarBodyKeydown($event)">\n  </tbody>\n</table>\n'
     }]
-  }], () => [], {
+  }], () => [{
+    type: ChangeDetectorRef
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: Directionality,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [MAT_DATE_RANGE_SELECTION_STRATEGY]
+    }, {
+      type: Optional
+    }]
+  }], {
     activeDate: [{
       type: Input
     }],
@@ -2025,16 +3032,6 @@ var MatMonthView = class _MatMonthView {
 var yearsPerPage = 24;
 var yearsPerRow = 4;
 var MatMultiYearView = class _MatMultiYearView {
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dir = inject(Directionality, {
-    optional: true
-  });
-  _rerenderSubscription = import_rxjs.Subscription.EMPTY;
-  /** Flag used to filter out space/enter keyup events that originated outside of the view. */
-  _selectionKeyPressed;
   /** The date to display in this multi-year view (everything other than the year is ignored). */
   get activeDate() {
     return this._activeDate;
@@ -2047,7 +3044,6 @@ var MatMultiYearView = class _MatMultiYearView {
       this._init();
     }
   }
-  _activeDate;
   /** The currently selected date. */
   get selected() {
     return this._selected;
@@ -2060,7 +3056,6 @@ var MatMultiYearView = class _MatMultiYearView {
     }
     this._setSelectedYear(value);
   }
-  _selected;
   /** The minimum selectable date. */
   get minDate() {
     return this._minDate;
@@ -2068,7 +3063,6 @@ var MatMultiYearView = class _MatMultiYearView {
   set minDate(value) {
     this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _minDate;
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
@@ -2076,26 +3070,14 @@ var MatMultiYearView = class _MatMultiYearView {
   set maxDate(value) {
     this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _maxDate;
-  /** A function used to filter which dates are selectable. */
-  dateFilter;
-  /** Function that can be used to add custom CSS classes to date cells. */
-  dateClass;
-  /** Emits when a new year is selected. */
-  selectedChange = new EventEmitter();
-  /** Emits the selected year. This doesn't imply a change on the selected date */
-  yearSelected = new EventEmitter();
-  /** Emits when any date is activated. */
-  activeDateChange = new EventEmitter();
-  /** The body of calendar table */
-  _matCalendarBody;
-  /** Grid of calendar cells representing the currently displayed years. */
-  _years;
-  /** The year that today falls on. */
-  _todayYear;
-  /** The year of the selected date. Null if the selected date is null. */
-  _selectedYear;
-  constructor() {
+  constructor(_changeDetectorRef, _dateAdapter, _dir) {
+    this._changeDetectorRef = _changeDetectorRef;
+    this._dateAdapter = _dateAdapter;
+    this._dir = _dir;
+    this._rerenderSubscription = import_rxjs.Subscription.EMPTY;
+    this.selectedChange = new EventEmitter();
+    this.yearSelected = new EventEmitter();
+    this.activeDateChange = new EventEmitter();
     if (!this._dateAdapter && (typeof ngDevMode === "undefined" || ngDevMode)) {
       throw createMissingDateImplError("DateAdapter");
     }
@@ -2262,66 +3244,70 @@ var MatMultiYearView = class _MatMultiYearView {
       this._selectedYear = this._dateAdapter.getYear(value);
     }
   }
-  static ɵfac = function MatMultiYearView_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatMultiYearView)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatMultiYearView,
-    selectors: [["mat-multi-year-view"]],
-    viewQuery: function MatMultiYearView_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(MatCalendarBody, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
-      }
-    },
-    inputs: {
-      activeDate: "activeDate",
-      selected: "selected",
-      minDate: "minDate",
-      maxDate: "maxDate",
-      dateFilter: "dateFilter",
-      dateClass: "dateClass"
-    },
-    outputs: {
-      selectedChange: "selectedChange",
-      yearSelected: "yearSelected",
-      activeDateChange: "activeDateChange"
-    },
-    exportAs: ["matMultiYearView"],
-    standalone: true,
-    features: [ɵɵStandaloneFeature],
-    decls: 5,
-    vars: 7,
-    consts: [["role", "grid", 1, "mat-calendar-table"], ["aria-hidden", "true", 1, "mat-calendar-table-header"], ["colspan", "4", 1, "mat-calendar-table-header-divider"], ["mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "keyup", "keydown", "rows", "todayValue", "startValue", "endValue", "numCols", "cellAspectRatio", "activeCell"]],
-    template: function MatMultiYearView_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
-        ɵɵelement(3, "th", 2);
-        ɵɵelementEnd()();
-        ɵɵelementStart(4, "tbody", 3);
-        ɵɵlistener("selectedValueChange", function MatMultiYearView_Template_tbody_selectedValueChange_4_listener($event) {
-          return ctx._yearSelected($event);
-        })("activeDateChange", function MatMultiYearView_Template_tbody_activeDateChange_4_listener($event) {
-          return ctx._updateActiveDate($event);
-        })("keyup", function MatMultiYearView_Template_tbody_keyup_4_listener($event) {
-          return ctx._handleCalendarBodyKeyup($event);
-        })("keydown", function MatMultiYearView_Template_tbody_keydown_4_listener($event) {
-          return ctx._handleCalendarBodyKeydown($event);
-        });
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵadvance(4);
-        ɵɵproperty("rows", ctx._years)("todayValue", ctx._todayYear)("startValue", ctx._selectedYear)("endValue", ctx._selectedYear)("numCols", 4)("cellAspectRatio", 4 / 7)("activeCell", ctx._getActiveCell());
-      }
-    },
-    dependencies: [MatCalendarBody],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatMultiYearView_Factory(t) {
+      return new (t || _MatMultiYearView)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(Directionality, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatMultiYearView,
+      selectors: [["mat-multi-year-view"]],
+      viewQuery: function MatMultiYearView_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(MatCalendarBody, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
+        }
+      },
+      inputs: {
+        activeDate: "activeDate",
+        selected: "selected",
+        minDate: "minDate",
+        maxDate: "maxDate",
+        dateFilter: "dateFilter",
+        dateClass: "dateClass"
+      },
+      outputs: {
+        selectedChange: "selectedChange",
+        yearSelected: "yearSelected",
+        activeDateChange: "activeDateChange"
+      },
+      exportAs: ["matMultiYearView"],
+      standalone: true,
+      features: [ɵɵStandaloneFeature],
+      decls: 5,
+      vars: 7,
+      consts: [["role", "grid", 1, "mat-calendar-table"], ["aria-hidden", "true", 1, "mat-calendar-table-header"], ["colspan", "4", 1, "mat-calendar-table-header-divider"], ["mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "keyup", "keydown", "rows", "todayValue", "startValue", "endValue", "numCols", "cellAspectRatio", "activeCell"]],
+      template: function MatMultiYearView_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
+          ɵɵelement(3, "th", 2);
+          ɵɵelementEnd()();
+          ɵɵelementStart(4, "tbody", 3);
+          ɵɵlistener("selectedValueChange", function MatMultiYearView_Template_tbody_selectedValueChange_4_listener($event) {
+            return ctx._yearSelected($event);
+          })("activeDateChange", function MatMultiYearView_Template_tbody_activeDateChange_4_listener($event) {
+            return ctx._updateActiveDate($event);
+          })("keyup", function MatMultiYearView_Template_tbody_keyup_4_listener($event) {
+            return ctx._handleCalendarBodyKeyup($event);
+          })("keydown", function MatMultiYearView_Template_tbody_keydown_4_listener($event) {
+            return ctx._handleCalendarBodyKeydown($event);
+          });
+          ɵɵelementEnd()();
+        }
+        if (rf & 2) {
+          ɵɵadvance(4);
+          ɵɵproperty("rows", ctx._years)("todayValue", ctx._todayYear)("startValue", ctx._selectedYear)("endValue", ctx._selectedYear)("numCols", 4)("cellAspectRatio", 4 / 7)("activeCell", ctx._getActiveCell());
+        }
+      },
+      dependencies: [MatCalendarBody],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMultiYearView, [{
@@ -2331,10 +3317,23 @@ var MatMultiYearView = class _MatMultiYearView {
       exportAs: "matMultiYearView",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [MatCalendarBody],
       template: '<table class="mat-calendar-table" role="grid">\n  <thead aria-hidden="true" class="mat-calendar-table-header">\n    <tr><th class="mat-calendar-table-header-divider" colspan="4"></th></tr>\n  </thead>\n  <tbody mat-calendar-body\n         [rows]="_years"\n         [todayValue]="_todayYear"\n         [startValue]="_selectedYear!"\n         [endValue]="_selectedYear!"\n         [numCols]="4"\n         [cellAspectRatio]="4 / 7"\n         [activeCell]="_getActiveCell()"\n         (selectedValueChange)="_yearSelected($event)"\n         (activeDateChange)="_updateActiveDate($event)"\n         (keyup)="_handleCalendarBodyKeyup($event)"\n         (keydown)="_handleCalendarBodyKeydown($event)">\n  </tbody>\n</table>\n'
     }]
-  }], () => [], {
+  }], () => [{
+    type: ChangeDetectorRef
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: Directionality,
+    decorators: [{
+      type: Optional
+    }]
+  }], {
     activeDate: [{
       type: Input
     }],
@@ -2392,19 +3391,6 @@ function euclideanModulo(a, b) {
   return (a % b + b) % b;
 }
 var MatYearView = class _MatYearView {
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  _dateFormats = inject(MAT_DATE_FORMATS, {
-    optional: true
-  });
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dir = inject(Directionality, {
-    optional: true
-  });
-  _rerenderSubscription = import_rxjs.Subscription.EMPTY;
-  /** Flag used to filter out space/enter keyup events that originated outside of the view. */
-  _selectionKeyPressed;
   /** The date to display in this year view (everything other than the year is ignored). */
   get activeDate() {
     return this._activeDate;
@@ -2417,7 +3403,6 @@ var MatYearView = class _MatYearView {
       this._init();
     }
   }
-  _activeDate;
   /** The currently selected date. */
   get selected() {
     return this._selected;
@@ -2430,7 +3415,6 @@ var MatYearView = class _MatYearView {
     }
     this._setSelectedMonth(value);
   }
-  _selected;
   /** The minimum selectable date. */
   get minDate() {
     return this._minDate;
@@ -2438,7 +3422,6 @@ var MatYearView = class _MatYearView {
   set minDate(value) {
     this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _minDate;
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
@@ -2446,31 +3429,15 @@ var MatYearView = class _MatYearView {
   set maxDate(value) {
     this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _maxDate;
-  /** A function used to filter which dates are selectable. */
-  dateFilter;
-  /** Function that can be used to add custom CSS classes to date cells. */
-  dateClass;
-  /** Emits when a new month is selected. */
-  selectedChange = new EventEmitter();
-  /** Emits the selected month. This doesn't imply a change on the selected date */
-  monthSelected = new EventEmitter();
-  /** Emits when any date is activated. */
-  activeDateChange = new EventEmitter();
-  /** The body of calendar table */
-  _matCalendarBody;
-  /** Grid of calendar cells representing the months of the year. */
-  _months;
-  /** The label for this year (e.g. "2017"). */
-  _yearLabel;
-  /** The month in this year that today falls on. Null if today is in a different year. */
-  _todayMonth;
-  /**
-   * The month in this year that the selected Date falls on.
-   * Null if the selected Date is in a different year.
-   */
-  _selectedMonth;
-  constructor() {
+  constructor(_changeDetectorRef, _dateFormats, _dateAdapter, _dir) {
+    this._changeDetectorRef = _changeDetectorRef;
+    this._dateFormats = _dateFormats;
+    this._dateAdapter = _dateAdapter;
+    this._dir = _dir;
+    this._rerenderSubscription = import_rxjs.Subscription.EMPTY;
+    this.selectedChange = new EventEmitter();
+    this.monthSelected = new EventEmitter();
+    this.activeDateChange = new EventEmitter();
     if (typeof ngDevMode === "undefined" || ngDevMode) {
       if (!this._dateAdapter) {
         throw createMissingDateImplError("DateAdapter");
@@ -2660,66 +3627,70 @@ var MatYearView = class _MatYearView {
       this._selectedMonth = this._getMonthInCurrentYear(value);
     }
   }
-  static ɵfac = function MatYearView_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatYearView)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatYearView,
-    selectors: [["mat-year-view"]],
-    viewQuery: function MatYearView_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(MatCalendarBody, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
-      }
-    },
-    inputs: {
-      activeDate: "activeDate",
-      selected: "selected",
-      minDate: "minDate",
-      maxDate: "maxDate",
-      dateFilter: "dateFilter",
-      dateClass: "dateClass"
-    },
-    outputs: {
-      selectedChange: "selectedChange",
-      monthSelected: "monthSelected",
-      activeDateChange: "activeDateChange"
-    },
-    exportAs: ["matYearView"],
-    standalone: true,
-    features: [ɵɵStandaloneFeature],
-    decls: 5,
-    vars: 9,
-    consts: [["role", "grid", 1, "mat-calendar-table"], ["aria-hidden", "true", 1, "mat-calendar-table-header"], ["colspan", "4", 1, "mat-calendar-table-header-divider"], ["mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "keyup", "keydown", "label", "rows", "todayValue", "startValue", "endValue", "labelMinRequiredCells", "numCols", "cellAspectRatio", "activeCell"]],
-    template: function MatYearView_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
-        ɵɵelement(3, "th", 2);
-        ɵɵelementEnd()();
-        ɵɵelementStart(4, "tbody", 3);
-        ɵɵlistener("selectedValueChange", function MatYearView_Template_tbody_selectedValueChange_4_listener($event) {
-          return ctx._monthSelected($event);
-        })("activeDateChange", function MatYearView_Template_tbody_activeDateChange_4_listener($event) {
-          return ctx._updateActiveDate($event);
-        })("keyup", function MatYearView_Template_tbody_keyup_4_listener($event) {
-          return ctx._handleCalendarBodyKeyup($event);
-        })("keydown", function MatYearView_Template_tbody_keydown_4_listener($event) {
-          return ctx._handleCalendarBodyKeydown($event);
-        });
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵadvance(4);
-        ɵɵproperty("label", ctx._yearLabel)("rows", ctx._months)("todayValue", ctx._todayMonth)("startValue", ctx._selectedMonth)("endValue", ctx._selectedMonth)("labelMinRequiredCells", 2)("numCols", 4)("cellAspectRatio", 4 / 7)("activeCell", ctx._dateAdapter.getMonth(ctx.activeDate));
-      }
-    },
-    dependencies: [MatCalendarBody],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatYearView_Factory(t) {
+      return new (t || _MatYearView)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(Directionality, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatYearView,
+      selectors: [["mat-year-view"]],
+      viewQuery: function MatYearView_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(MatCalendarBody, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
+        }
+      },
+      inputs: {
+        activeDate: "activeDate",
+        selected: "selected",
+        minDate: "minDate",
+        maxDate: "maxDate",
+        dateFilter: "dateFilter",
+        dateClass: "dateClass"
+      },
+      outputs: {
+        selectedChange: "selectedChange",
+        monthSelected: "monthSelected",
+        activeDateChange: "activeDateChange"
+      },
+      exportAs: ["matYearView"],
+      standalone: true,
+      features: [ɵɵStandaloneFeature],
+      decls: 5,
+      vars: 9,
+      consts: [["role", "grid", 1, "mat-calendar-table"], ["aria-hidden", "true", 1, "mat-calendar-table-header"], ["colspan", "4", 1, "mat-calendar-table-header-divider"], ["mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "keyup", "keydown", "label", "rows", "todayValue", "startValue", "endValue", "labelMinRequiredCells", "numCols", "cellAspectRatio", "activeCell"]],
+      template: function MatYearView_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
+          ɵɵelement(3, "th", 2);
+          ɵɵelementEnd()();
+          ɵɵelementStart(4, "tbody", 3);
+          ɵɵlistener("selectedValueChange", function MatYearView_Template_tbody_selectedValueChange_4_listener($event) {
+            return ctx._monthSelected($event);
+          })("activeDateChange", function MatYearView_Template_tbody_activeDateChange_4_listener($event) {
+            return ctx._updateActiveDate($event);
+          })("keyup", function MatYearView_Template_tbody_keyup_4_listener($event) {
+            return ctx._handleCalendarBodyKeyup($event);
+          })("keydown", function MatYearView_Template_tbody_keydown_4_listener($event) {
+            return ctx._handleCalendarBodyKeydown($event);
+          });
+          ɵɵelementEnd()();
+        }
+        if (rf & 2) {
+          ɵɵadvance(4);
+          ɵɵproperty("label", ctx._yearLabel)("rows", ctx._months)("todayValue", ctx._todayMonth)("startValue", ctx._selectedMonth)("endValue", ctx._selectedMonth)("labelMinRequiredCells", 2)("numCols", 4)("cellAspectRatio", 4 / 7)("activeCell", ctx._dateAdapter.getMonth(ctx.activeDate));
+        }
+      },
+      dependencies: [MatCalendarBody],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatYearView, [{
@@ -2729,10 +3700,31 @@ var MatYearView = class _MatYearView {
       exportAs: "matYearView",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [MatCalendarBody],
       template: '<table class="mat-calendar-table" role="grid">\n  <thead aria-hidden="true" class="mat-calendar-table-header">\n    <tr><th class="mat-calendar-table-header-divider" colspan="4"></th></tr>\n  </thead>\n  <tbody mat-calendar-body\n         [label]="_yearLabel"\n         [rows]="_months"\n         [todayValue]="_todayMonth!"\n         [startValue]="_selectedMonth!"\n         [endValue]="_selectedMonth!"\n         [labelMinRequiredCells]="2"\n         [numCols]="4"\n         [cellAspectRatio]="4 / 7"\n         [activeCell]="_dateAdapter.getMonth(activeDate)"\n         (selectedValueChange)="_monthSelected($event)"\n         (activeDateChange)="_updateActiveDate($event)"\n         (keyup)="_handleCalendarBodyKeyup($event)"\n         (keydown)="_handleCalendarBodyKeydown($event)">\n  </tbody>\n</table>\n'
     }]
-  }], () => [], {
+  }], () => [{
+    type: ChangeDetectorRef
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: Directionality,
+    decorators: [{
+      type: Optional
+    }]
+  }], {
     activeDate: [{
       type: Input
     }],
@@ -2766,18 +3758,15 @@ var MatYearView = class _MatYearView {
     }]
   });
 })();
+var calendarHeaderId = 1;
 var MatCalendarHeader = class _MatCalendarHeader {
-  _intl = inject(MatDatepickerIntl);
-  calendar = inject(MatCalendar);
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dateFormats = inject(MAT_DATE_FORMATS, {
-    optional: true
-  });
-  constructor() {
-    inject(_CdkPrivateStyleLoader).load(_VisuallyHiddenLoader);
-    const changeDetectorRef = inject(ChangeDetectorRef);
+  constructor(_intl, calendar, _dateAdapter, _dateFormats, changeDetectorRef) {
+    this._intl = _intl;
+    this.calendar = calendar;
+    this._dateAdapter = _dateAdapter;
+    this._dateFormats = _dateFormats;
+    this._id = `mat-calendar-header-${calendarHeaderId++}`;
+    this._periodButtonLabelId = `${this._id}-period-label`;
     this.calendar.stateChanges.subscribe(() => changeDetectorRef.markForCheck());
   }
   /** The display text for the current calendar view. */
@@ -2866,81 +3855,84 @@ var MatCalendarHeader = class _MatCalendarHeader {
     const maxYearLabel = this._dateAdapter.getYearName(this._dateAdapter.createDate(maxYearOfPage, 0, 1));
     return [minYearLabel, maxYearLabel];
   }
-  _periodButtonLabelId = inject(_IdGenerator).getId("mat-calendar-period-label-");
-  static ɵfac = function MatCalendarHeader_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatCalendarHeader)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatCalendarHeader,
-    selectors: [["mat-calendar-header"]],
-    exportAs: ["matCalendarHeader"],
-    standalone: true,
-    features: [ɵɵStandaloneFeature],
-    ngContentSelectors: _c1,
-    decls: 17,
-    vars: 11,
-    consts: [[1, "mat-calendar-header"], [1, "mat-calendar-controls"], ["aria-live", "polite", 1, "cdk-visually-hidden", 3, "id"], ["mat-button", "", "type", "button", 1, "mat-calendar-period-button", 3, "click"], ["aria-hidden", "true"], ["viewBox", "0 0 10 5", "focusable", "false", "aria-hidden", "true", 1, "mat-calendar-arrow"], ["points", "0,0 5,5 10,0"], [1, "mat-calendar-spacer"], ["mat-icon-button", "", "type", "button", 1, "mat-calendar-previous-button", 3, "click", "disabled"], ["viewBox", "0 0 24 24", "focusable", "false", "aria-hidden", "true"], ["d", "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"], ["mat-icon-button", "", "type", "button", 1, "mat-calendar-next-button", 3, "click", "disabled"], ["d", "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"]],
-    template: function MatCalendarHeader_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0)(1, "div", 1)(2, "span", 2);
-        ɵɵtext(3);
-        ɵɵelementEnd();
-        ɵɵelementStart(4, "button", 3);
-        ɵɵlistener("click", function MatCalendarHeader_Template_button_click_4_listener() {
-          return ctx.currentPeriodClicked();
-        });
-        ɵɵelementStart(5, "span", 4);
-        ɵɵtext(6);
-        ɵɵelementEnd();
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(7, "svg", 5);
-        ɵɵelement(8, "polygon", 6);
-        ɵɵelementEnd()();
-        ɵɵnamespaceHTML();
-        ɵɵelement(9, "div", 7);
-        ɵɵprojection(10);
-        ɵɵelementStart(11, "button", 8);
-        ɵɵlistener("click", function MatCalendarHeader_Template_button_click_11_listener() {
-          return ctx.previousClicked();
-        });
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(12, "svg", 9);
-        ɵɵelement(13, "path", 10);
-        ɵɵelementEnd()();
-        ɵɵnamespaceHTML();
-        ɵɵelementStart(14, "button", 11);
-        ɵɵlistener("click", function MatCalendarHeader_Template_button_click_14_listener() {
-          return ctx.nextClicked();
-        });
-        ɵɵnamespaceSVG();
-        ɵɵelementStart(15, "svg", 9);
-        ɵɵelement(16, "path", 12);
-        ɵɵelementEnd()()()();
-      }
-      if (rf & 2) {
-        ɵɵadvance(2);
-        ɵɵproperty("id", ctx._periodButtonLabelId);
-        ɵɵadvance();
-        ɵɵtextInterpolate(ctx.periodButtonDescription);
-        ɵɵadvance();
-        ɵɵattribute("aria-label", ctx.periodButtonLabel)("aria-describedby", ctx._periodButtonLabelId);
-        ɵɵadvance(2);
-        ɵɵtextInterpolate(ctx.periodButtonText);
-        ɵɵadvance();
-        ɵɵclassProp("mat-calendar-invert", ctx.calendar.currentView !== "month");
-        ɵɵadvance(4);
-        ɵɵproperty("disabled", !ctx.previousEnabled());
-        ɵɵattribute("aria-label", ctx.prevButtonLabel);
-        ɵɵadvance(3);
-        ɵɵproperty("disabled", !ctx.nextEnabled());
-        ɵɵattribute("aria-label", ctx.nextButtonLabel);
-      }
-    },
-    dependencies: [MatButton, MatIconButton],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatCalendarHeader_Factory(t) {
+      return new (t || _MatCalendarHeader)(ɵɵdirectiveInject(MatDatepickerIntl), ɵɵdirectiveInject(forwardRef(() => MatCalendar)), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(ChangeDetectorRef));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatCalendarHeader,
+      selectors: [["mat-calendar-header"]],
+      exportAs: ["matCalendarHeader"],
+      standalone: true,
+      features: [ɵɵStandaloneFeature],
+      ngContentSelectors: _c12,
+      decls: 17,
+      vars: 11,
+      consts: [[1, "mat-calendar-header"], [1, "mat-calendar-controls"], ["aria-live", "polite", 1, "cdk-visually-hidden", 3, "id"], ["mat-button", "", "type", "button", 1, "mat-calendar-period-button", 3, "click"], ["aria-hidden", "true"], ["viewBox", "0 0 10 5", "focusable", "false", "aria-hidden", "true", 1, "mat-calendar-arrow"], ["points", "0,0 5,5 10,0"], [1, "mat-calendar-spacer"], ["mat-icon-button", "", "type", "button", 1, "mat-calendar-previous-button", 3, "click", "disabled"], ["viewBox", "0 0 24 24", "focusable", "false", "aria-hidden", "true"], ["d", "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"], ["mat-icon-button", "", "type", "button", 1, "mat-calendar-next-button", 3, "click", "disabled"], ["d", "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"]],
+      template: function MatCalendarHeader_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef();
+          ɵɵelementStart(0, "div", 0)(1, "div", 1)(2, "span", 2);
+          ɵɵtext(3);
+          ɵɵelementEnd();
+          ɵɵelementStart(4, "button", 3);
+          ɵɵlistener("click", function MatCalendarHeader_Template_button_click_4_listener() {
+            return ctx.currentPeriodClicked();
+          });
+          ɵɵelementStart(5, "span", 4);
+          ɵɵtext(6);
+          ɵɵelementEnd();
+          ɵɵnamespaceSVG();
+          ɵɵelementStart(7, "svg", 5);
+          ɵɵelement(8, "polygon", 6);
+          ɵɵelementEnd()();
+          ɵɵnamespaceHTML();
+          ɵɵelement(9, "div", 7);
+          ɵɵprojection(10);
+          ɵɵelementStart(11, "button", 8);
+          ɵɵlistener("click", function MatCalendarHeader_Template_button_click_11_listener() {
+            return ctx.previousClicked();
+          });
+          ɵɵnamespaceSVG();
+          ɵɵelementStart(12, "svg", 9);
+          ɵɵelement(13, "path", 10);
+          ɵɵelementEnd()();
+          ɵɵnamespaceHTML();
+          ɵɵelementStart(14, "button", 11);
+          ɵɵlistener("click", function MatCalendarHeader_Template_button_click_14_listener() {
+            return ctx.nextClicked();
+          });
+          ɵɵnamespaceSVG();
+          ɵɵelementStart(15, "svg", 9);
+          ɵɵelement(16, "path", 12);
+          ɵɵelementEnd()()()();
+        }
+        if (rf & 2) {
+          ɵɵadvance(2);
+          ɵɵproperty("id", ctx._periodButtonLabelId);
+          ɵɵadvance();
+          ɵɵtextInterpolate(ctx.periodButtonDescription);
+          ɵɵadvance();
+          ɵɵattribute("aria-label", ctx.periodButtonLabel)("aria-describedby", ctx._periodButtonLabelId);
+          ɵɵadvance(2);
+          ɵɵtextInterpolate(ctx.periodButtonText);
+          ɵɵadvance();
+          ɵɵclassProp("mat-calendar-invert", ctx.calendar.currentView !== "month");
+          ɵɵadvance(4);
+          ɵɵproperty("disabled", !ctx.previousEnabled());
+          ɵɵattribute("aria-label", ctx.prevButtonLabel);
+          ɵɵadvance(3);
+          ɵɵproperty("disabled", !ctx.nextEnabled());
+          ɵɵattribute("aria-label", ctx.nextButtonLabel);
+        }
+      },
+      dependencies: [MatButton, MatIconButton],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatCalendarHeader, [{
@@ -2950,6 +3942,7 @@ var MatCalendarHeader = class _MatCalendarHeader {
       exportAs: "matCalendarHeader",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [MatButton, MatIconButton],
       template: `<div class="mat-calendar-header">
   <div class="mat-calendar-controls">
@@ -2990,27 +3983,32 @@ var MatCalendarHeader = class _MatCalendarHeader {
 </div>
 `
     }]
-  }], () => [], null);
+  }], () => [{
+    type: MatDatepickerIntl
+  }, {
+    type: MatCalendar,
+    decorators: [{
+      type: Inject,
+      args: [forwardRef(() => MatCalendar)]
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }, {
+    type: ChangeDetectorRef
+  }], null);
 })();
 var MatCalendar = class _MatCalendar {
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dateFormats = inject(MAT_DATE_FORMATS, {
-    optional: true
-  });
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  /** An input indicating the type of the header component, if set. */
-  headerComponent;
-  /** A portal containing the header component type for this calendar. */
-  _calendarHeaderPortal;
-  _intlChanges;
-  /**
-   * Used for scheduling that focus should be moved to the active cell on the next tick.
-   * We need to schedule it, rather than do it immediately, because we have to wait
-   * for Angular to re-evaluate the view children.
-   */
-  _moveFocusOnNextTick = false;
   /** A date representing the period (month or year) to start the calendar in. */
   get startAt() {
     return this._startAt;
@@ -3018,9 +4016,6 @@ var MatCalendar = class _MatCalendar {
   set startAt(value) {
     this._startAt = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _startAt;
-  /** Whether the calendar should be started in month or year view. */
-  startView = "month";
   /** The currently selected date. */
   get selected() {
     return this._selected;
@@ -3032,7 +4027,6 @@ var MatCalendar = class _MatCalendar {
       this._selected = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
     }
   }
-  _selected;
   /** The minimum selectable date. */
   get minDate() {
     return this._minDate;
@@ -3040,7 +4034,6 @@ var MatCalendar = class _MatCalendar {
   set minDate(value) {
     this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _minDate;
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
@@ -3048,45 +4041,6 @@ var MatCalendar = class _MatCalendar {
   set maxDate(value) {
     this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _maxDate;
-  /** Function used to filter which dates are selectable. */
-  dateFilter;
-  /** Function that can be used to add custom CSS classes to dates. */
-  dateClass;
-  /** Start of the comparison range. */
-  comparisonStart;
-  /** End of the comparison range. */
-  comparisonEnd;
-  /** ARIA Accessible name of the `<input matStartDate/>` */
-  startDateAccessibleName;
-  /** ARIA Accessible name of the `<input matEndDate/>` */
-  endDateAccessibleName;
-  /** Emits when the currently selected date changes. */
-  selectedChange = new EventEmitter();
-  /**
-   * Emits the year chosen in multiyear view.
-   * This doesn't imply a change on the selected date.
-   */
-  yearSelected = new EventEmitter();
-  /**
-   * Emits the month chosen in year view.
-   * This doesn't imply a change on the selected date.
-   */
-  monthSelected = new EventEmitter();
-  /**
-   * Emits when the current view changes.
-   */
-  viewChanged = new EventEmitter(true);
-  /** Emits when any date is selected. */
-  _userSelection = new EventEmitter();
-  /** Emits a new date range value when the user completes a drag drop operation. */
-  _userDragDrop = new EventEmitter();
-  /** Reference to the current month view component. */
-  monthView;
-  /** Reference to the current year view component. */
-  yearView;
-  /** Reference to the current multi-year view component. */
-  multiYearView;
   /**
    * The current active date. This determines which time period is shown and which date is
    * highlighted when using keyboard navigation.
@@ -3099,7 +4053,6 @@ var MatCalendar = class _MatCalendar {
     this.stateChanges.next();
     this._changeDetectorRef.markForCheck();
   }
-  _clampedActiveDate;
   /** Whether the calendar is in month view. */
   get currentView() {
     return this._currentView;
@@ -3113,14 +4066,20 @@ var MatCalendar = class _MatCalendar {
       this.viewChanged.emit(viewChangedResult);
     }
   }
-  _currentView;
-  /** Origin of active drag, or null when dragging is not active. */
-  _activeDrag = null;
-  /**
-   * Emits whenever there is a state change that the header may need to respond to.
-   */
-  stateChanges = new import_rxjs.Subject();
-  constructor() {
+  constructor(_intl, _dateAdapter, _dateFormats, _changeDetectorRef) {
+    this._dateAdapter = _dateAdapter;
+    this._dateFormats = _dateFormats;
+    this._changeDetectorRef = _changeDetectorRef;
+    this._moveFocusOnNextTick = false;
+    this.startView = "month";
+    this.selectedChange = new EventEmitter();
+    this.yearSelected = new EventEmitter();
+    this.monthSelected = new EventEmitter();
+    this.viewChanged = new EventEmitter(true);
+    this._userSelection = new EventEmitter();
+    this._userDragDrop = new EventEmitter();
+    this._activeDrag = null;
+    this.stateChanges = new import_rxjs.Subject();
     if (typeof ngDevMode === "undefined" || ngDevMode) {
       if (!this._dateAdapter) {
         throw createMissingDateImplError("DateAdapter");
@@ -3129,8 +4088,8 @@ var MatCalendar = class _MatCalendar {
         throw createMissingDateImplError("MAT_DATE_FORMATS");
       }
     }
-    this._intlChanges = inject(MatDatepickerIntl).changes.subscribe(() => {
-      this._changeDetectorRef.markForCheck();
+    this._intlChanges = _intl.changes.subscribe(() => {
+      _changeDetectorRef.markForCheck();
       this.stateChanges.next();
     });
   }
@@ -3211,73 +4170,77 @@ var MatCalendar = class _MatCalendar {
   _getCurrentViewComponent() {
     return this.monthView || this.yearView || this.multiYearView;
   }
-  static ɵfac = function MatCalendar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatCalendar)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatCalendar,
-    selectors: [["mat-calendar"]],
-    viewQuery: function MatCalendar_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(MatMonthView, 5);
-        ɵɵviewQuery(MatYearView, 5);
-        ɵɵviewQuery(MatMultiYearView, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.monthView = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.yearView = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.multiYearView = _t.first);
-      }
-    },
-    hostAttrs: [1, "mat-calendar"],
-    inputs: {
-      headerComponent: "headerComponent",
-      startAt: "startAt",
-      startView: "startView",
-      selected: "selected",
-      minDate: "minDate",
-      maxDate: "maxDate",
-      dateFilter: "dateFilter",
-      dateClass: "dateClass",
-      comparisonStart: "comparisonStart",
-      comparisonEnd: "comparisonEnd",
-      startDateAccessibleName: "startDateAccessibleName",
-      endDateAccessibleName: "endDateAccessibleName"
-    },
-    outputs: {
-      selectedChange: "selectedChange",
-      yearSelected: "yearSelected",
-      monthSelected: "monthSelected",
-      viewChanged: "viewChanged",
-      _userSelection: "_userSelection",
-      _userDragDrop: "_userDragDrop"
-    },
-    exportAs: ["matCalendar"],
-    standalone: true,
-    features: [ɵɵProvidersFeature([MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER]), ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
-    decls: 5,
-    vars: 2,
-    consts: [[3, "cdkPortalOutlet"], ["cdkMonitorSubtreeFocus", "", "tabindex", "-1", 1, "mat-calendar-content"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName", "activeDrag"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"], [3, "activeDateChange", "_userSelection", "dragStarted", "dragEnded", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName", "activeDrag"], [3, "activeDateChange", "monthSelected", "selectedChange", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"], [3, "activeDateChange", "yearSelected", "selectedChange", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"]],
-    template: function MatCalendar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, MatCalendar_ng_template_0_Template, 0, 0, "ng-template", 0);
-        ɵɵelementStart(1, "div", 1);
-        ɵɵtemplate(2, MatCalendar_Case_2_Template, 1, 11, "mat-month-view", 2)(3, MatCalendar_Case_3_Template, 1, 6, "mat-year-view", 3)(4, MatCalendar_Case_4_Template, 1, 6, "mat-multi-year-view", 3);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        let tmp_1_0;
-        ɵɵproperty("cdkPortalOutlet", ctx._calendarHeaderPortal);
-        ɵɵadvance(2);
-        ɵɵconditional((tmp_1_0 = ctx.currentView) === "month" ? 2 : tmp_1_0 === "year" ? 3 : tmp_1_0 === "multi-year" ? 4 : -1);
-      }
-    },
-    dependencies: [CdkPortalOutlet, CdkMonitorFocus, MatMonthView, MatYearView, MatMultiYearView],
-    styles: ['.mat-calendar{display:block;line-height:normal;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-sys-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-sys-body-medium-size))}.mat-calendar-header{padding:8px 8px 0 8px}.mat-calendar-content{padding:0 8px 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px;font-size:var(--mat-datepicker-calendar-period-button-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-datepicker-calendar-period-button-text-weight, var(--mat-sys-title-small-weight));--mdc-text-button-label-text-color:var(--mat-datepicker-calendar-period-button-text-color, var(--mat-sys-on-surface-variant))}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle;fill:var(--mat-datepicker-calendar-period-button-icon-color, var(--mat-sys-on-surface-variant))}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}@media(forced-colors: active){.mat-calendar-arrow{fill:CanvasText}}.mat-datepicker-content .mat-calendar-previous-button:not(.mat-mdc-button-disabled),.mat-datepicker-content .mat-calendar-next-button:not(.mat-mdc-button-disabled){color:var(--mat-datepicker-calendar-navigation-button-icon-color, var(--mat-sys-on-surface-variant))}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px 0;color:var(--mat-datepicker-calendar-header-text-color, var(--mat-sys-on-surface-variant));font-size:var(--mat-datepicker-calendar-header-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-datepicker-calendar-header-text-weight, var(--mat-sys-title-small-weight))}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider::after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px;background:var(--mat-datepicker-calendar-header-divider-color, transparent)}.mat-calendar-body-cell-content::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px)*-1)}.mat-calendar-body-cell:focus .mat-focus-indicator::before{content:""}'],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatCalendar_Factory(t) {
+      return new (t || _MatCalendar)(ɵɵdirectiveInject(MatDatepickerIntl), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(ChangeDetectorRef));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatCalendar,
+      selectors: [["mat-calendar"]],
+      viewQuery: function MatCalendar_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(MatMonthView, 5);
+          ɵɵviewQuery(MatYearView, 5);
+          ɵɵviewQuery(MatMultiYearView, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.monthView = _t.first);
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.yearView = _t.first);
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.multiYearView = _t.first);
+        }
+      },
+      hostAttrs: [1, "mat-calendar"],
+      inputs: {
+        headerComponent: "headerComponent",
+        startAt: "startAt",
+        startView: "startView",
+        selected: "selected",
+        minDate: "minDate",
+        maxDate: "maxDate",
+        dateFilter: "dateFilter",
+        dateClass: "dateClass",
+        comparisonStart: "comparisonStart",
+        comparisonEnd: "comparisonEnd",
+        startDateAccessibleName: "startDateAccessibleName",
+        endDateAccessibleName: "endDateAccessibleName"
+      },
+      outputs: {
+        selectedChange: "selectedChange",
+        yearSelected: "yearSelected",
+        monthSelected: "monthSelected",
+        viewChanged: "viewChanged",
+        _userSelection: "_userSelection",
+        _userDragDrop: "_userDragDrop"
+      },
+      exportAs: ["matCalendar"],
+      standalone: true,
+      features: [ɵɵProvidersFeature([MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER]), ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
+      decls: 5,
+      vars: 2,
+      consts: [[3, "cdkPortalOutlet"], ["cdkMonitorSubtreeFocus", "", "tabindex", "-1", 1, "mat-calendar-content"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName", "activeDrag"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"], [3, "activeDateChange", "_userSelection", "dragStarted", "dragEnded", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName", "activeDrag"], [3, "activeDateChange", "monthSelected", "selectedChange", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"], [3, "activeDateChange", "yearSelected", "selectedChange", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"]],
+      template: function MatCalendar_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵtemplate(0, MatCalendar_ng_template_0_Template, 0, 0, "ng-template", 0);
+          ɵɵelementStart(1, "div", 1);
+          ɵɵtemplate(2, MatCalendar_Case_2_Template, 1, 11, "mat-month-view", 2)(3, MatCalendar_Case_3_Template, 1, 6, "mat-year-view", 3)(4, MatCalendar_Case_4_Template, 1, 6, "mat-multi-year-view", 3);
+          ɵɵelementEnd();
+        }
+        if (rf & 2) {
+          let tmp_1_0;
+          ɵɵproperty("cdkPortalOutlet", ctx._calendarHeaderPortal);
+          ɵɵadvance(2);
+          ɵɵconditional((tmp_1_0 = ctx.currentView) === "month" ? 2 : tmp_1_0 === "year" ? 3 : tmp_1_0 === "multi-year" ? 4 : -1);
+        }
+      },
+      dependencies: [CdkPortalOutlet, CdkMonitorFocus, MatMonthView, MatYearView, MatMultiYearView],
+      styles: ['.mat-calendar{display:block;line-height:normal;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-app-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-app-body-medium-size))}.mat-calendar-header{padding:8px 8px 0 8px}.mat-calendar-content{padding:0 8px 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px;font-size:var(--mat-datepicker-calendar-period-button-text-size, var(--mat-app-title-small-size));font-weight:var(--mat-datepicker-calendar-period-button-text-weight, var(--mat-app-title-small-weight));--mdc-text-button-label-text-color:var(--mat-datepicker-calendar-period-button-text-color, var(--mat-app-on-surface-variant))}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle;fill:var(--mat-datepicker-calendar-period-button-icon-color, var(--mat-app-on-surface-variant))}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}.cdk-high-contrast-active .mat-calendar-arrow{fill:CanvasText}.mat-datepicker-content .mat-calendar-previous-button:not(.mat-mdc-button-disabled),.mat-datepicker-content .mat-calendar-next-button:not(.mat-mdc-button-disabled){color:var(--mat-datepicker-calendar-navigation-button-icon-color, var(--mat-app-on-surface-variant))}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px 0;color:var(--mat-datepicker-calendar-header-text-color, var(--mat-app-on-surface-variant));font-size:var(--mat-datepicker-calendar-header-text-size, var(--mat-app-title-small-size));font-weight:var(--mat-datepicker-calendar-header-text-weight, var(--mat-app-title-small-weight))}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider::after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px;background:var(--mat-datepicker-calendar-header-divider-color)}.mat-calendar-body-cell-content::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px)*-1)}.mat-calendar-body-cell:focus .mat-focus-indicator::before{content:""}'],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatCalendar, [{
@@ -3291,6 +4254,7 @@ var MatCalendar = class _MatCalendar {
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
       providers: [MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER],
+      standalone: true,
       imports: [CdkPortalOutlet, CdkMonitorFocus, MatMonthView, MatYearView, MatMultiYearView],
       template: `<ng-template [cdkPortalOutlet]="_calendarHeaderPortal"></ng-template>
 
@@ -3340,9 +4304,26 @@ var MatCalendar = class _MatCalendar {
   }
 </div>
 `,
-      styles: ['.mat-calendar{display:block;line-height:normal;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-sys-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-sys-body-medium-size))}.mat-calendar-header{padding:8px 8px 0 8px}.mat-calendar-content{padding:0 8px 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px;font-size:var(--mat-datepicker-calendar-period-button-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-datepicker-calendar-period-button-text-weight, var(--mat-sys-title-small-weight));--mdc-text-button-label-text-color:var(--mat-datepicker-calendar-period-button-text-color, var(--mat-sys-on-surface-variant))}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle;fill:var(--mat-datepicker-calendar-period-button-icon-color, var(--mat-sys-on-surface-variant))}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}@media(forced-colors: active){.mat-calendar-arrow{fill:CanvasText}}.mat-datepicker-content .mat-calendar-previous-button:not(.mat-mdc-button-disabled),.mat-datepicker-content .mat-calendar-next-button:not(.mat-mdc-button-disabled){color:var(--mat-datepicker-calendar-navigation-button-icon-color, var(--mat-sys-on-surface-variant))}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px 0;color:var(--mat-datepicker-calendar-header-text-color, var(--mat-sys-on-surface-variant));font-size:var(--mat-datepicker-calendar-header-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-datepicker-calendar-header-text-weight, var(--mat-sys-title-small-weight))}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider::after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px;background:var(--mat-datepicker-calendar-header-divider-color, transparent)}.mat-calendar-body-cell-content::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px)*-1)}.mat-calendar-body-cell:focus .mat-focus-indicator::before{content:""}']
+      styles: ['.mat-calendar{display:block;line-height:normal;font-family:var(--mat-datepicker-calendar-text-font, var(--mat-app-body-medium-font));font-size:var(--mat-datepicker-calendar-text-size, var(--mat-app-body-medium-size))}.mat-calendar-header{padding:8px 8px 0 8px}.mat-calendar-content{padding:0 8px 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px;font-size:var(--mat-datepicker-calendar-period-button-text-size, var(--mat-app-title-small-size));font-weight:var(--mat-datepicker-calendar-period-button-text-weight, var(--mat-app-title-small-weight));--mdc-text-button-label-text-color:var(--mat-datepicker-calendar-period-button-text-color, var(--mat-app-on-surface-variant))}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle;fill:var(--mat-datepicker-calendar-period-button-icon-color, var(--mat-app-on-surface-variant))}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}.cdk-high-contrast-active .mat-calendar-arrow{fill:CanvasText}.mat-datepicker-content .mat-calendar-previous-button:not(.mat-mdc-button-disabled),.mat-datepicker-content .mat-calendar-next-button:not(.mat-mdc-button-disabled){color:var(--mat-datepicker-calendar-navigation-button-icon-color, var(--mat-app-on-surface-variant))}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px 0;color:var(--mat-datepicker-calendar-header-text-color, var(--mat-app-on-surface-variant));font-size:var(--mat-datepicker-calendar-header-text-size, var(--mat-app-title-small-size));font-weight:var(--mat-datepicker-calendar-header-text-weight, var(--mat-app-title-small-weight))}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider::after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px;background:var(--mat-datepicker-calendar-header-divider-color)}.mat-calendar-body-cell-content::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px)*-1)}.mat-calendar-body-cell:focus .mat-focus-indicator::before{content:""}']
     }]
-  }], () => [], {
+  }], () => [{
+    type: MatDatepickerIntl
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }, {
+    type: ChangeDetectorRef
+  }], {
     headerComponent: [{
       type: Input
     }],
@@ -3441,6 +4422,7 @@ var matDatepickerAnimations = {
     transition("void => *", animate("120ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)"))
   ])
 };
+var datepickerUid = 0;
 var MAT_DATEPICKER_SCROLL_STRATEGY = new InjectionToken("mat-datepicker-scroll-strategy", {
   providedIn: "root",
   factory: () => {
@@ -3457,54 +4439,16 @@ var MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER = {
   useFactory: MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY
 };
 var MatDatepickerContent = class _MatDatepickerContent {
-  _elementRef = inject(ElementRef);
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  _globalModel = inject(MatDateSelectionModel);
-  _dateAdapter = inject(DateAdapter);
-  _rangeSelectionStrategy = inject(MAT_DATE_RANGE_SELECTION_STRATEGY, {
-    optional: true
-  });
-  _subscriptions = new import_rxjs.Subscription();
-  _model;
-  /** Reference to the internal calendar component. */
-  _calendar;
-  /**
-   * Theme color of the internal calendar. This API is supported in M2 themes
-   * only, it has no effect in M3 themes. For color customization in M3, see https://material.angular.io/components/datepicker/styling.
-   *
-   * For information on applying color variants in M3, see
-   * https://material.angular.io/guide/material-2-theming#optional-add-backwards-compatibility-styles-for-color-variants
-   */
-  color;
-  /** Reference to the datepicker that created the overlay. */
-  datepicker;
-  /** Start of the comparison range. */
-  comparisonStart;
-  /** End of the comparison range. */
-  comparisonEnd;
-  /** ARIA Accessible name of the `<input matStartDate/>` */
-  startDateAccessibleName;
-  /** ARIA Accessible name of the `<input matEndDate/>` */
-  endDateAccessibleName;
-  /** Whether the datepicker is above or below the input. */
-  _isAbove;
-  /** Current state of the animation. */
-  _animationState;
-  /** Emits when an animation has finished. */
-  _animationDone = new import_rxjs.Subject();
-  /** Whether there is an in-progress animation. */
-  _isAnimating = false;
-  /** Text for the close button. */
-  _closeButtonText;
-  /** Whether the close button currently has focus. */
-  _closeButtonFocused;
-  /** Portal with projected action buttons. */
-  _actionsPortal = null;
-  /** Id of the label for the `role="dialog"` element. */
-  _dialogLabelId;
-  constructor() {
-    inject(_CdkPrivateStyleLoader).load(_VisuallyHiddenLoader);
-    const intl = inject(MatDatepickerIntl);
+  constructor(_elementRef, _changeDetectorRef, _globalModel, _dateAdapter, _rangeSelectionStrategy, intl) {
+    this._elementRef = _elementRef;
+    this._changeDetectorRef = _changeDetectorRef;
+    this._globalModel = _globalModel;
+    this._dateAdapter = _dateAdapter;
+    this._rangeSelectionStrategy = _rangeSelectionStrategy;
+    this._subscriptions = new import_rxjs.Subscription();
+    this._animationDone = new import_rxjs.Subject();
+    this._isAnimating = false;
+    this._actionsPortal = null;
     this._closeButtonText = intl.closeCalendarLabel;
   }
   ngOnInit() {
@@ -3570,97 +4514,101 @@ var MatDatepickerContent = class _MatDatepickerContent {
       this._changeDetectorRef.detectChanges();
     }
   }
-  static ɵfac = function MatDatepickerContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerContent)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatDatepickerContent,
-    selectors: [["mat-datepicker-content"]],
-    viewQuery: function MatDatepickerContent_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(MatCalendar, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._calendar = _t.first);
-      }
-    },
-    hostAttrs: [1, "mat-datepicker-content"],
-    hostVars: 5,
-    hostBindings: function MatDatepickerContent_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵsyntheticHostListener("@transformPanel.start", function MatDatepickerContent_animation_transformPanel_start_HostBindingHandler($event) {
-          return ctx._handleAnimationEvent($event);
-        })("@transformPanel.done", function MatDatepickerContent_animation_transformPanel_done_HostBindingHandler($event) {
-          return ctx._handleAnimationEvent($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵsyntheticHostProperty("@transformPanel", ctx._animationState);
-        ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
-        ɵɵclassProp("mat-datepicker-content-touch", ctx.datepicker.touchUi);
-      }
-    },
-    inputs: {
-      color: "color"
-    },
-    exportAs: ["matDatepickerContent"],
-    standalone: true,
-    features: [ɵɵStandaloneFeature],
-    decls: 5,
-    vars: 27,
-    consts: [["cdkTrapFocus", "", "role", "dialog", 1, "mat-datepicker-content-container"], [3, "yearSelected", "monthSelected", "viewChanged", "_userSelection", "_userDragDrop", "id", "startAt", "startView", "minDate", "maxDate", "dateFilter", "headerComponent", "selected", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName"], [3, "cdkPortalOutlet"], ["type", "button", "mat-raised-button", "", 1, "mat-datepicker-close-button", 3, "focus", "blur", "click", "color"]],
-    template: function MatDatepickerContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵelementStart(0, "div", 0)(1, "mat-calendar", 1);
-        ɵɵlistener("yearSelected", function MatDatepickerContent_Template_mat_calendar_yearSelected_1_listener($event) {
-          return ctx.datepicker._selectYear($event);
-        })("monthSelected", function MatDatepickerContent_Template_mat_calendar_monthSelected_1_listener($event) {
-          return ctx.datepicker._selectMonth($event);
-        })("viewChanged", function MatDatepickerContent_Template_mat_calendar_viewChanged_1_listener($event) {
-          return ctx.datepicker._viewChanged($event);
-        })("_userSelection", function MatDatepickerContent_Template_mat_calendar__userSelection_1_listener($event) {
-          return ctx._handleUserSelection($event);
-        })("_userDragDrop", function MatDatepickerContent_Template_mat_calendar__userDragDrop_1_listener($event) {
-          return ctx._handleUserDragDrop($event);
-        });
-        ɵɵelementEnd();
-        ɵɵtemplate(2, MatDatepickerContent_ng_template_2_Template, 0, 0, "ng-template", 2);
-        ɵɵelementStart(3, "button", 3);
-        ɵɵlistener("focus", function MatDatepickerContent_Template_button_focus_3_listener() {
-          return ctx._closeButtonFocused = true;
-        })("blur", function MatDatepickerContent_Template_button_blur_3_listener() {
-          return ctx._closeButtonFocused = false;
-        })("click", function MatDatepickerContent_Template_button_click_3_listener() {
-          return ctx.datepicker.close();
-        });
-        ɵɵtext(4);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        let tmp_3_0;
-        ɵɵclassProp("mat-datepicker-content-container-with-custom-header", ctx.datepicker.calendarHeaderComponent)("mat-datepicker-content-container-with-actions", ctx._actionsPortal);
-        ɵɵattribute("aria-modal", true)("aria-labelledby", (tmp_3_0 = ctx._dialogLabelId) !== null && tmp_3_0 !== void 0 ? tmp_3_0 : void 0);
-        ɵɵadvance();
-        ɵɵclassMap(ctx.datepicker.panelClass);
-        ɵɵproperty("id", ctx.datepicker.id)("startAt", ctx.datepicker.startAt)("startView", ctx.datepicker.startView)("minDate", ctx.datepicker._getMinDate())("maxDate", ctx.datepicker._getMaxDate())("dateFilter", ctx.datepicker._getDateFilter())("headerComponent", ctx.datepicker.calendarHeaderComponent)("selected", ctx._getSelected())("dateClass", ctx.datepicker.dateClass)("comparisonStart", ctx.comparisonStart)("comparisonEnd", ctx.comparisonEnd)("@fadeInCalendar", "enter")("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
-        ɵɵadvance();
-        ɵɵproperty("cdkPortalOutlet", ctx._actionsPortal);
-        ɵɵadvance();
-        ɵɵclassProp("cdk-visually-hidden", !ctx._closeButtonFocused);
-        ɵɵproperty("color", ctx.color || "primary");
-        ɵɵadvance();
-        ɵɵtextInterpolate(ctx._closeButtonText);
-      }
-    },
-    dependencies: [CdkTrapFocus, MatCalendar, CdkPortalOutlet, MatButton],
-    styles: [".mat-datepicker-content{display:block;border-radius:4px;background-color:var(--mat-datepicker-calendar-container-background-color, var(--mat-sys-surface-container-high));color:var(--mat-datepicker-calendar-container-text-color, var(--mat-sys-on-surface));box-shadow:var(--mat-datepicker-calendar-container-elevation-shadow, 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12));border-radius:var(--mat-datepicker-calendar-container-shape, var(--mat-sys-corner-large))}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.mat-datepicker-content-touch{display:block;max-height:80vh;box-shadow:var(--mat-datepicker-calendar-container-touch-elevation-shadow, 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12));border-radius:var(--mat-datepicker-calendar-container-touch-shape, var(--mat-sys-corner-extra-large));position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:788px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:80vh}}@media all and (orientation: portrait){.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}"],
-    encapsulation: 2,
-    data: {
-      animation: [matDatepickerAnimations.transformPanel, matDatepickerAnimations.fadeInCalendar]
-    },
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatDatepickerContent_Factory(t) {
+      return new (t || _MatDatepickerContent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(MatDateSelectionModel), ɵɵdirectiveInject(DateAdapter), ɵɵdirectiveInject(MAT_DATE_RANGE_SELECTION_STRATEGY, 8), ɵɵdirectiveInject(MatDatepickerIntl));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatDatepickerContent,
+      selectors: [["mat-datepicker-content"]],
+      viewQuery: function MatDatepickerContent_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(MatCalendar, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._calendar = _t.first);
+        }
+      },
+      hostAttrs: [1, "mat-datepicker-content"],
+      hostVars: 5,
+      hostBindings: function MatDatepickerContent_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵsyntheticHostListener("@transformPanel.start", function MatDatepickerContent_animation_transformPanel_start_HostBindingHandler($event) {
+            return ctx._handleAnimationEvent($event);
+          })("@transformPanel.done", function MatDatepickerContent_animation_transformPanel_done_HostBindingHandler($event) {
+            return ctx._handleAnimationEvent($event);
+          });
+        }
+        if (rf & 2) {
+          ɵɵsyntheticHostProperty("@transformPanel", ctx._animationState);
+          ɵɵclassMap(ctx.color ? "mat-" + ctx.color : "");
+          ɵɵclassProp("mat-datepicker-content-touch", ctx.datepicker.touchUi);
+        }
+      },
+      inputs: {
+        color: "color"
+      },
+      exportAs: ["matDatepickerContent"],
+      standalone: true,
+      features: [ɵɵStandaloneFeature],
+      decls: 5,
+      vars: 27,
+      consts: [["cdkTrapFocus", "", "role", "dialog", 1, "mat-datepicker-content-container"], [3, "yearSelected", "monthSelected", "viewChanged", "_userSelection", "_userDragDrop", "id", "startAt", "startView", "minDate", "maxDate", "dateFilter", "headerComponent", "selected", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName"], [3, "cdkPortalOutlet"], ["type", "button", "mat-raised-button", "", 1, "mat-datepicker-close-button", 3, "focus", "blur", "click", "color"]],
+      template: function MatDatepickerContent_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵelementStart(0, "div", 0)(1, "mat-calendar", 1);
+          ɵɵlistener("yearSelected", function MatDatepickerContent_Template_mat_calendar_yearSelected_1_listener($event) {
+            return ctx.datepicker._selectYear($event);
+          })("monthSelected", function MatDatepickerContent_Template_mat_calendar_monthSelected_1_listener($event) {
+            return ctx.datepicker._selectMonth($event);
+          })("viewChanged", function MatDatepickerContent_Template_mat_calendar_viewChanged_1_listener($event) {
+            return ctx.datepicker._viewChanged($event);
+          })("_userSelection", function MatDatepickerContent_Template_mat_calendar__userSelection_1_listener($event) {
+            return ctx._handleUserSelection($event);
+          })("_userDragDrop", function MatDatepickerContent_Template_mat_calendar__userDragDrop_1_listener($event) {
+            return ctx._handleUserDragDrop($event);
+          });
+          ɵɵelementEnd();
+          ɵɵtemplate(2, MatDatepickerContent_ng_template_2_Template, 0, 0, "ng-template", 2);
+          ɵɵelementStart(3, "button", 3);
+          ɵɵlistener("focus", function MatDatepickerContent_Template_button_focus_3_listener() {
+            return ctx._closeButtonFocused = true;
+          })("blur", function MatDatepickerContent_Template_button_blur_3_listener() {
+            return ctx._closeButtonFocused = false;
+          })("click", function MatDatepickerContent_Template_button_click_3_listener() {
+            return ctx.datepicker.close();
+          });
+          ɵɵtext(4);
+          ɵɵelementEnd()();
+        }
+        if (rf & 2) {
+          let tmp_3_0;
+          ɵɵclassProp("mat-datepicker-content-container-with-custom-header", ctx.datepicker.calendarHeaderComponent)("mat-datepicker-content-container-with-actions", ctx._actionsPortal);
+          ɵɵattribute("aria-modal", true)("aria-labelledby", (tmp_3_0 = ctx._dialogLabelId) !== null && tmp_3_0 !== void 0 ? tmp_3_0 : void 0);
+          ɵɵadvance();
+          ɵɵclassMap(ctx.datepicker.panelClass);
+          ɵɵproperty("id", ctx.datepicker.id)("startAt", ctx.datepicker.startAt)("startView", ctx.datepicker.startView)("minDate", ctx.datepicker._getMinDate())("maxDate", ctx.datepicker._getMaxDate())("dateFilter", ctx.datepicker._getDateFilter())("headerComponent", ctx.datepicker.calendarHeaderComponent)("selected", ctx._getSelected())("dateClass", ctx.datepicker.dateClass)("comparisonStart", ctx.comparisonStart)("comparisonEnd", ctx.comparisonEnd)("@fadeInCalendar", "enter")("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
+          ɵɵadvance();
+          ɵɵproperty("cdkPortalOutlet", ctx._actionsPortal);
+          ɵɵadvance();
+          ɵɵclassProp("cdk-visually-hidden", !ctx._closeButtonFocused);
+          ɵɵproperty("color", ctx.color || "primary");
+          ɵɵadvance();
+          ɵɵtextInterpolate(ctx._closeButtonText);
+        }
+      },
+      dependencies: [CdkTrapFocus, MatCalendar, CdkPortalOutlet, MatButton],
+      styles: [".mat-datepicker-content{display:block;border-radius:4px;background-color:var(--mat-datepicker-calendar-container-background-color, var(--mat-app-surface-container-high));color:var(--mat-datepicker-calendar-container-text-color, var(--mat-app-on-surface));box-shadow:var(--mat-datepicker-calendar-container-elevation-shadow);border-radius:var(--mat-datepicker-calendar-container-shape, var(--mat-app-corner-large))}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.mat-datepicker-content-touch{display:block;max-height:80vh;box-shadow:var(--mat-datepicker-calendar-container-touch-elevation-shadow);border-radius:var(--mat-datepicker-calendar-container-touch-shape, var(--mat-app-corner-extra-large));position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:788px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:80vh}}@media all and (orientation: portrait){.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}"],
+      encapsulation: 2,
+      data: {
+        animation: [matDatepickerAnimations.transformPanel, matDatepickerAnimations.fadeInCalendar]
+      },
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerContent, [{
@@ -3679,6 +4627,7 @@ var MatDatepickerContent = class _MatDatepickerContent {
       exportAs: "matDatepickerContent",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [CdkTrapFocus, MatCalendar, CdkPortalOutlet, MatButton],
       template: `<div
   cdkTrapFocus
@@ -3724,9 +4673,27 @@ var MatDatepickerContent = class _MatDatepickerContent {
     (click)="datepicker.close()">{{ _closeButtonText }}</button>
 </div>
 `,
-      styles: [".mat-datepicker-content{display:block;border-radius:4px;background-color:var(--mat-datepicker-calendar-container-background-color, var(--mat-sys-surface-container-high));color:var(--mat-datepicker-calendar-container-text-color, var(--mat-sys-on-surface));box-shadow:var(--mat-datepicker-calendar-container-elevation-shadow, 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12));border-radius:var(--mat-datepicker-calendar-container-shape, var(--mat-sys-corner-large))}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.mat-datepicker-content-touch{display:block;max-height:80vh;box-shadow:var(--mat-datepicker-calendar-container-touch-elevation-shadow, 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12));border-radius:var(--mat-datepicker-calendar-container-touch-shape, var(--mat-sys-corner-extra-large));position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:788px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:80vh}}@media all and (orientation: portrait){.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}"]
+      styles: [".mat-datepicker-content{display:block;border-radius:4px;background-color:var(--mat-datepicker-calendar-container-background-color, var(--mat-app-surface-container-high));color:var(--mat-datepicker-calendar-container-text-color, var(--mat-app-on-surface));box-shadow:var(--mat-datepicker-calendar-container-elevation-shadow);border-radius:var(--mat-datepicker-calendar-container-shape, var(--mat-app-corner-large))}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.mat-datepicker-content-touch{display:block;max-height:80vh;box-shadow:var(--mat-datepicker-calendar-container-touch-elevation-shadow);border-radius:var(--mat-datepicker-calendar-container-touch-shape, var(--mat-app-corner-extra-large));position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:788px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:80vh}}@media all and (orientation: portrait){.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}"]
     }]
-  }], () => [], {
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: ChangeDetectorRef
+  }, {
+    type: MatDateSelectionModel
+  }, {
+    type: DateAdapter
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_RANGE_SELECTION_STRATEGY]
+    }]
+  }, {
+    type: MatDatepickerIntl
+  }], {
     _calendar: [{
       type: ViewChild,
       args: [MatCalendar]
@@ -3737,20 +4704,6 @@ var MatDatepickerContent = class _MatDatepickerContent {
   });
 })();
 var MatDatepickerBase = class _MatDatepickerBase {
-  _overlay = inject(Overlay);
-  _viewContainerRef = inject(ViewContainerRef);
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dir = inject(Directionality, {
-    optional: true
-  });
-  _model = inject(MatDateSelectionModel);
-  _scrollStrategy = inject(MAT_DATEPICKER_SCROLL_STRATEGY);
-  _inputStateChanges = import_rxjs.Subscription.EMPTY;
-  _document = inject(DOCUMENT);
-  /** An input indicating the type of the custom header component for the calendar, if set. */
-  calendarHeaderComponent;
   /** The date to open the calendar to initially. */
   get startAt() {
     return this._startAt || (this.datepickerInput ? this.datepickerInput.getStartValue() : null);
@@ -3758,15 +4711,12 @@ var MatDatepickerBase = class _MatDatepickerBase {
   set startAt(value) {
     this._startAt = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
   }
-  _startAt;
-  /** The view that the calendar should start in. */
-  startView = "month";
   /**
    * Theme color of the datepicker's calendar. This API is supported in M2 themes only, it
-   * has no effect in M3 themes. For color customization in M3, see https://material.angular.io/components/datepicker/styling.
+   * has no effect in M3 themes.
    *
    * For information on applying color variants in M3, see
-   * https://material.angular.io/guide/material-2-theming#optional-add-backwards-compatibility-styles-for-color-variants
+   * https://material.angular.io/guide/theming#using-component-color-variants.
    */
   get color() {
     return this._color || (this.datepickerInput ? this.datepickerInput.getThemePalette() : void 0);
@@ -3774,12 +4724,6 @@ var MatDatepickerBase = class _MatDatepickerBase {
   set color(value) {
     this._color = value;
   }
-  _color;
-  /**
-   * Whether the calendar UI is in touch mode. In touch mode the calendar opens in a dialog rather
-   * than a dropdown and elements have more padding to allow for bigger touch targets.
-   */
-  touchUi = false;
   /** Whether the datepicker pop-up should be disabled. */
   get disabled() {
     return this._disabled === void 0 && this.datepickerInput ? this.datepickerInput.disabled : !!this._disabled;
@@ -3790,37 +4734,6 @@ var MatDatepickerBase = class _MatDatepickerBase {
       this.stateChanges.next(void 0);
     }
   }
-  _disabled;
-  /** Preferred position of the datepicker in the X axis. */
-  xPosition = "start";
-  /** Preferred position of the datepicker in the Y axis. */
-  yPosition = "below";
-  /**
-   * Whether to restore focus to the previously-focused element when the calendar is closed.
-   * Note that automatic focus restoration is an accessibility feature and it is recommended that
-   * you provide your own equivalent, if you decide to turn it off.
-   */
-  restoreFocus = true;
-  /**
-   * Emits selected year in multiyear view.
-   * This doesn't imply a change on the selected date.
-   */
-  yearSelected = new EventEmitter();
-  /**
-   * Emits selected month in year view.
-   * This doesn't imply a change on the selected date.
-   */
-  monthSelected = new EventEmitter();
-  /**
-   * Emits when the current view changes.
-   */
-  viewChanged = new EventEmitter(true);
-  /** Function that can be used to add custom CSS classes to dates. */
-  dateClass;
-  /** Emits when the datepicker has been opened. */
-  openedStream = new EventEmitter();
-  /** Emits when the datepicker has been closed. */
-  closedStream = new EventEmitter();
   /** Classes to be passed to the date picker panel. */
   get panelClass() {
     return this._panelClass;
@@ -3828,7 +4741,6 @@ var MatDatepickerBase = class _MatDatepickerBase {
   set panelClass(value) {
     this._panelClass = coerceStringArray(value);
   }
-  _panelClass;
   /** Whether the calendar is open. */
   get opened() {
     return this._opened;
@@ -3840,9 +4752,6 @@ var MatDatepickerBase = class _MatDatepickerBase {
       this.close();
     }
   }
-  _opened = false;
-  /** The id for the datepicker calendar. */
-  id = inject(_IdGenerator).getId("mat-datepicker-");
   /** The minimum selectable date. */
   _getMinDate() {
     return this.datepickerInput && this.datepickerInput.min;
@@ -3854,26 +4763,35 @@ var MatDatepickerBase = class _MatDatepickerBase {
   _getDateFilter() {
     return this.datepickerInput && this.datepickerInput.dateFilter;
   }
-  /** A reference to the overlay into which we've rendered the calendar. */
-  _overlayRef;
-  /** Reference to the component instance rendered in the overlay. */
-  _componentRef;
-  /** The element that was focused before the datepicker was opened. */
-  _focusedElementBeforeOpen = null;
-  /** Unique class that will be added to the backdrop so that the test harnesses can look it up. */
-  _backdropHarnessClass = `${this.id}-backdrop`;
-  /** Currently-registered actions portal. */
-  _actionsPortal;
-  /** The input element this datepicker is associated with. */
-  datepickerInput;
-  /** Emits when the datepicker's state changes. */
-  stateChanges = new import_rxjs.Subject();
-  _injector = inject(Injector);
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  constructor() {
+  constructor(_overlay, _unusedNgZone, _viewContainerRef, scrollStrategy, _dateAdapter, _dir, _model) {
+    this._overlay = _overlay;
+    this._viewContainerRef = _viewContainerRef;
+    this._dateAdapter = _dateAdapter;
+    this._dir = _dir;
+    this._model = _model;
+    this._inputStateChanges = import_rxjs.Subscription.EMPTY;
+    this._document = inject(DOCUMENT);
+    this.startView = "month";
+    this.touchUi = false;
+    this.xPosition = "start";
+    this.yPosition = "below";
+    this.restoreFocus = true;
+    this.yearSelected = new EventEmitter();
+    this.monthSelected = new EventEmitter();
+    this.viewChanged = new EventEmitter(true);
+    this.openedStream = new EventEmitter();
+    this.closedStream = new EventEmitter();
+    this._opened = false;
+    this.id = `mat-datepicker-${datepickerUid++}`;
+    this._focusedElementBeforeOpen = null;
+    this._backdropHarnessClass = `${this.id}-backdrop`;
+    this.stateChanges = new import_rxjs.Subject();
+    this._injector = inject(Injector);
+    this._changeDetectorRef = inject(ChangeDetectorRef);
     if (!this._dateAdapter && (typeof ngDevMode === "undefined" || ngDevMode)) {
       throw createMissingDateImplError("DateAdapter");
     }
+    this._scrollStrategy = scrollStrategy;
     this._model.selectionChanged.subscribe(() => {
       this._changeDetectorRef.markForCheck();
     });
@@ -4014,7 +4932,7 @@ var MatDatepickerBase = class _MatDatepickerBase {
       positionStrategy: isDialog ? this._getDialogStrategy() : this._getDropdownStrategy(),
       hasBackdrop: true,
       backdropClass: [isDialog ? "cdk-overlay-dark-backdrop" : "mat-overlay-transparent-backdrop", this._backdropHarnessClass],
-      direction: this._dir || "ltr",
+      direction: this._dir,
       scrollStrategy: isDialog ? this._overlay.scrollStrategies.block() : this._scrollStrategy(),
       panelClass: `mat-datepicker-${isDialog ? "dialog" : "popup"}`
     }));
@@ -4091,40 +5009,67 @@ var MatDatepickerBase = class _MatDatepickerBase {
       return event.keyCode === ESCAPE && !hasModifierKey(event) || this.datepickerInput && hasModifierKey(event, "altKey") && event.keyCode === UP_ARROW && ctrlShiftMetaModifiers.every((modifier) => !hasModifierKey(event, modifier));
     })));
   }
-  static ɵfac = function MatDatepickerBase_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerBase)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDatepickerBase,
-    inputs: {
-      calendarHeaderComponent: "calendarHeaderComponent",
-      startAt: "startAt",
-      startView: "startView",
-      color: "color",
-      touchUi: [2, "touchUi", "touchUi", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      xPosition: "xPosition",
-      yPosition: "yPosition",
-      restoreFocus: [2, "restoreFocus", "restoreFocus", booleanAttribute],
-      dateClass: "dateClass",
-      panelClass: "panelClass",
-      opened: [2, "opened", "opened", booleanAttribute]
-    },
-    outputs: {
-      yearSelected: "yearSelected",
-      monthSelected: "monthSelected",
-      viewChanged: "viewChanged",
-      openedStream: "opened",
-      closedStream: "closed"
-    },
-    standalone: true,
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature]
-  });
+  static {
+    this.ɵfac = function MatDatepickerBase_Factory(t) {
+      return new (t || _MatDatepickerBase)(ɵɵdirectiveInject(Overlay), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(MAT_DATEPICKER_SCROLL_STRATEGY), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(MatDateSelectionModel));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDatepickerBase,
+      inputs: {
+        calendarHeaderComponent: "calendarHeaderComponent",
+        startAt: "startAt",
+        startView: "startView",
+        color: "color",
+        touchUi: [2, "touchUi", "touchUi", booleanAttribute],
+        disabled: [2, "disabled", "disabled", booleanAttribute],
+        xPosition: "xPosition",
+        yPosition: "yPosition",
+        restoreFocus: [2, "restoreFocus", "restoreFocus", booleanAttribute],
+        dateClass: "dateClass",
+        panelClass: "panelClass",
+        opened: [2, "opened", "opened", booleanAttribute]
+      },
+      outputs: {
+        yearSelected: "yearSelected",
+        monthSelected: "monthSelected",
+        viewChanged: "viewChanged",
+        openedStream: "opened",
+        closedStream: "closed"
+      },
+      features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature]
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerBase, [{
     type: Directive
-  }], () => [], {
+  }], () => [{
+    type: Overlay
+  }, {
+    type: NgZone
+  }, {
+    type: ViewContainerRef
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [MAT_DATEPICKER_SCROLL_STRATEGY]
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: Directionality,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: MatDateSelectionModel
+  }], {
     calendarHeaderComponent: [{
       type: Input
     }],
@@ -4193,28 +5138,32 @@ var MatDatepickerBase = class _MatDatepickerBase {
   });
 })();
 var MatDatepicker = class _MatDatepicker extends MatDatepickerBase {
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵMatDatepicker_BaseFactory;
-    return function MatDatepicker_Factory(__ngFactoryType__) {
-      return (ɵMatDatepicker_BaseFactory || (ɵMatDatepicker_BaseFactory = ɵɵgetInheritedFactory(_MatDatepicker)))(__ngFactoryType__ || _MatDatepicker);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatDatepicker,
-    selectors: [["mat-datepicker"]],
-    exportAs: ["matDatepicker"],
-    standalone: true,
-    features: [ɵɵProvidersFeature([MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER, {
-      provide: MatDatepickerBase,
-      useExisting: _MatDatepicker
-    }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 0,
-    vars: 0,
-    template: function MatDatepicker_Template(rf, ctx) {
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = /* @__PURE__ */ (() => {
+      let ɵMatDatepicker_BaseFactory;
+      return function MatDatepicker_Factory(t) {
+        return (ɵMatDatepicker_BaseFactory || (ɵMatDatepicker_BaseFactory = ɵɵgetInheritedFactory(_MatDatepicker)))(t || _MatDatepicker);
+      };
+    })();
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatDatepicker,
+      selectors: [["mat-datepicker"]],
+      exportAs: ["matDatepicker"],
+      standalone: true,
+      features: [ɵɵProvidersFeature([MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER, {
+        provide: MatDatepickerBase,
+        useExisting: _MatDatepicker
+      }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      decls: 0,
+      vars: 0,
+      template: function MatDatepicker_Template(rf, ctx) {
+      },
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepicker, [{
@@ -4228,15 +5177,12 @@ var MatDatepicker = class _MatDatepicker extends MatDatepickerBase {
       providers: [MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER, {
         provide: MatDatepickerBase,
         useExisting: MatDatepicker
-      }]
+      }],
+      standalone: true
     }]
   }], null, null);
 })();
 var MatDatepickerInputEvent = class {
-  target;
-  targetElement;
-  /** The new value for the target datepicker input. */
-  value;
   constructor(target, targetElement) {
     this.target = target;
     this.targetElement = targetElement;
@@ -4244,15 +5190,6 @@ var MatDatepickerInputEvent = class {
   }
 };
 var MatDatepickerInputBase = class _MatDatepickerInputBase {
-  _elementRef = inject(ElementRef);
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _dateFormats = inject(MAT_DATE_FORMATS, {
-    optional: true
-  });
-  /** Whether the component has been initialized. */
-  _isInitialized;
   /** The value of the input. */
   get value() {
     return this._model ? this._getValueFromModel(this._model.selection) : this._pendingValue;
@@ -4260,7 +5197,6 @@ var MatDatepickerInputBase = class _MatDatepickerInputBase {
   set value(value) {
     this._assignValueProgrammatically(value);
   }
-  _model;
   /** Whether the datepicker-input is disabled. */
   get disabled() {
     return !!this._disabled || this._parentDisabled();
@@ -4276,64 +5212,6 @@ var MatDatepickerInputBase = class _MatDatepickerInputBase {
       element.blur();
     }
   }
-  _disabled;
-  /** Emits when a `change` event is fired on this `<input>`. */
-  dateChange = new EventEmitter();
-  /** Emits when an `input` event is fired on this `<input>`. */
-  dateInput = new EventEmitter();
-  /** Emits when the internal state has changed */
-  stateChanges = new import_rxjs.Subject();
-  _onTouched = () => {
-  };
-  _validatorOnChange = () => {
-  };
-  _cvaOnChange = () => {
-  };
-  _valueChangesSubscription = import_rxjs.Subscription.EMPTY;
-  _localeSubscription = import_rxjs.Subscription.EMPTY;
-  /**
-   * Since the value is kept on the model which is assigned in an Input,
-   * we might get a value before we have a model. This property keeps track
-   * of the value until we have somewhere to assign it.
-   */
-  _pendingValue;
-  /** The form control validator for whether the input parses. */
-  _parseValidator = () => {
-    return this._lastValueValid ? null : {
-      "matDatepickerParse": {
-        "text": this._elementRef.nativeElement.value
-      }
-    };
-  };
-  /** The form control validator for the date filter. */
-  _filterValidator = (control) => {
-    const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
-    return !controlValue || this._matchesFilter(controlValue) ? null : {
-      "matDatepickerFilter": true
-    };
-  };
-  /** The form control validator for the min date. */
-  _minValidator = (control) => {
-    const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
-    const min = this._getMinDate();
-    return !min || !controlValue || this._dateAdapter.compareDate(min, controlValue) <= 0 ? null : {
-      "matDatepickerMin": {
-        "min": min,
-        "actual": controlValue
-      }
-    };
-  };
-  /** The form control validator for the max date. */
-  _maxValidator = (control) => {
-    const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
-    const max = this._getMaxDate();
-    return !max || !controlValue || this._dateAdapter.compareDate(max, controlValue) >= 0 ? null : {
-      "matDatepickerMax": {
-        "max": max,
-        "actual": controlValue
-      }
-    };
-  };
   /** Gets the base validator functions. */
   _getValidators() {
     return [this._parseValidator, this._minValidator, this._maxValidator, this._filterValidator];
@@ -4357,9 +5235,55 @@ var MatDatepickerInputBase = class _MatDatepickerInputBase {
       }
     });
   }
-  /** Whether the last value set on the input was valid. */
-  _lastValueValid = false;
-  constructor() {
+  constructor(_elementRef, _dateAdapter, _dateFormats) {
+    this._elementRef = _elementRef;
+    this._dateAdapter = _dateAdapter;
+    this._dateFormats = _dateFormats;
+    this.dateChange = new EventEmitter();
+    this.dateInput = new EventEmitter();
+    this.stateChanges = new import_rxjs.Subject();
+    this._onTouched = () => {
+    };
+    this._validatorOnChange = () => {
+    };
+    this._cvaOnChange = () => {
+    };
+    this._valueChangesSubscription = import_rxjs.Subscription.EMPTY;
+    this._localeSubscription = import_rxjs.Subscription.EMPTY;
+    this._parseValidator = () => {
+      return this._lastValueValid ? null : {
+        "matDatepickerParse": {
+          "text": this._elementRef.nativeElement.value
+        }
+      };
+    };
+    this._filterValidator = (control) => {
+      const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      return !controlValue || this._matchesFilter(controlValue) ? null : {
+        "matDatepickerFilter": true
+      };
+    };
+    this._minValidator = (control) => {
+      const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const min = this._getMinDate();
+      return !min || !controlValue || this._dateAdapter.compareDate(min, controlValue) <= 0 ? null : {
+        "matDatepickerMin": {
+          "min": min,
+          "actual": controlValue
+        }
+      };
+    };
+    this._maxValidator = (control) => {
+      const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const max = this._getMaxDate();
+      return !max || !controlValue || this._dateAdapter.compareDate(max, controlValue) >= 0 ? null : {
+        "matDatepickerMax": {
+          "max": max,
+          "actual": controlValue
+        }
+      };
+    };
+    this._lastValueValid = false;
     if (typeof ngDevMode === "undefined" || ngDevMode) {
       if (!this._dateAdapter) {
         throw createMissingDateImplError("DateAdapter");
@@ -4368,7 +5292,7 @@ var MatDatepickerInputBase = class _MatDatepickerInputBase {
         throw createMissingDateImplError("MAT_DATE_FORMATS");
       }
     }
-    this._localeSubscription = this._dateAdapter.localeChanges.subscribe(() => {
+    this._localeSubscription = _dateAdapter.localeChanges.subscribe(() => {
       this._assignValueProgrammatically(this.value);
     });
   }
@@ -4485,27 +5409,49 @@ var MatDatepickerInputBase = class _MatDatepickerInputBase {
     const filter2 = this._getDateFilter();
     return !filter2 || filter2(value);
   }
-  static ɵfac = function MatDatepickerInputBase_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerInputBase)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDatepickerInputBase,
-    inputs: {
-      value: "value",
-      disabled: [2, "disabled", "disabled", booleanAttribute]
-    },
-    outputs: {
-      dateChange: "dateChange",
-      dateInput: "dateInput"
-    },
-    standalone: true,
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature]
-  });
+  static {
+    this.ɵfac = function MatDatepickerInputBase_Factory(t) {
+      return new (t || _MatDatepickerInputBase)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDatepickerInputBase,
+      inputs: {
+        value: "value",
+        disabled: [2, "disabled", "disabled", booleanAttribute]
+      },
+      outputs: {
+        dateChange: "dateChange",
+        dateInput: "dateInput"
+      },
+      standalone: true,
+      features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature]
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerInputBase, [{
-    type: Directive
-  }], () => [], {
+    type: Directive,
+    args: [{
+      standalone: true
+    }]
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }], {
     value: [{
       type: Input
     }],
@@ -4551,11 +5497,6 @@ var MAT_DATEPICKER_VALIDATORS = {
   multi: true
 };
 var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBase {
-  _formField = inject(MAT_FORM_FIELD, {
-    optional: true
-  });
-  _closedSubscription = import_rxjs.Subscription.EMPTY;
-  _openedSubscription = import_rxjs.Subscription.EMPTY;
   /** The datepicker that this input is associated with. */
   set matDatepicker(datepicker) {
     if (datepicker) {
@@ -4571,9 +5512,6 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
       this._registerModel(datepicker.registerInput(this));
     }
   }
-  _datepicker;
-  /** The id of the panel owned by this input. */
-  _ariaOwns = signal(null);
   /** The minimum valid date. */
   get min() {
     return this._min;
@@ -4585,7 +5523,6 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
       this._validatorOnChange();
     }
   }
-  _min;
   /** The maximum valid date. */
   get max() {
     return this._max;
@@ -4597,7 +5534,6 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
       this._validatorOnChange();
     }
   }
-  _max;
   /** Function that can be used to filter out dates within the datepicker. */
   get dateFilter() {
     return this._dateFilter;
@@ -4609,11 +5545,12 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
       this._validatorOnChange();
     }
   }
-  _dateFilter;
-  /** The combined form control validator for this input. */
-  _validator;
-  constructor() {
-    super();
+  constructor(elementRef, dateAdapter, dateFormats, _formField) {
+    super(elementRef, dateAdapter, dateFormats);
+    this._formField = _formField;
+    this._closedSubscription = import_rxjs.Subscription.EMPTY;
+    this._openedSubscription = import_rxjs.Subscription.EMPTY;
+    this._ariaOwns = signal(null);
     this._validator = Validators.compose(super._getValidators());
   }
   /**
@@ -4672,44 +5609,48 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
   _shouldHandleChangeEvent(event) {
     return event.source !== this;
   }
-  static ɵfac = function MatDatepickerInput_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerInput)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDatepickerInput,
-    selectors: [["input", "matDatepicker", ""]],
-    hostAttrs: [1, "mat-datepicker-input"],
-    hostVars: 6,
-    hostBindings: function MatDatepickerInput_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("input", function MatDatepickerInput_input_HostBindingHandler($event) {
-          return ctx._onInput($event.target.value);
-        })("change", function MatDatepickerInput_change_HostBindingHandler() {
-          return ctx._onChange();
-        })("blur", function MatDatepickerInput_blur_HostBindingHandler() {
-          return ctx._onBlur();
-        })("keydown", function MatDatepickerInput_keydown_HostBindingHandler($event) {
-          return ctx._onKeydown($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵhostProperty("disabled", ctx.disabled);
-        ɵɵattribute("aria-haspopup", ctx._datepicker ? "dialog" : null)("aria-owns", ctx._ariaOwns())("min", ctx.min ? ctx._dateAdapter.toIso8601(ctx.min) : null)("max", ctx.max ? ctx._dateAdapter.toIso8601(ctx.max) : null)("data-mat-calendar", ctx._datepicker ? ctx._datepicker.id : null);
-      }
-    },
-    inputs: {
-      matDatepicker: "matDatepicker",
-      min: "min",
-      max: "max",
-      dateFilter: [0, "matDatepickerFilter", "dateFilter"]
-    },
-    exportAs: ["matDatepickerInput"],
-    standalone: true,
-    features: [ɵɵProvidersFeature([MAT_DATEPICKER_VALUE_ACCESSOR, MAT_DATEPICKER_VALIDATORS, {
-      provide: MAT_INPUT_VALUE_ACCESSOR,
-      useExisting: _MatDatepickerInput
-    }]), ɵɵInheritDefinitionFeature]
-  });
+  static {
+    this.ɵfac = function MatDatepickerInput_Factory(t) {
+      return new (t || _MatDatepickerInput)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(MAT_FORM_FIELD, 8));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDatepickerInput,
+      selectors: [["input", "matDatepicker", ""]],
+      hostAttrs: [1, "mat-datepicker-input"],
+      hostVars: 6,
+      hostBindings: function MatDatepickerInput_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵlistener("input", function MatDatepickerInput_input_HostBindingHandler($event) {
+            return ctx._onInput($event.target.value);
+          })("change", function MatDatepickerInput_change_HostBindingHandler() {
+            return ctx._onChange();
+          })("blur", function MatDatepickerInput_blur_HostBindingHandler() {
+            return ctx._onBlur();
+          })("keydown", function MatDatepickerInput_keydown_HostBindingHandler($event) {
+            return ctx._onKeydown($event);
+          });
+        }
+        if (rf & 2) {
+          ɵɵhostProperty("disabled", ctx.disabled);
+          ɵɵattribute("aria-haspopup", ctx._datepicker ? "dialog" : null)("aria-owns", ctx._ariaOwns())("min", ctx.min ? ctx._dateAdapter.toIso8601(ctx.min) : null)("max", ctx.max ? ctx._dateAdapter.toIso8601(ctx.max) : null)("data-mat-calendar", ctx._datepicker ? ctx._datepicker.id : null);
+        }
+      },
+      inputs: {
+        matDatepicker: "matDatepicker",
+        min: "min",
+        max: "max",
+        dateFilter: [0, "matDatepickerFilter", "dateFilter"]
+      },
+      exportAs: ["matDatepickerInput"],
+      standalone: true,
+      features: [ɵɵProvidersFeature([MAT_DATEPICKER_VALUE_ACCESSOR, MAT_DATEPICKER_VALIDATORS, {
+        provide: MAT_INPUT_VALUE_ACCESSOR,
+        useExisting: _MatDatepickerInput
+      }]), ɵɵInheritDefinitionFeature]
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerInput, [{
@@ -4735,9 +5676,33 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
         "(blur)": "_onBlur()",
         "(keydown)": "_onKeydown($event)"
       },
-      exportAs: "matDatepickerInput"
+      exportAs: "matDatepickerInput",
+      standalone: true
     }]
-  }], () => [], {
+  }], () => [{
+    type: ElementRef
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_FORM_FIELD]
+    }]
+  }], {
     matDatepicker: [{
       type: Input
     }],
@@ -4754,33 +5719,29 @@ var MatDatepickerInput = class _MatDatepickerInput extends MatDatepickerInputBas
   });
 })();
 var MatDatepickerToggleIcon = class _MatDatepickerToggleIcon {
-  static ɵfac = function MatDatepickerToggleIcon_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerToggleIcon)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDatepickerToggleIcon,
-    selectors: [["", "matDatepickerToggleIcon", ""]],
-    standalone: true
-  });
+  static {
+    this.ɵfac = function MatDatepickerToggleIcon_Factory(t) {
+      return new (t || _MatDatepickerToggleIcon)();
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDatepickerToggleIcon,
+      selectors: [["", "matDatepickerToggleIcon", ""]],
+      standalone: true
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerToggleIcon, [{
     type: Directive,
     args: [{
-      selector: "[matDatepickerToggleIcon]"
+      selector: "[matDatepickerToggleIcon]",
+      standalone: true
     }]
   }], null, null);
 })();
 var MatDatepickerToggle = class _MatDatepickerToggle {
-  _intl = inject(MatDatepickerIntl);
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  _stateChanges = import_rxjs.Subscription.EMPTY;
-  /** Datepicker instance that the button will toggle. */
-  datepicker;
-  /** Tabindex for the toggle. */
-  tabIndex;
-  /** Screen-reader label for the button. */
-  ariaLabel;
   /** Whether the toggle button is disabled. */
   get disabled() {
     if (this._disabled === void 0 && this.datepicker) {
@@ -4791,17 +5752,10 @@ var MatDatepickerToggle = class _MatDatepickerToggle {
   set disabled(value) {
     this._disabled = value;
   }
-  _disabled;
-  /** Whether ripples on the toggle should be disabled. */
-  disableRipple;
-  /** Custom icon set by the consumer. */
-  _customIcon;
-  /** Underlying button element. */
-  _button;
-  constructor() {
-    const defaultTabIndex = inject(new HostAttributeToken("tabindex"), {
-      optional: true
-    });
+  constructor(_intl, _changeDetectorRef, defaultTabIndex) {
+    this._intl = _intl;
+    this._changeDetectorRef = _changeDetectorRef;
+    this._stateChanges = import_rxjs.Subscription.EMPTY;
     const parsedTabIndex = Number(defaultTabIndex);
     this.tabIndex = parsedTabIndex || parsedTabIndex === 0 ? parsedTabIndex : null;
   }
@@ -4829,77 +5783,81 @@ var MatDatepickerToggle = class _MatDatepickerToggle {
     this._stateChanges.unsubscribe();
     this._stateChanges = (0, import_rxjs.merge)(this._intl.changes, datepickerStateChanged, inputStateChanged, datepickerToggled).subscribe(() => this._changeDetectorRef.markForCheck());
   }
-  static ɵfac = function MatDatepickerToggle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerToggle)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatDatepickerToggle,
-    selectors: [["mat-datepicker-toggle"]],
-    contentQueries: function MatDatepickerToggle_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, MatDatepickerToggleIcon, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._customIcon = _t.first);
-      }
-    },
-    viewQuery: function MatDatepickerToggle_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c2, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._button = _t.first);
-      }
-    },
-    hostAttrs: [1, "mat-datepicker-toggle"],
-    hostVars: 8,
-    hostBindings: function MatDatepickerToggle_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function MatDatepickerToggle_click_HostBindingHandler($event) {
-          return ctx._open($event);
-        });
-      }
-      if (rf & 2) {
-        ɵɵattribute("tabindex", null)("data-mat-calendar", ctx.datepicker ? ctx.datepicker.id : null);
-        ɵɵclassProp("mat-datepicker-toggle-active", ctx.datepicker && ctx.datepicker.opened)("mat-accent", ctx.datepicker && ctx.datepicker.color === "accent")("mat-warn", ctx.datepicker && ctx.datepicker.color === "warn");
-      }
-    },
-    inputs: {
-      datepicker: [0, "for", "datepicker"],
-      tabIndex: "tabIndex",
-      ariaLabel: [0, "aria-label", "ariaLabel"],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      disableRipple: "disableRipple"
-    },
-    exportAs: ["matDatepickerToggle"],
-    standalone: true,
-    features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
-    ngContentSelectors: _c4,
-    decls: 4,
-    vars: 7,
-    consts: [["button", ""], ["mat-icon-button", "", "type", "button", 3, "disabled", "disableRipple"], ["viewBox", "0 0 24 24", "width", "24px", "height", "24px", "fill", "currentColor", "focusable", "false", "aria-hidden", "true", 1, "mat-datepicker-toggle-default-icon"], ["d", "M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"]],
-    template: function MatDatepickerToggle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c3);
-        ɵɵelementStart(0, "button", 1, 0);
-        ɵɵtemplate(2, MatDatepickerToggle_Conditional_2_Template, 2, 0, ":svg:svg", 2);
-        ɵɵprojection(3);
-        ɵɵelementEnd();
-      }
-      if (rf & 2) {
-        ɵɵproperty("disabled", ctx.disabled)("disableRipple", ctx.disableRipple);
-        ɵɵattribute("aria-haspopup", ctx.datepicker ? "dialog" : null)("aria-label", ctx.ariaLabel || ctx._intl.openCalendarLabel)("tabindex", ctx.disabled ? -1 : ctx.tabIndex)("aria-expanded", ctx.datepicker ? ctx.datepicker.opened : null);
-        ɵɵadvance(2);
-        ɵɵconditional(!ctx._customIcon ? 2 : -1);
-      }
-    },
-    dependencies: [MatIconButton],
-    styles: [".mat-datepicker-toggle{pointer-events:auto;color:var(--mat-datepicker-toggle-icon-color, var(--mat-sys-on-surface-variant))}.mat-datepicker-toggle-active{color:var(--mat-datepicker-toggle-active-state-icon-color, var(--mat-sys-on-surface-variant))}@media(forced-colors: active){.mat-datepicker-toggle-default-icon{color:CanvasText}}"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatDatepickerToggle_Factory(t) {
+      return new (t || _MatDatepickerToggle)(ɵɵdirectiveInject(MatDatepickerIntl), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵinjectAttribute("tabindex"));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatDatepickerToggle,
+      selectors: [["mat-datepicker-toggle"]],
+      contentQueries: function MatDatepickerToggle_ContentQueries(rf, ctx, dirIndex) {
+        if (rf & 1) {
+          ɵɵcontentQuery(dirIndex, MatDatepickerToggleIcon, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._customIcon = _t.first);
+        }
+      },
+      viewQuery: function MatDatepickerToggle_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(_c22, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._button = _t.first);
+        }
+      },
+      hostAttrs: [1, "mat-datepicker-toggle"],
+      hostVars: 8,
+      hostBindings: function MatDatepickerToggle_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵlistener("click", function MatDatepickerToggle_click_HostBindingHandler($event) {
+            return ctx._open($event);
+          });
+        }
+        if (rf & 2) {
+          ɵɵattribute("tabindex", null)("data-mat-calendar", ctx.datepicker ? ctx.datepicker.id : null);
+          ɵɵclassProp("mat-datepicker-toggle-active", ctx.datepicker && ctx.datepicker.opened)("mat-accent", ctx.datepicker && ctx.datepicker.color === "accent")("mat-warn", ctx.datepicker && ctx.datepicker.color === "warn");
+        }
+      },
+      inputs: {
+        datepicker: [0, "for", "datepicker"],
+        tabIndex: "tabIndex",
+        ariaLabel: [0, "aria-label", "ariaLabel"],
+        disabled: [2, "disabled", "disabled", booleanAttribute],
+        disableRipple: "disableRipple"
+      },
+      exportAs: ["matDatepickerToggle"],
+      standalone: true,
+      features: [ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
+      ngContentSelectors: _c42,
+      decls: 4,
+      vars: 6,
+      consts: [["button", ""], ["mat-icon-button", "", "type", "button", 3, "disabled", "disableRipple"], ["viewBox", "0 0 24 24", "width", "24px", "height", "24px", "fill", "currentColor", "focusable", "false", "aria-hidden", "true", 1, "mat-datepicker-toggle-default-icon"], ["d", "M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"]],
+      template: function MatDatepickerToggle_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c32);
+          ɵɵelementStart(0, "button", 1, 0);
+          ɵɵtemplate(2, MatDatepickerToggle_Conditional_2_Template, 2, 0, ":svg:svg", 2);
+          ɵɵprojection(3);
+          ɵɵelementEnd();
+        }
+        if (rf & 2) {
+          ɵɵproperty("disabled", ctx.disabled)("disableRipple", ctx.disableRipple);
+          ɵɵattribute("aria-haspopup", ctx.datepicker ? "dialog" : null)("aria-label", ctx.ariaLabel || ctx._intl.openCalendarLabel)("tabindex", ctx.disabled ? -1 : ctx.tabIndex);
+          ɵɵadvance(2);
+          ɵɵconditional(!ctx._customIcon ? 2 : -1);
+        }
+      },
+      dependencies: [MatIconButton],
+      styles: [".mat-datepicker-toggle{pointer-events:auto;color:var(--mat-datepicker-toggle-icon-color, var(--mat-app-on-surface-variant))}.mat-datepicker-toggle-active{color:var(--mat-datepicker-toggle-active-state-icon-color, var(--mat-app-on-surface-variant))}.cdk-high-contrast-active .mat-datepicker-toggle-default-icon{color:CanvasText}"],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerToggle, [{
@@ -4922,6 +5880,7 @@ var MatDatepickerToggle = class _MatDatepickerToggle {
       exportAs: "matDatepickerToggle",
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
+      standalone: true,
       imports: [MatIconButton],
       template: `<button
   #button
@@ -4930,7 +5889,6 @@ var MatDatepickerToggle = class _MatDatepickerToggle {
   [attr.aria-haspopup]="datepicker ? 'dialog' : null"
   [attr.aria-label]="ariaLabel || _intl.openCalendarLabel"
   [attr.tabindex]="disabled ? -1 : tabIndex"
-  [attr.aria-expanded]="datepicker ? datepicker.opened : null"
   [disabled]="disabled"
   [disableRipple]="disableRipple">
 
@@ -4950,9 +5908,19 @@ var MatDatepickerToggle = class _MatDatepickerToggle {
   <ng-content select="[matDatepickerToggleIcon]"></ng-content>
 </button>
 `,
-      styles: [".mat-datepicker-toggle{pointer-events:auto;color:var(--mat-datepicker-toggle-icon-color, var(--mat-sys-on-surface-variant))}.mat-datepicker-toggle-active{color:var(--mat-datepicker-toggle-active-state-icon-color, var(--mat-sys-on-surface-variant))}@media(forced-colors: active){.mat-datepicker-toggle-default-icon{color:CanvasText}}"]
+      styles: [".mat-datepicker-toggle{pointer-events:auto;color:var(--mat-datepicker-toggle-icon-color, var(--mat-app-on-surface-variant))}.mat-datepicker-toggle-active{color:var(--mat-datepicker-toggle-active-state-icon-color, var(--mat-app-on-surface-variant))}.cdk-high-contrast-active .mat-datepicker-toggle-default-icon{color:CanvasText}"]
     }]
-  }], () => [], {
+  }], () => [{
+    type: MatDatepickerIntl
+  }, {
+    type: ChangeDetectorRef
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Attribute,
+      args: ["tabindex"]
+    }]
+  }], {
     datepicker: [{
       type: Input,
       args: ["for"]
@@ -4983,33 +5951,562 @@ var MatDatepickerToggle = class _MatDatepickerToggle {
     }]
   });
 })();
+function _computeAriaAccessibleName(element) {
+  return _computeAriaAccessibleNameInternal(element, true);
+}
+function ssrSafeIsElement(node) {
+  return node.nodeType === Node.ELEMENT_NODE;
+}
+function ssrSafeIsHTMLInputElement(node) {
+  return node.nodeName === "INPUT";
+}
+function ssrSafeIsHTMLTextAreaElement(node) {
+  return node.nodeName === "TEXTAREA";
+}
+function _computeAriaAccessibleNameInternal(currentNode, isDirectlyReferenced) {
+  if (ssrSafeIsElement(currentNode) && isDirectlyReferenced) {
+    const labelledbyIds = currentNode.getAttribute?.("aria-labelledby")?.split(/\s+/g) || [];
+    const validIdRefs = labelledbyIds.reduce((validIds, id) => {
+      const elem = document.getElementById(id);
+      if (elem) {
+        validIds.push(elem);
+      }
+      return validIds;
+    }, []);
+    if (validIdRefs.length) {
+      return validIdRefs.map((idRef) => {
+        return _computeAriaAccessibleNameInternal(idRef, false);
+      }).join(" ");
+    }
+  }
+  if (ssrSafeIsElement(currentNode)) {
+    const ariaLabel = currentNode.getAttribute("aria-label")?.trim();
+    if (ariaLabel) {
+      return ariaLabel;
+    }
+  }
+  if (ssrSafeIsHTMLInputElement(currentNode) || ssrSafeIsHTMLTextAreaElement(currentNode)) {
+    if (currentNode.labels?.length) {
+      return Array.from(currentNode.labels).map((x) => _computeAriaAccessibleNameInternal(x, false)).join(" ");
+    }
+    const placeholder = currentNode.getAttribute("placeholder")?.trim();
+    if (placeholder) {
+      return placeholder;
+    }
+    const title = currentNode.getAttribute("title")?.trim();
+    if (title) {
+      return title;
+    }
+  }
+  return (currentNode.textContent || "").replace(/\s+/g, " ").trim();
+}
+var MAT_DATE_RANGE_INPUT_PARENT = new InjectionToken("MAT_DATE_RANGE_INPUT_PARENT");
+var MatDateRangeInputPartBase = class _MatDateRangeInputPartBase extends MatDatepickerInputBase {
+  /** Object used to control when error messages are shown. */
+  get errorStateMatcher() {
+    return this._errorStateTracker.matcher;
+  }
+  set errorStateMatcher(value) {
+    this._errorStateTracker.matcher = value;
+  }
+  /** Whether the input is in an error state. */
+  get errorState() {
+    return this._errorStateTracker.errorState;
+  }
+  set errorState(value) {
+    this._errorStateTracker.errorState = value;
+  }
+  constructor(_rangeInput, _elementRef, _defaultErrorStateMatcher, _injector, _parentForm, _parentFormGroup, dateAdapter, dateFormats) {
+    super(_elementRef, dateAdapter, dateFormats);
+    this._rangeInput = _rangeInput;
+    this._elementRef = _elementRef;
+    this._defaultErrorStateMatcher = _defaultErrorStateMatcher;
+    this._injector = _injector;
+    this._parentForm = _parentForm;
+    this._parentFormGroup = _parentFormGroup;
+    this._dir = inject(Directionality, {
+      optional: true
+    });
+    this._errorStateTracker = new _ErrorStateTracker(this._defaultErrorStateMatcher, null, this._parentFormGroup, this._parentForm, this.stateChanges);
+  }
+  ngOnInit() {
+    const ngControl = this._injector.get(NgControl, null, {
+      optional: true,
+      self: true
+    });
+    if (ngControl) {
+      this.ngControl = ngControl;
+      this._errorStateTracker.ngControl = ngControl;
+    }
+  }
+  ngDoCheck() {
+    if (this.ngControl) {
+      this.updateErrorState();
+    }
+  }
+  /** Gets whether the input is empty. */
+  isEmpty() {
+    return this._elementRef.nativeElement.value.length === 0;
+  }
+  /** Gets the placeholder of the input. */
+  _getPlaceholder() {
+    return this._elementRef.nativeElement.placeholder;
+  }
+  /** Focuses the input. */
+  focus() {
+    this._elementRef.nativeElement.focus();
+  }
+  /** Gets the value that should be used when mirroring the input's size. */
+  getMirrorValue() {
+    const element = this._elementRef.nativeElement;
+    const value = element.value;
+    return value.length > 0 ? value : element.placeholder;
+  }
+  /** Refreshes the error state of the input. */
+  updateErrorState() {
+    this._errorStateTracker.updateErrorState();
+  }
+  /** Handles `input` events on the input element. */
+  _onInput(value) {
+    super._onInput(value);
+    this._rangeInput._handleChildValueChange();
+  }
+  /** Opens the datepicker associated with the input. */
+  _openPopup() {
+    this._rangeInput._openDatepicker();
+  }
+  /** Gets the minimum date from the range input. */
+  _getMinDate() {
+    return this._rangeInput.min;
+  }
+  /** Gets the maximum date from the range input. */
+  _getMaxDate() {
+    return this._rangeInput.max;
+  }
+  /** Gets the date filter function from the range input. */
+  _getDateFilter() {
+    return this._rangeInput.dateFilter;
+  }
+  _parentDisabled() {
+    return this._rangeInput._groupDisabled;
+  }
+  _shouldHandleChangeEvent({
+    source
+  }) {
+    return source !== this._rangeInput._startInput && source !== this._rangeInput._endInput;
+  }
+  _assignValueProgrammatically(value) {
+    super._assignValueProgrammatically(value);
+    const opposite = this === this._rangeInput._startInput ? this._rangeInput._endInput : this._rangeInput._startInput;
+    opposite?._validatorOnChange();
+  }
+  /** return the ARIA accessible name of the input element */
+  _getAccessibleName() {
+    return _computeAriaAccessibleName(this._elementRef.nativeElement);
+  }
+  static {
+    this.ɵfac = function MatDateRangeInputPartBase_Factory(t) {
+      return new (t || _MatDateRangeInputPartBase)(ɵɵdirectiveInject(MAT_DATE_RANGE_INPUT_PARENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ErrorStateMatcher), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgForm, 8), ɵɵdirectiveInject(FormGroupDirective, 8), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDateRangeInputPartBase,
+      inputs: {
+        errorStateMatcher: "errorStateMatcher"
+      },
+      standalone: true,
+      features: [ɵɵInheritDefinitionFeature]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDateRangeInputPartBase, [{
+    type: Directive,
+    args: [{
+      standalone: true
+    }]
+  }], () => [{
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [MAT_DATE_RANGE_INPUT_PARENT]
+    }]
+  }, {
+    type: ElementRef
+  }, {
+    type: ErrorStateMatcher
+  }, {
+    type: Injector
+  }, {
+    type: NgForm,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: FormGroupDirective,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }], {
+    errorStateMatcher: [{
+      type: Input
+    }]
+  });
+})();
+var MatStartDate = class _MatStartDate extends MatDateRangeInputPartBase {
+  constructor(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats) {
+    super(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats);
+    this._startValidator = (control) => {
+      const start = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const end = this._model ? this._model.selection.end : null;
+      return !start || !end || this._dateAdapter.compareDate(start, end) <= 0 ? null : {
+        "matStartDateInvalid": {
+          "end": end,
+          "actual": start
+        }
+      };
+    };
+    this._validator = Validators.compose([...super._getValidators(), this._startValidator]);
+  }
+  _getValueFromModel(modelValue) {
+    return modelValue.start;
+  }
+  _shouldHandleChangeEvent(change) {
+    if (!super._shouldHandleChangeEvent(change)) {
+      return false;
+    } else {
+      return !change.oldValue?.start ? !!change.selection.start : !change.selection.start || !!this._dateAdapter.compareDate(change.oldValue.start, change.selection.start);
+    }
+  }
+  _assignValueToModel(value) {
+    if (this._model) {
+      const range = new DateRange(value, this._model.selection.end);
+      this._model.updateSelection(range, this);
+    }
+  }
+  _formatValue(value) {
+    super._formatValue(value);
+    this._rangeInput._handleChildValueChange();
+  }
+  _onKeydown(event) {
+    const endInput = this._rangeInput._endInput;
+    const element = this._elementRef.nativeElement;
+    const isLtr = this._dir?.value !== "rtl";
+    if ((event.keyCode === RIGHT_ARROW && isLtr || event.keyCode === LEFT_ARROW && !isLtr) && element.selectionStart === element.value.length && element.selectionEnd === element.value.length) {
+      event.preventDefault();
+      endInput._elementRef.nativeElement.setSelectionRange(0, 0);
+      endInput.focus();
+    } else {
+      super._onKeydown(event);
+    }
+  }
+  static {
+    this.ɵfac = function MatStartDate_Factory(t) {
+      return new (t || _MatStartDate)(ɵɵdirectiveInject(MAT_DATE_RANGE_INPUT_PARENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ErrorStateMatcher), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgForm, 8), ɵɵdirectiveInject(FormGroupDirective, 8), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatStartDate,
+      selectors: [["input", "matStartDate", ""]],
+      hostAttrs: ["type", "text", 1, "mat-start-date", "mat-date-range-input-inner"],
+      hostVars: 5,
+      hostBindings: function MatStartDate_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵlistener("input", function MatStartDate_input_HostBindingHandler($event) {
+            return ctx._onInput($event.target.value);
+          })("change", function MatStartDate_change_HostBindingHandler() {
+            return ctx._onChange();
+          })("keydown", function MatStartDate_keydown_HostBindingHandler($event) {
+            return ctx._onKeydown($event);
+          })("blur", function MatStartDate_blur_HostBindingHandler() {
+            return ctx._onBlur();
+          });
+        }
+        if (rf & 2) {
+          ɵɵhostProperty("disabled", ctx.disabled);
+          ɵɵattribute("aria-haspopup", ctx._rangeInput.rangePicker ? "dialog" : null)("aria-owns", ctx._rangeInput._ariaOwns ? ctx._rangeInput._ariaOwns() : (ctx._rangeInput.rangePicker == null ? null : ctx._rangeInput.rangePicker.opened) && ctx._rangeInput.rangePicker.id || null)("min", ctx._getMinDate() ? ctx._dateAdapter.toIso8601(ctx._getMinDate()) : null)("max", ctx._getMaxDate() ? ctx._dateAdapter.toIso8601(ctx._getMaxDate()) : null);
+        }
+      },
+      outputs: {
+        dateChange: "dateChange",
+        dateInput: "dateInput"
+      },
+      standalone: true,
+      features: [ɵɵProvidersFeature([{
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: _MatStartDate,
+        multi: true
+      }, {
+        provide: NG_VALIDATORS,
+        useExisting: _MatStartDate,
+        multi: true
+      }]), ɵɵInheritDefinitionFeature]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStartDate, [{
+    type: Directive,
+    args: [{
+      selector: "input[matStartDate]",
+      host: {
+        "class": "mat-start-date mat-date-range-input-inner",
+        "[disabled]": "disabled",
+        "(input)": "_onInput($event.target.value)",
+        "(change)": "_onChange()",
+        "(keydown)": "_onKeydown($event)",
+        "[attr.aria-haspopup]": '_rangeInput.rangePicker ? "dialog" : null',
+        "[attr.aria-owns]": `_rangeInput._ariaOwns
+        ? _rangeInput._ariaOwns()
+        : (_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null`,
+        "[attr.min]": "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
+        "[attr.max]": "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
+        "(blur)": "_onBlur()",
+        "type": "text"
+      },
+      providers: [{
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: MatStartDate,
+        multi: true
+      }, {
+        provide: NG_VALIDATORS,
+        useExisting: MatStartDate,
+        multi: true
+      }],
+      // These need to be specified explicitly, because some tooling doesn't
+      // seem to pick them up from the base class. See #20932.
+      outputs: ["dateChange", "dateInput"],
+      standalone: true
+    }]
+  }], () => [{
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [MAT_DATE_RANGE_INPUT_PARENT]
+    }]
+  }, {
+    type: ElementRef
+  }, {
+    type: ErrorStateMatcher
+  }, {
+    type: Injector
+  }, {
+    type: NgForm,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: FormGroupDirective,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }], null);
+})();
+var MatEndDate = class _MatEndDate extends MatDateRangeInputPartBase {
+  constructor(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats) {
+    super(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats);
+    this._endValidator = (control) => {
+      const end = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const start = this._model ? this._model.selection.start : null;
+      return !end || !start || this._dateAdapter.compareDate(end, start) >= 0 ? null : {
+        "matEndDateInvalid": {
+          "start": start,
+          "actual": end
+        }
+      };
+    };
+    this._validator = Validators.compose([...super._getValidators(), this._endValidator]);
+  }
+  _getValueFromModel(modelValue) {
+    return modelValue.end;
+  }
+  _shouldHandleChangeEvent(change) {
+    if (!super._shouldHandleChangeEvent(change)) {
+      return false;
+    } else {
+      return !change.oldValue?.end ? !!change.selection.end : !change.selection.end || !!this._dateAdapter.compareDate(change.oldValue.end, change.selection.end);
+    }
+  }
+  _assignValueToModel(value) {
+    if (this._model) {
+      const range = new DateRange(this._model.selection.start, value);
+      this._model.updateSelection(range, this);
+    }
+  }
+  _moveCaretToEndOfStartInput() {
+    const startInput = this._rangeInput._startInput._elementRef.nativeElement;
+    const value = startInput.value;
+    if (value.length > 0) {
+      startInput.setSelectionRange(value.length, value.length);
+    }
+    startInput.focus();
+  }
+  _onKeydown(event) {
+    const element = this._elementRef.nativeElement;
+    const isLtr = this._dir?.value !== "rtl";
+    if (event.keyCode === BACKSPACE && !element.value) {
+      this._moveCaretToEndOfStartInput();
+    } else if ((event.keyCode === LEFT_ARROW && isLtr || event.keyCode === RIGHT_ARROW && !isLtr) && element.selectionStart === 0 && element.selectionEnd === 0) {
+      event.preventDefault();
+      this._moveCaretToEndOfStartInput();
+    } else {
+      super._onKeydown(event);
+    }
+  }
+  static {
+    this.ɵfac = function MatEndDate_Factory(t) {
+      return new (t || _MatEndDate)(ɵɵdirectiveInject(MAT_DATE_RANGE_INPUT_PARENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ErrorStateMatcher), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgForm, 8), ɵɵdirectiveInject(FormGroupDirective, 8), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_DATE_FORMATS, 8));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatEndDate,
+      selectors: [["input", "matEndDate", ""]],
+      hostAttrs: ["type", "text", 1, "mat-end-date", "mat-date-range-input-inner"],
+      hostVars: 5,
+      hostBindings: function MatEndDate_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵlistener("input", function MatEndDate_input_HostBindingHandler($event) {
+            return ctx._onInput($event.target.value);
+          })("change", function MatEndDate_change_HostBindingHandler() {
+            return ctx._onChange();
+          })("keydown", function MatEndDate_keydown_HostBindingHandler($event) {
+            return ctx._onKeydown($event);
+          })("blur", function MatEndDate_blur_HostBindingHandler() {
+            return ctx._onBlur();
+          });
+        }
+        if (rf & 2) {
+          ɵɵhostProperty("disabled", ctx.disabled);
+          ɵɵattribute("aria-haspopup", ctx._rangeInput.rangePicker ? "dialog" : null)("aria-owns", ctx._rangeInput._ariaOwns ? ctx._rangeInput._ariaOwns() : (ctx._rangeInput.rangePicker == null ? null : ctx._rangeInput.rangePicker.opened) && ctx._rangeInput.rangePicker.id || null)("min", ctx._getMinDate() ? ctx._dateAdapter.toIso8601(ctx._getMinDate()) : null)("max", ctx._getMaxDate() ? ctx._dateAdapter.toIso8601(ctx._getMaxDate()) : null);
+        }
+      },
+      outputs: {
+        dateChange: "dateChange",
+        dateInput: "dateInput"
+      },
+      standalone: true,
+      features: [ɵɵProvidersFeature([{
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: _MatEndDate,
+        multi: true
+      }, {
+        provide: NG_VALIDATORS,
+        useExisting: _MatEndDate,
+        multi: true
+      }]), ɵɵInheritDefinitionFeature]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatEndDate, [{
+    type: Directive,
+    args: [{
+      selector: "input[matEndDate]",
+      host: {
+        "class": "mat-end-date mat-date-range-input-inner",
+        "[disabled]": "disabled",
+        "(input)": "_onInput($event.target.value)",
+        "(change)": "_onChange()",
+        "(keydown)": "_onKeydown($event)",
+        "[attr.aria-haspopup]": '_rangeInput.rangePicker ? "dialog" : null',
+        "[attr.aria-owns]": `_rangeInput._ariaOwns
+        ? _rangeInput._ariaOwns()
+        : (_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null`,
+        "[attr.min]": "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
+        "[attr.max]": "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
+        "(blur)": "_onBlur()",
+        "type": "text"
+      },
+      providers: [{
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: MatEndDate,
+        multi: true
+      }, {
+        provide: NG_VALIDATORS,
+        useExisting: MatEndDate,
+        multi: true
+      }],
+      // These need to be specified explicitly, because some tooling doesn't
+      // seem to pick them up from the base class. See #20932.
+      outputs: ["dateChange", "dateInput"],
+      standalone: true
+    }]
+  }], () => [{
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [MAT_DATE_RANGE_INPUT_PARENT]
+    }]
+  }, {
+    type: ElementRef
+  }, {
+    type: ErrorStateMatcher
+  }, {
+    type: Injector
+  }, {
+    type: NgForm,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: FormGroupDirective,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_DATE_FORMATS]
+    }]
+  }], null);
+})();
+var nextUniqueId = 0;
 var MatDateRangeInput = class _MatDateRangeInput {
-  _changeDetectorRef = inject(ChangeDetectorRef);
-  _elementRef = inject(ElementRef);
-  _dateAdapter = inject(DateAdapter, {
-    optional: true
-  });
-  _formField = inject(MAT_FORM_FIELD, {
-    optional: true
-  });
-  _closedSubscription = import_rxjs.Subscription.EMPTY;
-  _openedSubscription = import_rxjs.Subscription.EMPTY;
-  _startInput;
-  _endInput;
   /** Current value of the range input. */
   get value() {
     return this._model ? this._model.selection : null;
   }
-  /** Unique ID for the group. */
-  id = inject(_IdGenerator).getId("mat-date-range-input-");
-  /** Whether the control is focused. */
-  focused = false;
   /** Whether the control's label should float. */
   get shouldLabelFloat() {
     return this.focused || !this.empty;
   }
-  /** Name of the form control. */
-  controlType = "mat-date-range-input";
   /**
    * Implemented as a part of `MatFormFieldControl`.
    * Set the placeholder attribute on `matStartDate` and `matEndDate`.
@@ -5042,9 +6539,6 @@ var MatDateRangeInput = class _MatDateRangeInput {
       this._registerModel(this._model);
     }
   }
-  _rangePicker;
-  /** The id of the panel owned by this input. */
-  _ariaOwns = signal(null);
   /** Whether the input is required. */
   get required() {
     return this._required ?? (this._isTargetRequired(this) || this._isTargetRequired(this._startInput) || this._isTargetRequired(this._endInput)) ?? false;
@@ -5052,7 +6546,6 @@ var MatDateRangeInput = class _MatDateRangeInput {
   set required(value) {
     this._required = value;
   }
-  _required;
   /** Function that can be used to filter out dates within the date range picker. */
   get dateFilter() {
     return this._dateFilter;
@@ -5070,7 +6563,6 @@ var MatDateRangeInput = class _MatDateRangeInput {
       end._validatorOnChange();
     }
   }
-  _dateFilter;
   /** The minimum valid date. */
   get min() {
     return this._min;
@@ -5082,7 +6574,6 @@ var MatDateRangeInput = class _MatDateRangeInput {
       this._revalidate();
     }
   }
-  _min;
   /** The maximum valid date. */
   get max() {
     return this._max;
@@ -5094,7 +6585,6 @@ var MatDateRangeInput = class _MatDateRangeInput {
       this._revalidate();
     }
   }
-  _max;
   /** Whether the input is disabled. */
   get disabled() {
     return this._startInput && this._endInput ? this._startInput.disabled && this._endInput.disabled : this._groupDisabled;
@@ -5105,7 +6595,6 @@ var MatDateRangeInput = class _MatDateRangeInput {
       this.stateChanges.next(void 0);
     }
   }
-  _groupDisabled = false;
   /** Whether the input is in an error state. */
   get errorState() {
     if (this._startInput && this._endInput) {
@@ -5119,40 +6608,31 @@ var MatDateRangeInput = class _MatDateRangeInput {
     const endEmpty = this._endInput ? this._endInput.isEmpty() : false;
     return startEmpty && endEmpty;
   }
-  /** Value for the `aria-describedby` attribute of the inputs. */
-  _ariaDescribedBy = null;
-  /** Date selection model currently registered with the input. */
-  _model;
-  /** Separator text to be shown between the inputs. */
-  separator = "–";
-  /** Start of the comparison range that should be shown in the calendar. */
-  comparisonStart = null;
-  /** End of the comparison range that should be shown in the calendar. */
-  comparisonEnd = null;
-  /**
-   * Implemented as a part of `MatFormFieldControl`.
-   * TODO(crisbeto): change type to `AbstractControlDirective` after #18206 lands.
-   * @docs-private
-   */
-  ngControl;
-  /** Emits when the input's state has changed. */
-  stateChanges = new import_rxjs.Subject();
-  /**
-   * Disable the automatic labeling to avoid issues like #27241.
-   * @docs-private
-   */
-  disableAutomaticLabeling = true;
-  constructor() {
-    if (!this._dateAdapter && (typeof ngDevMode === "undefined" || ngDevMode)) {
+  constructor(_changeDetectorRef, _elementRef, control, _dateAdapter, _formField) {
+    this._changeDetectorRef = _changeDetectorRef;
+    this._elementRef = _elementRef;
+    this._dateAdapter = _dateAdapter;
+    this._formField = _formField;
+    this._closedSubscription = import_rxjs.Subscription.EMPTY;
+    this._openedSubscription = import_rxjs.Subscription.EMPTY;
+    this.id = `mat-date-range-input-${nextUniqueId++}`;
+    this.focused = false;
+    this.controlType = "mat-date-range-input";
+    this._ariaOwns = signal(null);
+    this._groupDisabled = false;
+    this._ariaDescribedBy = null;
+    this.separator = "–";
+    this.comparisonStart = null;
+    this.comparisonEnd = null;
+    this.stateChanges = new import_rxjs.Subject();
+    this.disableAutomaticLabeling = true;
+    if (!_dateAdapter && (typeof ngDevMode === "undefined" || ngDevMode)) {
       throw createMissingDateImplError("DateAdapter");
     }
-    if (this._formField?._elementRef.nativeElement.classList.contains("mat-mdc-form-field")) {
-      this._elementRef.nativeElement.classList.add("mat-mdc-input-element", "mat-mdc-form-field-input-control", "mdc-text-field__input");
+    if (_formField?._elementRef.nativeElement.classList.contains("mat-mdc-form-field")) {
+      _elementRef.nativeElement.classList.add("mat-mdc-input-element", "mat-mdc-form-field-input-control", "mdc-text-field__input");
     }
-    this.ngControl = inject(ControlContainer, {
-      optional: true,
-      self: true
-    });
+    this.ngControl = control;
   }
   /**
    * Implemented as a part of `MatFormFieldControl`.
@@ -5278,78 +6758,96 @@ var MatDateRangeInput = class _MatDateRangeInput {
   _isTargetRequired(target) {
     return target?.ngControl?.control?.hasValidator(Validators.required);
   }
-  static ɵfac = function MatDateRangeInput_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDateRangeInput)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatDateRangeInput,
-    selectors: [["mat-date-range-input"]],
-    hostAttrs: ["role", "group", 1, "mat-date-range-input"],
-    hostVars: 8,
-    hostBindings: function MatDateRangeInput_HostBindings(rf, ctx) {
-      if (rf & 2) {
-        ɵɵattribute("id", ctx.id)("aria-labelledby", ctx._getAriaLabelledby())("aria-describedby", ctx._ariaDescribedBy)("data-mat-calendar", ctx.rangePicker ? ctx.rangePicker.id : null);
-        ɵɵclassProp("mat-date-range-input-hide-placeholders", ctx._shouldHidePlaceholders())("mat-date-range-input-required", ctx.required);
-      }
-    },
-    inputs: {
-      rangePicker: "rangePicker",
-      required: [2, "required", "required", booleanAttribute],
-      dateFilter: "dateFilter",
-      min: "min",
-      max: "max",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      separator: "separator",
-      comparisonStart: "comparisonStart",
-      comparisonEnd: "comparisonEnd"
-    },
-    exportAs: ["matDateRangeInput"],
-    standalone: true,
-    features: [ɵɵProvidersFeature([{
-      provide: MatFormFieldControl,
-      useExisting: _MatDateRangeInput
-    }]), ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
-    ngContentSelectors: _c6,
-    decls: 11,
-    vars: 5,
-    consts: [["cdkMonitorSubtreeFocus", "", 1, "mat-date-range-input-container", 3, "cdkFocusChange"], [1, "mat-date-range-input-wrapper"], ["aria-hidden", "true", 1, "mat-date-range-input-mirror"], [1, "mat-date-range-input-separator"], [1, "mat-date-range-input-wrapper", "mat-date-range-input-end-wrapper"]],
-    template: function MatDateRangeInput_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c5);
-        ɵɵelementStart(0, "div", 0);
-        ɵɵlistener("cdkFocusChange", function MatDateRangeInput_Template_div_cdkFocusChange_0_listener($event) {
-          return ctx._updateFocus($event);
-        });
-        ɵɵelementStart(1, "div", 1);
-        ɵɵprojection(2);
-        ɵɵelementStart(3, "span", 2);
-        ɵɵtext(4);
-        ɵɵelementEnd()();
-        ɵɵelementStart(5, "span", 3);
-        ɵɵtext(6);
-        ɵɵelementEnd();
-        ɵɵelementStart(7, "div", 4);
-        ɵɵprojection(8, 1);
-        ɵɵelementStart(9, "span", 2);
-        ɵɵtext(10);
-        ɵɵelementEnd()()();
-      }
-      if (rf & 2) {
-        ɵɵadvance(4);
-        ɵɵtextInterpolate(ctx._getInputMirrorValue("start"));
-        ɵɵadvance();
-        ɵɵclassProp("mat-date-range-input-separator-hidden", ctx._shouldHideSeparator());
-        ɵɵadvance();
-        ɵɵtextInterpolate(ctx.separator);
-        ɵɵadvance(4);
-        ɵɵtextInterpolate(ctx._getInputMirrorValue("end"));
-      }
-    },
-    dependencies: [CdkMonitorFocus],
-    styles: [".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1);margin:0 4px;color:var(--mat-datepicker-range-input-separator-color, var(--mat-sys-on-surface))}.mat-form-field-disabled .mat-date-range-input-separator{color:var(--mat-datepicker-range-input-disabled-state-separator-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:rgba(0,0,0,0);color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-date-range-input-inner::placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-moz-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-webkit-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner:-ms-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner[disabled]{color:var(--mat-datepicker-range-input-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{opacity:0}}.mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{opacity:0}}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatDateRangeInput_Factory(t) {
+      return new (t || _MatDateRangeInput)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ControlContainer, 10), ɵɵdirectiveInject(DateAdapter, 8), ɵɵdirectiveInject(MAT_FORM_FIELD, 8));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatDateRangeInput,
+      selectors: [["mat-date-range-input"]],
+      contentQueries: function MatDateRangeInput_ContentQueries(rf, ctx, dirIndex) {
+        if (rf & 1) {
+          ɵɵcontentQuery(dirIndex, MatStartDate, 5);
+          ɵɵcontentQuery(dirIndex, MatEndDate, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._startInput = _t.first);
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._endInput = _t.first);
+        }
+      },
+      hostAttrs: ["role", "group", 1, "mat-date-range-input"],
+      hostVars: 8,
+      hostBindings: function MatDateRangeInput_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          ɵɵattribute("id", ctx.id)("aria-labelledby", ctx._getAriaLabelledby())("aria-describedby", ctx._ariaDescribedBy)("data-mat-calendar", ctx.rangePicker ? ctx.rangePicker.id : null);
+          ɵɵclassProp("mat-date-range-input-hide-placeholders", ctx._shouldHidePlaceholders())("mat-date-range-input-required", ctx.required);
+        }
+      },
+      inputs: {
+        rangePicker: "rangePicker",
+        required: [2, "required", "required", booleanAttribute],
+        dateFilter: "dateFilter",
+        min: "min",
+        max: "max",
+        disabled: [2, "disabled", "disabled", booleanAttribute],
+        separator: "separator",
+        comparisonStart: "comparisonStart",
+        comparisonEnd: "comparisonEnd"
+      },
+      exportAs: ["matDateRangeInput"],
+      standalone: true,
+      features: [ɵɵProvidersFeature([{
+        provide: MatFormFieldControl,
+        useExisting: _MatDateRangeInput
+      }, {
+        provide: MAT_DATE_RANGE_INPUT_PARENT,
+        useExisting: _MatDateRangeInput
+      }]), ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
+      ngContentSelectors: _c62,
+      decls: 11,
+      vars: 5,
+      consts: [["cdkMonitorSubtreeFocus", "", 1, "mat-date-range-input-container", 3, "cdkFocusChange"], [1, "mat-date-range-input-wrapper"], ["aria-hidden", "true", 1, "mat-date-range-input-mirror"], [1, "mat-date-range-input-separator"], [1, "mat-date-range-input-wrapper", "mat-date-range-input-end-wrapper"]],
+      template: function MatDateRangeInput_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef(_c52);
+          ɵɵelementStart(0, "div", 0);
+          ɵɵlistener("cdkFocusChange", function MatDateRangeInput_Template_div_cdkFocusChange_0_listener($event) {
+            return ctx._updateFocus($event);
+          });
+          ɵɵelementStart(1, "div", 1);
+          ɵɵprojection(2);
+          ɵɵelementStart(3, "span", 2);
+          ɵɵtext(4);
+          ɵɵelementEnd()();
+          ɵɵelementStart(5, "span", 3);
+          ɵɵtext(6);
+          ɵɵelementEnd();
+          ɵɵelementStart(7, "div", 4);
+          ɵɵprojection(8, 1);
+          ɵɵelementStart(9, "span", 2);
+          ɵɵtext(10);
+          ɵɵelementEnd()()();
+        }
+        if (rf & 2) {
+          ɵɵadvance(4);
+          ɵɵtextInterpolate(ctx._getInputMirrorValue("start"));
+          ɵɵadvance();
+          ɵɵclassProp("mat-date-range-input-separator-hidden", ctx._shouldHideSeparator());
+          ɵɵadvance();
+          ɵɵtextInterpolate(ctx.separator);
+          ɵɵadvance(4);
+          ɵɵtextInterpolate(ctx._getInputMirrorValue("end"));
+        }
+      },
+      dependencies: [CdkMonitorFocus],
+      styles: [".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1);margin:0 4px;color:var(--mat-datepicker-range-input-separator-color, var(--mat-app-on-surface))}.mat-form-field-disabled .mat-date-range-input-separator{color:var(--mat-datepicker-range-input-disabled-state-separator-color)}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:rgba(0,0,0,0);color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-date-range-input-inner::placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-moz-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-webkit-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner:-ms-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner[disabled]{color:var(--mat-datepicker-range-input-disabled-state-text-color)}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{opacity:0}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}"],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDateRangeInput, [{
@@ -5374,7 +6872,11 @@ var MatDateRangeInput = class _MatDateRangeInput {
       providers: [{
         provide: MatFormFieldControl,
         useExisting: MatDateRangeInput
+      }, {
+        provide: MAT_DATE_RANGE_INPUT_PARENT,
+        useExisting: MatDateRangeInput
       }],
+      standalone: true,
       imports: [CdkMonitorFocus],
       template: `<div
   class="mat-date-range-input-container"
@@ -5400,9 +6902,33 @@ var MatDateRangeInput = class _MatDateRangeInput {
 </div>
 
 `,
-      styles: [".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1);margin:0 4px;color:var(--mat-datepicker-range-input-separator-color, var(--mat-sys-on-surface))}.mat-form-field-disabled .mat-date-range-input-separator{color:var(--mat-datepicker-range-input-disabled-state-separator-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:rgba(0,0,0,0);color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-date-range-input-inner::placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-moz-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-webkit-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner:-ms-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner[disabled]{color:var(--mat-datepicker-range-input-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{opacity:0}}.mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}@media(forced-colors: active){.mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{opacity:0}}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}"]
+      styles: [".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1);margin:0 4px;color:var(--mat-datepicker-range-input-separator-color, var(--mat-app-on-surface))}.mat-form-field-disabled .mat-date-range-input-separator{color:var(--mat-datepicker-range-input-disabled-state-separator-color)}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:rgba(0,0,0,0);color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-date-range-input-inner::placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-moz-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner::-webkit-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner:-ms-input-placeholder{transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-date-range-input-inner[disabled]{color:var(--mat-datepicker-range-input-disabled-state-text-color)}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-webkit-input-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-webkit-input-placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{-webkit-user-select:none;user-select:none;color:rgba(0,0,0,0) !important;-webkit-text-fill-color:rgba(0,0,0,0);transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner:-ms-input-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner:-ms-input-placeholder{opacity:0}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}"]
     }]
-  }], () => [], {
+  }], () => [{
+    type: ChangeDetectorRef
+  }, {
+    type: ElementRef
+  }, {
+    type: ControlContainer,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Self
+    }]
+  }, {
+    type: DateAdapter,
+    decorators: [{
+      type: Optional
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Optional
+    }, {
+      type: Inject,
+      args: [MAT_FORM_FIELD]
+    }]
+  }], {
     rangePicker: [{
       type: Input
     }],
@@ -5435,452 +6961,16 @@ var MatDateRangeInput = class _MatDateRangeInput {
     }],
     comparisonEnd: [{
       type: Input
+    }],
+    _startInput: [{
+      type: ContentChild,
+      args: [MatStartDate]
+    }],
+    _endInput: [{
+      type: ContentChild,
+      args: [MatEndDate]
     }]
   });
-})();
-function _computeAriaAccessibleName(element) {
-  return _computeAriaAccessibleNameInternal(element, true);
-}
-function ssrSafeIsElement(node) {
-  return node.nodeType === Node.ELEMENT_NODE;
-}
-function ssrSafeIsHTMLInputElement(node) {
-  return node.nodeName === "INPUT";
-}
-function ssrSafeIsHTMLTextAreaElement(node) {
-  return node.nodeName === "TEXTAREA";
-}
-function _computeAriaAccessibleNameInternal(currentNode, isDirectlyReferenced) {
-  if (ssrSafeIsElement(currentNode) && isDirectlyReferenced) {
-    const labelledbyIds = currentNode.getAttribute?.("aria-labelledby")?.split(/\s+/g) || [];
-    const validIdRefs = labelledbyIds.reduce((validIds, id) => {
-      const elem = document.getElementById(id);
-      if (elem) {
-        validIds.push(elem);
-      }
-      return validIds;
-    }, []);
-    if (validIdRefs.length) {
-      return validIdRefs.map((idRef) => {
-        return _computeAriaAccessibleNameInternal(idRef, false);
-      }).join(" ");
-    }
-  }
-  if (ssrSafeIsElement(currentNode)) {
-    const ariaLabel = currentNode.getAttribute("aria-label")?.trim();
-    if (ariaLabel) {
-      return ariaLabel;
-    }
-  }
-  if (ssrSafeIsHTMLInputElement(currentNode) || ssrSafeIsHTMLTextAreaElement(currentNode)) {
-    if (currentNode.labels?.length) {
-      return Array.from(currentNode.labels).map((x) => _computeAriaAccessibleNameInternal(x, false)).join(" ");
-    }
-    const placeholder = currentNode.getAttribute("placeholder")?.trim();
-    if (placeholder) {
-      return placeholder;
-    }
-    const title = currentNode.getAttribute("title")?.trim();
-    if (title) {
-      return title;
-    }
-  }
-  return (currentNode.textContent || "").replace(/\s+/g, " ").trim();
-}
-var MatDateRangeInputPartBase = class _MatDateRangeInputPartBase extends MatDatepickerInputBase {
-  _rangeInput = inject(MatDateRangeInput);
-  _elementRef = inject(ElementRef);
-  _defaultErrorStateMatcher = inject(ErrorStateMatcher);
-  _injector = inject(Injector);
-  _parentForm = inject(NgForm, {
-    optional: true
-  });
-  _parentFormGroup = inject(FormGroupDirective, {
-    optional: true
-  });
-  /**
-   * Form control bound to this input part.
-   * @docs-private
-   */
-  ngControl;
-  _dir = inject(Directionality, {
-    optional: true
-  });
-  _errorStateTracker;
-  /** Object used to control when error messages are shown. */
-  get errorStateMatcher() {
-    return this._errorStateTracker.matcher;
-  }
-  set errorStateMatcher(value) {
-    this._errorStateTracker.matcher = value;
-  }
-  /** Whether the input is in an error state. */
-  get errorState() {
-    return this._errorStateTracker.errorState;
-  }
-  set errorState(value) {
-    this._errorStateTracker.errorState = value;
-  }
-  constructor() {
-    super();
-    this._errorStateTracker = new _ErrorStateTracker(this._defaultErrorStateMatcher, null, this._parentFormGroup, this._parentForm, this.stateChanges);
-  }
-  ngOnInit() {
-    const ngControl = this._injector.get(NgControl, null, {
-      optional: true,
-      self: true
-    });
-    if (ngControl) {
-      this.ngControl = ngControl;
-      this._errorStateTracker.ngControl = ngControl;
-    }
-  }
-  ngAfterContentInit() {
-    this._register();
-  }
-  ngDoCheck() {
-    if (this.ngControl) {
-      this.updateErrorState();
-    }
-  }
-  /** Gets whether the input is empty. */
-  isEmpty() {
-    return this._elementRef.nativeElement.value.length === 0;
-  }
-  /** Gets the placeholder of the input. */
-  _getPlaceholder() {
-    return this._elementRef.nativeElement.placeholder;
-  }
-  /** Focuses the input. */
-  focus() {
-    this._elementRef.nativeElement.focus();
-  }
-  /** Gets the value that should be used when mirroring the input's size. */
-  getMirrorValue() {
-    const element = this._elementRef.nativeElement;
-    const value = element.value;
-    return value.length > 0 ? value : element.placeholder;
-  }
-  /** Refreshes the error state of the input. */
-  updateErrorState() {
-    this._errorStateTracker.updateErrorState();
-  }
-  /** Handles `input` events on the input element. */
-  _onInput(value) {
-    super._onInput(value);
-    this._rangeInput._handleChildValueChange();
-  }
-  /** Opens the datepicker associated with the input. */
-  _openPopup() {
-    this._rangeInput._openDatepicker();
-  }
-  /** Gets the minimum date from the range input. */
-  _getMinDate() {
-    return this._rangeInput.min;
-  }
-  /** Gets the maximum date from the range input. */
-  _getMaxDate() {
-    return this._rangeInput.max;
-  }
-  /** Gets the date filter function from the range input. */
-  _getDateFilter() {
-    return this._rangeInput.dateFilter;
-  }
-  _parentDisabled() {
-    return this._rangeInput._groupDisabled;
-  }
-  _shouldHandleChangeEvent({
-    source
-  }) {
-    return source !== this._rangeInput._startInput && source !== this._rangeInput._endInput;
-  }
-  _assignValueProgrammatically(value) {
-    super._assignValueProgrammatically(value);
-    const opposite = this === this._rangeInput._startInput ? this._rangeInput._endInput : this._rangeInput._startInput;
-    opposite?._validatorOnChange();
-  }
-  /** return the ARIA accessible name of the input element */
-  _getAccessibleName() {
-    return _computeAriaAccessibleName(this._elementRef.nativeElement);
-  }
-  static ɵfac = function MatDateRangeInputPartBase_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDateRangeInputPartBase)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDateRangeInputPartBase,
-    inputs: {
-      errorStateMatcher: "errorStateMatcher"
-    },
-    standalone: true,
-    features: [ɵɵInheritDefinitionFeature]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDateRangeInputPartBase, [{
-    type: Directive
-  }], () => [], {
-    errorStateMatcher: [{
-      type: Input
-    }]
-  });
-})();
-var MatStartDate = class _MatStartDate extends MatDateRangeInputPartBase {
-  /** Validator that checks that the start date isn't after the end date. */
-  _startValidator = (control) => {
-    const start = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
-    const end = this._model ? this._model.selection.end : null;
-    return !start || !end || this._dateAdapter.compareDate(start, end) <= 0 ? null : {
-      "matStartDateInvalid": {
-        "end": end,
-        "actual": start
-      }
-    };
-  };
-  _validator = Validators.compose([...super._getValidators(), this._startValidator]);
-  _register() {
-    this._rangeInput._startInput = this;
-  }
-  _getValueFromModel(modelValue) {
-    return modelValue.start;
-  }
-  _shouldHandleChangeEvent(change) {
-    if (!super._shouldHandleChangeEvent(change)) {
-      return false;
-    } else {
-      return !change.oldValue?.start ? !!change.selection.start : !change.selection.start || !!this._dateAdapter.compareDate(change.oldValue.start, change.selection.start);
-    }
-  }
-  _assignValueToModel(value) {
-    if (this._model) {
-      const range = new DateRange(value, this._model.selection.end);
-      this._model.updateSelection(range, this);
-    }
-  }
-  _formatValue(value) {
-    super._formatValue(value);
-    this._rangeInput._handleChildValueChange();
-  }
-  _onKeydown(event) {
-    const endInput = this._rangeInput._endInput;
-    const element = this._elementRef.nativeElement;
-    const isLtr = this._dir?.value !== "rtl";
-    if ((event.keyCode === RIGHT_ARROW && isLtr || event.keyCode === LEFT_ARROW && !isLtr) && element.selectionStart === element.value.length && element.selectionEnd === element.value.length) {
-      event.preventDefault();
-      endInput._elementRef.nativeElement.setSelectionRange(0, 0);
-      endInput.focus();
-    } else {
-      super._onKeydown(event);
-    }
-  }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵMatStartDate_BaseFactory;
-    return function MatStartDate_Factory(__ngFactoryType__) {
-      return (ɵMatStartDate_BaseFactory || (ɵMatStartDate_BaseFactory = ɵɵgetInheritedFactory(_MatStartDate)))(__ngFactoryType__ || _MatStartDate);
-    };
-  })();
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatStartDate,
-    selectors: [["input", "matStartDate", ""]],
-    hostAttrs: ["type", "text", 1, "mat-start-date", "mat-date-range-input-inner"],
-    hostVars: 5,
-    hostBindings: function MatStartDate_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("input", function MatStartDate_input_HostBindingHandler($event) {
-          return ctx._onInput($event.target.value);
-        })("change", function MatStartDate_change_HostBindingHandler() {
-          return ctx._onChange();
-        })("keydown", function MatStartDate_keydown_HostBindingHandler($event) {
-          return ctx._onKeydown($event);
-        })("blur", function MatStartDate_blur_HostBindingHandler() {
-          return ctx._onBlur();
-        });
-      }
-      if (rf & 2) {
-        ɵɵhostProperty("disabled", ctx.disabled);
-        ɵɵattribute("aria-haspopup", ctx._rangeInput.rangePicker ? "dialog" : null)("aria-owns", ctx._rangeInput._ariaOwns ? ctx._rangeInput._ariaOwns() : (ctx._rangeInput.rangePicker == null ? null : ctx._rangeInput.rangePicker.opened) && ctx._rangeInput.rangePicker.id || null)("min", ctx._getMinDate() ? ctx._dateAdapter.toIso8601(ctx._getMinDate()) : null)("max", ctx._getMaxDate() ? ctx._dateAdapter.toIso8601(ctx._getMaxDate()) : null);
-      }
-    },
-    outputs: {
-      dateChange: "dateChange",
-      dateInput: "dateInput"
-    },
-    standalone: true,
-    features: [ɵɵProvidersFeature([{
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: _MatStartDate,
-      multi: true
-    }, {
-      provide: NG_VALIDATORS,
-      useExisting: _MatStartDate,
-      multi: true
-    }]), ɵɵInheritDefinitionFeature]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStartDate, [{
-    type: Directive,
-    args: [{
-      selector: "input[matStartDate]",
-      host: {
-        "class": "mat-start-date mat-date-range-input-inner",
-        "[disabled]": "disabled",
-        "(input)": "_onInput($event.target.value)",
-        "(change)": "_onChange()",
-        "(keydown)": "_onKeydown($event)",
-        "[attr.aria-haspopup]": '_rangeInput.rangePicker ? "dialog" : null',
-        "[attr.aria-owns]": `_rangeInput._ariaOwns
-        ? _rangeInput._ariaOwns()
-        : (_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null`,
-        "[attr.min]": "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
-        "[attr.max]": "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
-        "(blur)": "_onBlur()",
-        "type": "text"
-      },
-      providers: [{
-        provide: NG_VALUE_ACCESSOR,
-        useExisting: MatStartDate,
-        multi: true
-      }, {
-        provide: NG_VALIDATORS,
-        useExisting: MatStartDate,
-        multi: true
-      }],
-      // These need to be specified explicitly, because some tooling doesn't
-      // seem to pick them up from the base class. See #20932.
-      outputs: ["dateChange", "dateInput"]
-    }]
-  }], null, null);
-})();
-var MatEndDate = class _MatEndDate extends MatDateRangeInputPartBase {
-  /** Validator that checks that the end date isn't before the start date. */
-  _endValidator = (control) => {
-    const end = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
-    const start = this._model ? this._model.selection.start : null;
-    return !end || !start || this._dateAdapter.compareDate(end, start) >= 0 ? null : {
-      "matEndDateInvalid": {
-        "start": start,
-        "actual": end
-      }
-    };
-  };
-  _register() {
-    this._rangeInput._endInput = this;
-  }
-  _validator = Validators.compose([...super._getValidators(), this._endValidator]);
-  _getValueFromModel(modelValue) {
-    return modelValue.end;
-  }
-  _shouldHandleChangeEvent(change) {
-    if (!super._shouldHandleChangeEvent(change)) {
-      return false;
-    } else {
-      return !change.oldValue?.end ? !!change.selection.end : !change.selection.end || !!this._dateAdapter.compareDate(change.oldValue.end, change.selection.end);
-    }
-  }
-  _assignValueToModel(value) {
-    if (this._model) {
-      const range = new DateRange(this._model.selection.start, value);
-      this._model.updateSelection(range, this);
-    }
-  }
-  _moveCaretToEndOfStartInput() {
-    const startInput = this._rangeInput._startInput._elementRef.nativeElement;
-    const value = startInput.value;
-    if (value.length > 0) {
-      startInput.setSelectionRange(value.length, value.length);
-    }
-    startInput.focus();
-  }
-  _onKeydown(event) {
-    const element = this._elementRef.nativeElement;
-    const isLtr = this._dir?.value !== "rtl";
-    if (event.keyCode === BACKSPACE && !element.value) {
-      this._moveCaretToEndOfStartInput();
-    } else if ((event.keyCode === LEFT_ARROW && isLtr || event.keyCode === RIGHT_ARROW && !isLtr) && element.selectionStart === 0 && element.selectionEnd === 0) {
-      event.preventDefault();
-      this._moveCaretToEndOfStartInput();
-    } else {
-      super._onKeydown(event);
-    }
-  }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵMatEndDate_BaseFactory;
-    return function MatEndDate_Factory(__ngFactoryType__) {
-      return (ɵMatEndDate_BaseFactory || (ɵMatEndDate_BaseFactory = ɵɵgetInheritedFactory(_MatEndDate)))(__ngFactoryType__ || _MatEndDate);
-    };
-  })();
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatEndDate,
-    selectors: [["input", "matEndDate", ""]],
-    hostAttrs: ["type", "text", 1, "mat-end-date", "mat-date-range-input-inner"],
-    hostVars: 5,
-    hostBindings: function MatEndDate_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("input", function MatEndDate_input_HostBindingHandler($event) {
-          return ctx._onInput($event.target.value);
-        })("change", function MatEndDate_change_HostBindingHandler() {
-          return ctx._onChange();
-        })("keydown", function MatEndDate_keydown_HostBindingHandler($event) {
-          return ctx._onKeydown($event);
-        })("blur", function MatEndDate_blur_HostBindingHandler() {
-          return ctx._onBlur();
-        });
-      }
-      if (rf & 2) {
-        ɵɵhostProperty("disabled", ctx.disabled);
-        ɵɵattribute("aria-haspopup", ctx._rangeInput.rangePicker ? "dialog" : null)("aria-owns", ctx._rangeInput._ariaOwns ? ctx._rangeInput._ariaOwns() : (ctx._rangeInput.rangePicker == null ? null : ctx._rangeInput.rangePicker.opened) && ctx._rangeInput.rangePicker.id || null)("min", ctx._getMinDate() ? ctx._dateAdapter.toIso8601(ctx._getMinDate()) : null)("max", ctx._getMaxDate() ? ctx._dateAdapter.toIso8601(ctx._getMaxDate()) : null);
-      }
-    },
-    outputs: {
-      dateChange: "dateChange",
-      dateInput: "dateInput"
-    },
-    standalone: true,
-    features: [ɵɵProvidersFeature([{
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: _MatEndDate,
-      multi: true
-    }, {
-      provide: NG_VALIDATORS,
-      useExisting: _MatEndDate,
-      multi: true
-    }]), ɵɵInheritDefinitionFeature]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatEndDate, [{
-    type: Directive,
-    args: [{
-      selector: "input[matEndDate]",
-      host: {
-        "class": "mat-end-date mat-date-range-input-inner",
-        "[disabled]": "disabled",
-        "(input)": "_onInput($event.target.value)",
-        "(change)": "_onChange()",
-        "(keydown)": "_onKeydown($event)",
-        "[attr.aria-haspopup]": '_rangeInput.rangePicker ? "dialog" : null',
-        "[attr.aria-owns]": `_rangeInput._ariaOwns
-        ? _rangeInput._ariaOwns()
-        : (_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null`,
-        "[attr.min]": "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
-        "[attr.max]": "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
-        "(blur)": "_onBlur()",
-        "type": "text"
-      },
-      providers: [{
-        provide: NG_VALUE_ACCESSOR,
-        useExisting: MatEndDate,
-        multi: true
-      }, {
-        provide: NG_VALIDATORS,
-        useExisting: MatEndDate,
-        multi: true
-      }],
-      // These need to be specified explicitly, because some tooling doesn't
-      // seem to pick them up from the base class. See #20932.
-      outputs: ["dateChange", "dateInput"]
-    }]
-  }], null, null);
 })();
 var MatDateRangePicker = class _MatDateRangePicker extends MatDatepickerBase {
   _forwardContentValues(instance) {
@@ -5893,28 +6983,32 @@ var MatDateRangePicker = class _MatDateRangePicker extends MatDatepickerBase {
       instance.endDateAccessibleName = input._getEndDateAccessibleName();
     }
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵMatDateRangePicker_BaseFactory;
-    return function MatDateRangePicker_Factory(__ngFactoryType__) {
-      return (ɵMatDateRangePicker_BaseFactory || (ɵMatDateRangePicker_BaseFactory = ɵɵgetInheritedFactory(_MatDateRangePicker)))(__ngFactoryType__ || _MatDateRangePicker);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatDateRangePicker,
-    selectors: [["mat-date-range-picker"]],
-    exportAs: ["matDateRangePicker"],
-    standalone: true,
-    features: [ɵɵProvidersFeature([MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER, MAT_CALENDAR_RANGE_STRATEGY_PROVIDER, {
-      provide: MatDatepickerBase,
-      useExisting: _MatDateRangePicker
-    }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 0,
-    vars: 0,
-    template: function MatDateRangePicker_Template(rf, ctx) {
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = /* @__PURE__ */ (() => {
+      let ɵMatDateRangePicker_BaseFactory;
+      return function MatDateRangePicker_Factory(t) {
+        return (ɵMatDateRangePicker_BaseFactory || (ɵMatDateRangePicker_BaseFactory = ɵɵgetInheritedFactory(_MatDateRangePicker)))(t || _MatDateRangePicker);
+      };
+    })();
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatDateRangePicker,
+      selectors: [["mat-date-range-picker"]],
+      exportAs: ["matDateRangePicker"],
+      standalone: true,
+      features: [ɵɵProvidersFeature([MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER, MAT_CALENDAR_RANGE_STRATEGY_PROVIDER, {
+        provide: MatDatepickerBase,
+        useExisting: _MatDateRangePicker
+      }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+      decls: 0,
+      vars: 0,
+      template: function MatDateRangePicker_Template(rf, ctx) {
+      },
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDateRangePicker, [{
@@ -5928,33 +7022,38 @@ var MatDateRangePicker = class _MatDateRangePicker extends MatDatepickerBase {
       providers: [MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER, MAT_CALENDAR_RANGE_STRATEGY_PROVIDER, {
         provide: MatDatepickerBase,
         useExisting: MatDateRangePicker
-      }]
+      }],
+      standalone: true
     }]
   }], null, null);
 })();
 var MatDatepickerApply = class _MatDatepickerApply {
-  _datepicker = inject(MatDatepickerBase);
-  constructor() {
+  constructor(_datepicker) {
+    this._datepicker = _datepicker;
   }
   _applySelection() {
     this._datepicker._applyPendingSelection();
     this._datepicker.close();
   }
-  static ɵfac = function MatDatepickerApply_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerApply)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDatepickerApply,
-    selectors: [["", "matDatepickerApply", ""], ["", "matDateRangePickerApply", ""]],
-    hostBindings: function MatDatepickerApply_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function MatDatepickerApply_click_HostBindingHandler() {
-          return ctx._applySelection();
-        });
-      }
-    },
-    standalone: true
-  });
+  static {
+    this.ɵfac = function MatDatepickerApply_Factory(t) {
+      return new (t || _MatDatepickerApply)(ɵɵdirectiveInject(MatDatepickerBase));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDatepickerApply,
+      selectors: [["", "matDatepickerApply", ""], ["", "matDateRangePickerApply", ""]],
+      hostBindings: function MatDatepickerApply_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵlistener("click", function MatDatepickerApply_click_HostBindingHandler() {
+            return ctx._applySelection();
+          });
+        }
+      },
+      standalone: true
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerApply, [{
@@ -5963,29 +7062,36 @@ var MatDatepickerApply = class _MatDatepickerApply {
       selector: "[matDatepickerApply], [matDateRangePickerApply]",
       host: {
         "(click)": "_applySelection()"
-      }
+      },
+      standalone: true
     }]
-  }], () => [], null);
+  }], () => [{
+    type: MatDatepickerBase
+  }], null);
 })();
 var MatDatepickerCancel = class _MatDatepickerCancel {
-  _datepicker = inject(MatDatepickerBase);
-  constructor() {
+  constructor(_datepicker) {
+    this._datepicker = _datepicker;
   }
-  static ɵfac = function MatDatepickerCancel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerCancel)();
-  };
-  static ɵdir = ɵɵdefineDirective({
-    type: _MatDatepickerCancel,
-    selectors: [["", "matDatepickerCancel", ""], ["", "matDateRangePickerCancel", ""]],
-    hostBindings: function MatDatepickerCancel_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function MatDatepickerCancel_click_HostBindingHandler() {
-          return ctx._datepicker.close();
-        });
-      }
-    },
-    standalone: true
-  });
+  static {
+    this.ɵfac = function MatDatepickerCancel_Factory(t) {
+      return new (t || _MatDatepickerCancel)(ɵɵdirectiveInject(MatDatepickerBase));
+    };
+  }
+  static {
+    this.ɵdir = ɵɵdefineDirective({
+      type: _MatDatepickerCancel,
+      selectors: [["", "matDatepickerCancel", ""], ["", "matDateRangePickerCancel", ""]],
+      hostBindings: function MatDatepickerCancel_HostBindings(rf, ctx) {
+        if (rf & 1) {
+          ɵɵlistener("click", function MatDatepickerCancel_click_HostBindingHandler() {
+            return ctx._datepicker.close();
+          });
+        }
+      },
+      standalone: true
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerCancel, [{
@@ -5994,16 +7100,17 @@ var MatDatepickerCancel = class _MatDatepickerCancel {
       selector: "[matDatepickerCancel], [matDateRangePickerCancel]",
       host: {
         "(click)": "_datepicker.close()"
-      }
+      },
+      standalone: true
     }]
-  }], () => [], null);
+  }], () => [{
+    type: MatDatepickerBase
+  }], null);
 })();
 var MatDatepickerActions = class _MatDatepickerActions {
-  _datepicker = inject(MatDatepickerBase);
-  _viewContainerRef = inject(ViewContainerRef);
-  _template;
-  _portal;
-  constructor() {
+  constructor(_datepicker, _viewContainerRef) {
+    this._datepicker = _datepicker;
+    this._viewContainerRef = _viewContainerRef;
   }
   ngAfterViewInit() {
     this._portal = new TemplatePortal(this._template, this._viewContainerRef);
@@ -6015,37 +7122,41 @@ var MatDatepickerActions = class _MatDatepickerActions {
       this._portal?.detach();
     }
   }
-  static ɵfac = function MatDatepickerActions_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerActions)();
-  };
-  static ɵcmp = ɵɵdefineComponent({
-    type: _MatDatepickerActions,
-    selectors: [["mat-datepicker-actions"], ["mat-date-range-picker-actions"]],
-    viewQuery: function MatDatepickerActions_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(TemplateRef, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._template = _t.first);
-      }
-    },
-    standalone: true,
-    features: [ɵɵStandaloneFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    consts: [[1, "mat-datepicker-actions"]],
-    template: function MatDatepickerActions_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵtemplate(0, MatDatepickerActions_ng_template_0_Template, 2, 0, "ng-template");
-      }
-    },
-    styles: [".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:0 8px 8px 8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}"],
-    encapsulation: 2,
-    changeDetection: 0
-  });
+  static {
+    this.ɵfac = function MatDatepickerActions_Factory(t) {
+      return new (t || _MatDatepickerActions)(ɵɵdirectiveInject(MatDatepickerBase), ɵɵdirectiveInject(ViewContainerRef));
+    };
+  }
+  static {
+    this.ɵcmp = ɵɵdefineComponent({
+      type: _MatDatepickerActions,
+      selectors: [["mat-datepicker-actions"], ["mat-date-range-picker-actions"]],
+      viewQuery: function MatDatepickerActions_Query(rf, ctx) {
+        if (rf & 1) {
+          ɵɵviewQuery(TemplateRef, 5);
+        }
+        if (rf & 2) {
+          let _t;
+          ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._template = _t.first);
+        }
+      },
+      standalone: true,
+      features: [ɵɵStandaloneFeature],
+      ngContentSelectors: _c12,
+      decls: 1,
+      vars: 0,
+      consts: [[1, "mat-datepicker-actions"]],
+      template: function MatDatepickerActions_Template(rf, ctx) {
+        if (rf & 1) {
+          ɵɵprojectionDef();
+          ɵɵtemplate(0, MatDatepickerActions_ng_template_0_Template, 2, 0, "ng-template");
+        }
+      },
+      styles: [".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:0 8px 8px 8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}"],
+      encapsulation: 2,
+      changeDetection: 0
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerActions, [{
@@ -6061,9 +7172,14 @@ var MatDatepickerActions = class _MatDatepickerActions {
   `,
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
+      standalone: true,
       styles: [".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:0 8px 8px 8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}"]
     }]
-  }], () => [], {
+  }], () => [{
+    type: MatDatepickerBase
+  }, {
+    type: ViewContainerRef
+  }], {
     _template: [{
       type: ViewChild,
       args: [TemplateRef]
@@ -6071,24 +7187,30 @@ var MatDatepickerActions = class _MatDatepickerActions {
   });
 })();
 var MatDatepickerModule = class _MatDatepickerModule {
-  static ɵfac = function MatDatepickerModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MatDatepickerModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _MatDatepickerModule,
-    imports: [MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply],
-    exports: [CdkScrollableModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply]
-  });
-  static ɵinj = ɵɵdefineInjector({
-    providers: [MatDatepickerIntl, MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER],
-    imports: [MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, MatDatepickerContent, MatDatepickerToggle, MatCalendarHeader, CdkScrollableModule]
-  });
+  static {
+    this.ɵfac = function MatDatepickerModule_Factory(t) {
+      return new (t || _MatDatepickerModule)();
+    };
+  }
+  static {
+    this.ɵmod = ɵɵdefineNgModule({
+      type: _MatDatepickerModule,
+      imports: [CommonModule, MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply],
+      exports: [CdkScrollableModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply]
+    });
+  }
+  static {
+    this.ɵinj = ɵɵdefineInjector({
+      providers: [MatDatepickerIntl, MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER],
+      imports: [CommonModule, MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, MatDatepickerContent, MatDatepickerToggle, MatCalendarHeader, CdkScrollableModule]
+    });
+  }
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatDatepickerModule, [{
     type: NgModule,
     args: [{
-      imports: [MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply],
+      imports: [CommonModule, MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply],
       exports: [CdkScrollableModule, MatCalendar, MatCalendarBody, MatDatepicker, MatDatepickerContent, MatDatepickerInput, MatDatepickerToggle, MatDatepickerToggleIcon, MatMonthView, MatYearView, MatMultiYearView, MatCalendarHeader, MatDateRangeInput, MatStartDate, MatEndDate, MatDateRangePicker, MatDatepickerActions, MatDatepickerCancel, MatDatepickerApply],
       providers: [MatDatepickerIntl, MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER]
     }]

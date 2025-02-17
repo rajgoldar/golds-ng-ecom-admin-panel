@@ -1,14 +1,5 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  BrowserDomAdapter,
-  BrowserModule,
-  DomRendererFactory2,
-  EVENT_MANAGER_PLUGINS,
-  EventManagerPlugin,
-  HTTP_ROOT_INTERCEPTOR_FNS,
-  HttpClientModule
-} from "./chunk-7SL6GZNA.js";
-import {
   AnimationDriver,
   AnimationEngine,
   AnimationRendererFactory,
@@ -16,7 +7,17 @@ import {
   NoopAnimationDriver,
   WebAnimationsDriver,
   WebAnimationsStyleNormalizer
-} from "./chunk-F5RI4OPV.js";
+} from "./chunk-BDKWQMRD.js";
+import "./chunk-YITY56S4.js";
+import {
+  BrowserDomAdapter,
+  BrowserModule,
+  DomRendererFactory2,
+  EVENT_MANAGER_PLUGINS,
+  EventManagerPlugin,
+  HTTP_ROOT_INTERCEPTOR_FNS,
+  HttpClientModule
+} from "./chunk-VL6XL643.js";
 import {
   DOCUMENT,
   NullViewportScroller,
@@ -26,7 +27,7 @@ import {
   XhrFactory,
   getDOM,
   setRootDomAdapter
-} from "./chunk-UAKFLBMU.js";
+} from "./chunk-J6ZTTRJD.js";
 import {
   ALLOW_MULTIPLE_PLATFORMS,
   ANIMATION_MODULE_TYPE,
@@ -63,7 +64,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-FB6BDKAH.js";
+} from "./chunk-QNCE3SLJ.js";
 import {
   __async,
   __toESM
@@ -81,8 +82,8 @@ var InjectableAnimationEngine = class _InjectableAnimationEngine extends Animati
     this.flush();
   }
   static {
-    this.ɵfac = function InjectableAnimationEngine_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _InjectableAnimationEngine)(ɵɵinject(DOCUMENT), ɵɵinject(AnimationDriver), ɵɵinject(AnimationStyleNormalizer));
+    this.ɵfac = function InjectableAnimationEngine_Factory(t) {
+      return new (t || _InjectableAnimationEngine)(ɵɵinject(DOCUMENT), ɵɵinject(AnimationDriver), ɵɵinject(AnimationStyleNormalizer));
     };
   }
   static {
@@ -162,8 +163,8 @@ var BrowserAnimationsModule = class _BrowserAnimationsModule {
     };
   }
   static {
-    this.ɵfac = function BrowserAnimationsModule_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _BrowserAnimationsModule)();
+    this.ɵfac = function BrowserAnimationsModule_Factory(t) {
+      return new (t || _BrowserAnimationsModule)();
     };
   }
   static {
@@ -190,8 +191,8 @@ var BrowserAnimationsModule = class _BrowserAnimationsModule {
 })();
 var NoopAnimationsModule = class _NoopAnimationsModule {
   static {
-    this.ɵfac = function NoopAnimationsModule_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _NoopAnimationsModule)();
+    this.ɵfac = function NoopAnimationsModule_Factory(t) {
+      return new (t || _NoopAnimationsModule)();
     };
   }
   static {
@@ -16526,8 +16527,8 @@ var PlatformState = class _PlatformState {
     return this._doc;
   }
   static {
-    this.ɵfac = function PlatformState_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _PlatformState)(ɵɵinject(DOCUMENT));
+    this.ɵfac = function PlatformState_Factory(t) {
+      return new (t || _PlatformState)(ɵɵinject(DOCUMENT));
     };
   }
   static {
@@ -16571,8 +16572,8 @@ var ServerXhr = class _ServerXhr {
     return new impl.XMLHttpRequest();
   }
   static {
-    this.ɵfac = function ServerXhr_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _ServerXhr)();
+    this.ɵfac = function ServerXhr_Factory(t) {
+      return new (t || _ServerXhr)();
     };
   }
   static {
@@ -16712,8 +16713,8 @@ var ServerPlatformLocation = class _ServerPlatformLocation {
     return void 0;
   }
   static {
-    this.ɵfac = function ServerPlatformLocation_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _ServerPlatformLocation)(ɵɵinject(DOCUMENT), ɵɵinject(INITIAL_CONFIG, 8));
+    this.ɵfac = function ServerPlatformLocation_Factory(t) {
+      return new (t || _ServerPlatformLocation)(ɵɵinject(DOCUMENT), ɵɵinject(INITIAL_CONFIG, 8));
     };
   }
   static {
@@ -16755,8 +16756,8 @@ var ServerEventManagerPlugin = class _ServerEventManagerPlugin extends EventMana
     return getDOM().onAndCancel(element, eventName, handler);
   }
   static {
-    this.ɵfac = function ServerEventManagerPlugin_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _ServerEventManagerPlugin)(ɵɵinject(DOCUMENT));
+    this.ɵfac = function ServerEventManagerPlugin_Factory(t) {
+      return new (t || _ServerEventManagerPlugin)(ɵɵinject(DOCUMENT));
     };
   }
   static {
@@ -16871,8 +16872,8 @@ var PLATFORM_SERVER_PROVIDERS = [
 ];
 var ServerModule = class _ServerModule {
   static {
-    this.ɵfac = function ServerModule_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || _ServerModule)();
+    this.ɵfac = function ServerModule_Factory(t) {
+      return new (t || _ServerModule)();
     };
   }
   static {
@@ -16913,42 +16914,6 @@ function _document(injector) {
 var platformServer = createPlatformFactory(platformCore, "server", INTERNAL_SERVER_PLATFORM_PROVIDERS);
 function provideServerRendering() {
   return makeEnvironmentProviders([provideNoopAnimations(), ...PLATFORM_SERVER_PROVIDERS]);
-}
-var PERFORMANCE_MARK_PREFIX = "🅰️";
-var enablePerfLogging = false;
-function runAndMeasurePerf(label, method) {
-  if (!enablePerfLogging) {
-    return method();
-  }
-  const labelName = `${PERFORMANCE_MARK_PREFIX}:${label}`;
-  const startLabel = `start:${labelName}`;
-  const endLabel = `end:${labelName}`;
-  const end = () => {
-    performance.mark(endLabel);
-    performance.measure(labelName, startLabel, endLabel);
-    performance.clearMarks(startLabel);
-    performance.clearMarks(endLabel);
-  };
-  performance.mark(startLabel);
-  const returnValue = method();
-  if (returnValue instanceof Promise) {
-    return returnValue.finally(() => end());
-  } else {
-    end();
-    return returnValue;
-  }
-}
-var warningLogged = false;
-function enableSsrProfiling() {
-  if (!warningLogged && (typeof performance === "undefined" || !performance.mark || !performance.measure)) {
-    warningLogged = true;
-    console.warn("Performance API is not supported on this platform");
-    return;
-  }
-  enablePerfLogging = true;
-}
-function disableSsrProfiling() {
-  enablePerfLogging = false;
 }
 var EVENT_DISPATCH_SCRIPT_ID = "ng-event-dispatch-contract";
 function createServerPlatform(options) {
@@ -17004,7 +16969,7 @@ function insertEventRecordScript(appId, doc, eventTypesToReplay, nonce) {
   } = eventTypesToReplay;
   const eventDispatchScript = findEventDispatchScript(doc);
   if (eventDispatchScript) {
-    const replayScriptContents = `window.__jsaction_bootstrap(document.body,"${appId}",${JSON.stringify(Array.from(regular))},${JSON.stringify(Array.from(capture))});`;
+    const replayScriptContents = `window.__jsaction_bootstrap('ngContracts', document.body, ${JSON.stringify(appId)}, ${JSON.stringify(Array.from(regular))}${capture.size ? "," + JSON.stringify(Array.from(capture)) : ""});`;
     const replayScript = createScript(doc, replayScriptContents, nonce);
     eventDispatchScript.after(replayScript);
   }
@@ -17037,15 +17002,14 @@ function _render(platformRef, applicationRef) {
       }
     }
     appendServerContextInfo(applicationRef);
-    return platformState.renderToString();
-  });
-}
-function asyncDestroyPlatform(platformRef) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      platformRef.destroy();
-      resolve();
-    }, 0);
+    const output = platformState.renderToString();
+    yield new Promise((resolve) => {
+      setTimeout(() => {
+        platformRef.destroy();
+        resolve();
+      }, 0);
+    });
+    return output;
   });
 }
 var DEFAULT_SERVER_CONTEXT = "other";
@@ -17066,29 +17030,19 @@ function renderModule(moduleType, options) {
       url,
       platformProviders
     });
-    try {
-      const moduleRef = yield platformRef.bootstrapModule(moduleType);
-      const applicationRef = moduleRef.injector.get(ApplicationRef);
-      return yield _render(platformRef, applicationRef);
-    } finally {
-      yield asyncDestroyPlatform(platformRef);
-    }
+    const moduleRef = yield platformRef.bootstrapModule(moduleType);
+    const applicationRef = moduleRef.injector.get(ApplicationRef);
+    return _render(platformRef, applicationRef);
   });
 }
 function renderApplication(bootstrap, options) {
   return __async(this, null, function* () {
-    return runAndMeasurePerf("renderApplication", () => __async(this, null, function* () {
-      const platformRef = createServerPlatform(options);
-      try {
-        const applicationRef = yield bootstrap();
-        return yield _render(platformRef, applicationRef);
-      } finally {
-        yield asyncDestroyPlatform(platformRef);
-      }
-    }));
+    const platformRef = createServerPlatform(options);
+    const applicationRef = yield bootstrap();
+    return _render(platformRef, applicationRef);
   });
 }
-var VERSION = new Version("18.2.13");
+var VERSION = new Version("18.0.1");
 export {
   BEFORE_APP_SERIALIZED,
   INITIAL_CONFIG,
@@ -17101,22 +17055,20 @@ export {
   renderModule,
   INTERNAL_SERVER_PLATFORM_PROVIDERS as ɵINTERNAL_SERVER_PLATFORM_PROVIDERS,
   SERVER_CONTEXT as ɵSERVER_CONTEXT,
-  SERVER_RENDER_PROVIDERS as ɵSERVER_RENDER_PROVIDERS,
-  disableSsrProfiling as ɵdisableSsrProfiling,
-  enableSsrProfiling as ɵenableSsrProfiling
+  SERVER_RENDER_PROVIDERS as ɵSERVER_RENDER_PROVIDERS
 };
 /*! Bundled license information:
 
 @angular/platform-browser/fesm2022/animations.mjs:
   (**
-   * @license Angular v18.2.13
+   * @license Angular v18.0.1
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 
 @angular/platform-server/fesm2022/platform-server.mjs:
   (**
-   * @license Angular v18.2.13
+   * @license Angular v18.0.1
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)

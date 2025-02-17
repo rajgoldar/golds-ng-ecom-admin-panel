@@ -1,12 +1,10 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
-  MAT_INPUT_CONFIG,
   MAT_INPUT_VALUE_ACCESSOR,
   MatInput,
   MatInputModule,
   getMatInputUnsupportedTypeError
-} from "./chunk-J74U7V35.js";
-import "./chunk-TFDUT5FJ.js";
+} from "./chunk-4PCS64RV.js";
 import {
   MatError,
   MatFormField,
@@ -14,15 +12,16 @@ import {
   MatLabel,
   MatPrefix,
   MatSuffix
-} from "./chunk-3VVIO7PN.js";
-import "./chunk-Y3MXJAVK.js";
-import "./chunk-QMBW6Z3E.js";
-import "./chunk-N3ZF3M4H.js";
-import "./chunk-QYUJDBLS.js";
-import "./chunk-FB6BDKAH.js";
+} from "./chunk-VWQGOX3J.js";
+import "./chunk-YITY56S4.js";
+import "./chunk-JSCAYRTV.js";
+import "./chunk-27I4VZMZ.js";
+import "./chunk-3WRF2ZPO.js";
+import "./chunk-67U5MMGD.js";
+import "./chunk-J6ZTTRJD.js";
+import "./chunk-QNCE3SLJ.js";
 import "./chunk-NQ4HTGF6.js";
 export {
-  MAT_INPUT_CONFIG,
   MAT_INPUT_VALUE_ACCESSOR,
   MatError,
   MatFormField,

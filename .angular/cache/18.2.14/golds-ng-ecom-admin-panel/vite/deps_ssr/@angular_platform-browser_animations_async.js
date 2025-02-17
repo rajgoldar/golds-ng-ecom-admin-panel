@@ -1,15 +1,14 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   DomRendererFactory2
-} from "./chunk-7SL6GZNA.js";
+} from "./chunk-VL6XL643.js";
 import {
   DOCUMENT
-} from "./chunk-UAKFLBMU.js";
+} from "./chunk-J6ZTTRJD.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
   Injectable,
-  InjectionToken,
   NgZone,
   RendererFactory2,
   RuntimeError,
@@ -19,7 +18,7 @@ import {
   setClassMetadata,
   ɵɵdefineInjectable,
   ɵɵinvalidFactory
-} from "./chunk-FB6BDKAH.js";
+} from "./chunk-QNCE3SLJ.js";
 import "./chunk-NQ4HTGF6.js";
 
 // node_modules/@angular/platform-browser/fesm2022/animations/async.mjs
@@ -39,9 +38,6 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     this.scheduler = inject(ChangeDetectionScheduler, {
       optional: true
     });
-    this.loadingSchedulerFn = inject(ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN, {
-      optional: true
-    });
   }
   /** @nodoc */
   ngOnDestroy() {
@@ -51,14 +47,8 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const loadFn = () => this.moduleImpl ?? import("./browser-RHD2NI4F.js").then((m) => m);
-    let moduleImplPromise;
-    if (this.loadingSchedulerFn) {
-      moduleImplPromise = this.loadingSchedulerFn(loadFn);
-    } else {
-      moduleImplPromise = loadFn();
-    }
-    return moduleImplPromise.catch((e) => {
+    const moduleImpl = this.moduleImpl ?? import("./browser-CGSF4FCS.js").then((m) => m);
+    return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
       ɵcreateEngine,
@@ -94,7 +84,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
       const animationRenderer = animationRendererFactory.createRenderer(hostElement, rendererType);
       dynamicRenderer.use(animationRenderer);
       this.scheduler?.notify(
-        10
+        9
         /* NotificationSource.AsyncAnimationsLoaded */
       );
     }).catch((e) => {
@@ -112,7 +102,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
     return this.delegate.whenRenderingDone?.() ?? Promise.resolve();
   }
   static {
-    this.ɵfac = function AsyncAnimationRendererFactory_Factory(__ngFactoryType__) {
+    this.ɵfac = function AsyncAnimationRendererFactory_Factory(t) {
       ɵɵinvalidFactory();
     };
   }
@@ -227,7 +217,6 @@ var DynamicDelegationRenderer = class {
     return this.replay !== null && propOrEventName.startsWith(ANIMATION_PREFIX);
   }
 };
-var ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN = new InjectionToken(ngDevMode ? "async_animation_loading_scheduler_fn" : "");
 function provideAnimationsAsync(type = "animations") {
   performanceMarkFeature("NgAsyncAnimations");
   return makeEnvironmentProviders([{
@@ -243,14 +232,13 @@ function provideAnimationsAsync(type = "animations") {
 }
 export {
   provideAnimationsAsync,
-  ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN,
   AsyncAnimationRendererFactory as ɵAsyncAnimationRendererFactory
 };
 /*! Bundled license information:
 
 @angular/platform-browser/fesm2022/animations/async.mjs:
   (**
-   * @license Angular v18.2.13
+   * @license Angular v18.0.1
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)

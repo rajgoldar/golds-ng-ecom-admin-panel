@@ -33,15 +33,23 @@ import {
   VERSION,
   _ErrorStateTracker,
   _MatInternalFormField,
-  _StructuralStylesLoader,
   _countGroupLabelsBeforeOption,
   _getOptionScrollPosition,
   defaultRippleAnimationConfig,
+  mixinColor,
+  mixinDisableRipple,
+  mixinDisabled,
+  mixinErrorState,
+  mixinInitialized,
+  mixinTabIndex,
   provideNativeDateAdapter,
   setLines
-} from "./chunk-PQNBDXYA.js";
-import "./chunk-LTXCFMCH.js";
-import "./chunk-XPT4LW4J.js";
+} from "./chunk-NM4HFSEA.js";
+import "./chunk-UWQZLAU3.js";
+import "./chunk-KJGUM6FH.js";
+import "./chunk-75XSGMT3.js";
+import "./chunk-U2Z7PXWF.js";
+import "./chunk-WDMUDEB6.js";
 export {
   AnimationCurves,
   AnimationDurations,
@@ -77,10 +85,15 @@ export {
   VERSION,
   _ErrorStateTracker,
   _MatInternalFormField,
-  _StructuralStylesLoader,
   _countGroupLabelsBeforeOption,
   _getOptionScrollPosition,
   defaultRippleAnimationConfig,
+  mixinColor,
+  mixinDisableRipple,
+  mixinDisabled,
+  mixinErrorState,
+  mixinInitialized,
+  mixinTabIndex,
   provideNativeDateAdapter,
   setLines
 };
