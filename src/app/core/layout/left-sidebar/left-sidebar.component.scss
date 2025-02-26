@@ -17,6 +17,8 @@
         //     align-items:center;
         // }
         .sub-menus {
+          overflow: hidden;
+          transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
           ul {
             li {
                 padding: 15px 0 0 8px;

@@ -7,172 +7,35 @@
         <div class="sidebar-inner">
             <div class="sidebar-menu">
                 <ul>
-                    <li routerLink="/admin/dashboard" class="cursor-pointer">
-                        <div class="d-flex">
-                            <span class="me-1">
-                                <img src="./../../../../assets/icons/custom/home.svg" alt="">
-                            </span>
-                            <span>
-                                Dashboard
-                            </span>
-                        </div>
-                    </li>
+                    @for (menu of sidebarMenus(); track $index) {
                     <li>
-                        <div class="d-flex">
+                        <div class="d-flex cursor-pointer" (click)="toggleSubMenu(menu)"
+                            [routerLink]="!menu?.children ? menu?.route : null">
 
                             <span class="me-1">
 
-                                <img src="./../../../../assets/icons/custom/product.svg" alt="">
+                                <img [src]="'./../../../../assets/icons/custom/'+ menu?.icon" alt="">
                             </span>
                             <span>
-                                Products Management
+                                {{menu?.title}}
                             </span>
                         </div>
-                        <div class="sub-menus">
+                        @if(menu?.children && menu?.expanded){
+                        <div [@expandCollapse]="menu?.expanded ? 'expanded' : 'collapsed'" class="sub-menus">
                             <ul>
-                                <li routerLink="/admin/products/add" class="cursor-pointer">
+                                @for (sub of menu.children; track $index) {
+                                <li [routerLink]="sub?.route" class="cursor-pointer">
                                     <span class="dot"></span>
-                                    <span class="menu-text">Add Product</span>
+                                    <span class="menu-text">{{sub?.title}}</span>
                                 </li>
-                                <li routerLink="/admin/products/list" class="cursor-pointer">
-                                    <span class="dot"></span>
-                                    <span class="menu-text">List Products</span>
-                                </li>
+                                }
+
                             </ul>
                         </div>
+                        }
                     </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-                                <img src="./../../../../assets/icons/custom/order.svg" alt="">
-                            </span>
-                            <span>
-                                Orders Management
-                            </span>
-                        </div>
-                        <div class="sub-menus">
-                            <ul>
-                                <li>
-                                    <span class="dot"></span>
-                                    <span class="menu-text">All Orders</span>
-                                </li>
-                                <li>
-                                    <span class="dot"></span>
-                                    <span class="menu-text">Orders Processing</span>
-                                </li>
-                                <li>
-                                    <span class="dot"></span>
-                                    <span class="menu-text">Returns Refunds</span>
-                                </li>
-                            </ul>
-                        </div>
+                    }
 
-                    </li>
-                  
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/customer.svg" alt="">
-                            </span>
-                            <span>
-                                Customers Management
-                            </span>
-                        </div>
-                        <div class="sub-menus">
-                            <ul>
-                                <li>
-                                    <span class="dot"></span>
-                                    <span class="menu-text">List Customers</span>
-                                </li>
-                                <li>
-                                    <span class="dot"></span>
-                                    <span class="menu-text">Engagement</span>
-                                </li>
-                                <li>
-                                    <span class="dot"></span>
-                                    <span class="menu-text">Account Settings</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/marketing.svg" alt="">
-                            </span>
-                            <span>
-                                Marketing & Promotions
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/payment.svg" alt="">
-                            </span>
-                            <span>
-                                Payments & Transactions
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/analytics.svg" alt="">
-                            </span>
-                            <span>
-                                Reports & Analytics
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/settings.svg" alt="">
-                            </span>
-                            <span>
-                                Settings & Configurations
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/content.svg" alt="">
-                            </span>
-                            <span>
-                                Content Management
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/support.svg" alt="">
-                            </span>
-                            <span>
-                                Support & Feedback
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex">
-                            <span class="mr-1">
-
-                                <img src="./../../../../assets/icons/custom/customer.svg" alt="">
-                            </span>
-                            <span>
-                                Users & Roles
-                            </span>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>

@@ -7,7 +7,7 @@ import {
   OverlayModule,
   SelectionModel,
   ViewportRuler
-} from "./chunk-CZUNXMMP.js";
+} from "./chunk-HY5VBJA2.js";
 import {
   MAT_FORM_FIELD,
   MatError,
@@ -18,7 +18,7 @@ import {
   MatLabel,
   MatPrefix,
   MatSuffix
-} from "./chunk-TSSJQDF5.js";
+} from "./chunk-KNGSN3HY.js";
 import {
   animate,
   animateChild,
@@ -27,7 +27,7 @@ import {
   style,
   transition,
   trigger
-} from "./chunk-53SS4ZOF.js";
+} from "./chunk-I7BTFFDL.js";
 import {
   FormGroupDirective,
   NgControl,
@@ -46,23 +46,13 @@ import {
   _ErrorStateTracker,
   _countGroupLabelsBeforeOption,
   _getOptionScrollPosition
-} from "./chunk-SWQZV7SB.js";
+} from "./chunk-RD6AOJDN.js";
 import {
   ActiveDescendantKeyManager,
   LiveAnnouncer,
   addAriaReferencedId,
   removeAriaReferencedId
-} from "./chunk-5P2YKEDQ.js";
-import {
-  A,
-  DOWN_ARROW,
-  ENTER,
-  LEFT_ARROW,
-  RIGHT_ARROW,
-  SPACE,
-  UP_ARROW,
-  hasModifierKey
-} from "./chunk-3WRF2ZPO.js";
+} from "./chunk-NOTAOFBL.js";
 import {
   CommonModule,
   NgClass
@@ -129,6 +119,16 @@ import {
   ɵɵtextInterpolate,
   ɵɵviewQuery
 } from "./chunk-QNCE3SLJ.js";
+import {
+  A,
+  DOWN_ARROW,
+  ENTER,
+  LEFT_ARROW,
+  RIGHT_ARROW,
+  SPACE,
+  UP_ARROW,
+  hasModifierKey
+} from "./chunk-3WRF2ZPO.js";
 import {
   __toESM
 } from "./chunk-NQ4HTGF6.js";
